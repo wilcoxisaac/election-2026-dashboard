@@ -253,6 +253,23 @@ nav.toc a.watchlink .ldot{background:#fff}
 .wlinks{display:flex;flex-wrap:wrap;gap:8px;margin-top:auto}
 .wlinks a{display:inline-flex;align-items:center;min-height:40px;padding:6px 12px;border-radius:8px;background:var(--d3);color:#fff;text-decoration:none;font-weight:700;font-size:.88rem}
 .wlinks a:hover{filter:brightness(1.1)}
+
+:root{--hs1:#e4e0f8;--hs2:#b4a9ec;--hs3:#6250d6}
+@media (prefers-color-scheme:dark){:root{--hs1:#2e2950;--hs2:#4b3f97;--hs3:#7d6ff0}}
+.hrow{border-top:1px solid var(--grid);padding:6px 0;margin-top:4px}
+.hbar{display:flex;height:38px;border-radius:8px;overflow:visible;position:relative;gap:2px;margin:10px 0 4px}
+.hbar>div{height:100%;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:800;font-size:.8rem;overflow:hidden}
+.hbar>div:first-child{border-radius:8px 0 0 8px}.hbar>div:nth-last-child(2){border-radius:0 8px 8px 0}
+.hbar>div.lt{color:#0b0b0b}
+@media (prefers-color-scheme:dark){.hbar>div.lt{color:#f0efec}}
+.hbar .mark{position:absolute;top:-6px;bottom:-6px;width:3px;background:var(--ink);transform:translateX(-1px)}
+.hbar .mark em{position:absolute;top:-18px;left:50%;transform:translateX(-50%);font-style:normal;font-size:.72rem;font-weight:800;color:var(--ink)}
+.tiles{display:grid;grid-template-columns:repeat(auto-fill,minmax(118px,1fr));gap:8px;margin-top:6px}
+.tile{border:1px solid var(--line);border-radius:10px;padding:8px 10px;background:var(--surface);display:flex;flex-direction:column;gap:1px;min-width:0}
+.tile b{font-size:.98rem}.tile span{font-size:.8rem;color:var(--ink);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.tile em{font-style:normal;font-size:.72rem;color:var(--muted)}
+.tile.cD{background:var(--d3);border-color:var(--d3)}.tile.cR{background:var(--r3);border-color:var(--r3)}
+.tile.cD *,.tile.cR *{color:#fff!important}
 </style>
 </head>
 <body>
@@ -272,7 +289,7 @@ nav.toc a.watchlink .ldot{background:#fff}
 <p id="live" class="sr" aria-live="polite"></p>
 <p class="kicker">Chance of Democratic control · median of models &amp; markets</p>
 <nav class="toc" aria-label="Sections">
-  <a href="#watch" class="watchlink"><span class="ldot" aria-hidden="true"></span>Watch live</a><a href="#map-sec">Map</a><a href="#senate">Senate path</a><a href="#latest">Updates</a><a href="#momentum">Momentum</a><a href="#gov">Governors</a><a href="#courts">Courts</a><a href="#measures">Measures</a><a href="#tonight">Tonight</a>
+  <a href="#watch" class="watchlink"><span class="ldot" aria-hidden="true"></span>Watch live</a><a href="#map-sec">Map</a><a href="#senate">Senate path</a><a href="#house">House</a><a href="#latest">Updates</a><a href="#momentum">Momentum</a><a href="#gov">Governors</a><a href="#courts">Courts</a><a href="#measures">Measures</a><a href="#tonight">Tonight</a>
 </nav>
 
 <main id="main">
@@ -298,6 +315,7 @@ nav.toc a.watchlink .ldot{background:#fff}
     <h2 id="map-h">Battlefield map</h2>
     <div class="toggle" role="group" aria-label="Map layer">
       <button type="button" data-layer="SEN" aria-pressed="true">Senate</button>
+      <button type="button" data-layer="HSE" aria-pressed="false">House</button>
       <button type="button" data-layer="GOV" aria-pressed="false">Governors</button>
     </div>
   </div>
@@ -337,6 +355,17 @@ nav.toc a.watchlink .ldot{background:#fff}
   <details><summary>As table</summary><div class="scroll" id="fcTable"></div></details>
 </section>
 </div>
+<section id="house" class="card" aria-labelledby="house-h">
+  <h2 id="house-h">House path to 218</h2>
+  <p class="small">All 435 seats by Cook rating (Nov 2). Democrats are favored in enough seats to pass 218 before counting any toss-ups.</p>
+  <div class="hbar" id="hbar" role="img"></div>
+  <div class="tlegend" id="hbarLegend"></div>
+  <div class="grid g2" style="margin-top:14px">
+    <div><h3>Toss-ups to watch <span class="small" id="tuCount"></span></h3><div class="tiles" id="tuTiles"></div></div>
+    <div><h3>Likely flips <span class="small">· Republican seats now leaning Democratic</span></h3><div class="tiles" id="flipTiles"></div>
+      <h3 style="margin-top:12px">Democratic seats at risk</h3><div class="tiles" id="riskTiles"></div></div>
+  </div>
+</section>
 <section id="momentum" aria-labelledby="mom-h">
   <h2 id="mom-h">Momentum</h2>
   <div class="grid g2">
@@ -485,13 +514,13 @@ const LEGS=[
 ];
 
 const TIMELINE=[
- {t:"18:00",l:"6:00 pm",txt:"First polls close (most of Indiana and Kentucky). Watch KY-6 (House toss-up) as an early wave signal."},
- {t:"19:00",l:"7:00 pm",txt:"Georgia (Senate: Ossoff; Governor: Bottoms vs. Jackson), Virginia (VA-1, VA-2; VA-5 flipping would signal a big night), Florida, South Carolina."},
- {t:"19:30",l:"7:30 pm",txt:"North Carolina (Cooper — expected first Democratic flip) and Ohio (Brown vs. Husted; Acton vs. Ramaswamy)."},
- {t:"20:00",l:"8:00 pm",txt:"Maine (Collins — slow count), most of Texas (Talarico vs. Paxton), Kansas (most), Michigan (most), New Hampshire, Pennsylvania."},
- {t:"21:00",l:"9:00 pm",txt:"Iowa (absentees first — early D lead may shrink), Nebraska (Osborn), Minnesota, Wisconsin, Arizona, New York, west Texas."},
+ {t:"18:00",l:"6:00 pm",txt:"First polls close (most of Indiana and Kentucky). House: KY-6 (toss-up) is an early wave signal."},
+ {t:"19:00",l:"7:00 pm",txt:"Georgia (Senate: Ossoff; Governor: Bottoms vs. Jackson), Virginia — House: VA-1 (toss-up), VA-2 (lean D flip); VA-5 flipping would signal a wave, Florida, South Carolina."},
+ {t:"19:30",l:"7:30 pm",txt:"North Carolina (Cooper; House: NC-1 toss-up) and Ohio (Brown vs. Husted; Acton vs. Ramaswamy; House: OH-7, OH-9)."},
+ {t:"20:00",l:"8:00 pm",txt:"Maine (Collins — slow count), most of Texas (Talarico; House: TX-15, TX-35), Kansas, Michigan (House: MI-4, MI-7, MI-10), New Hampshire, Pennsylvania (House: PA-1, PA-7, PA-8, PA-10)."},
+ {t:"21:00",l:"9:00 pm",txt:"Iowa (absentees first; House: IA-1, IA-2, IA-3), Nebraska (Osborn), Minnesota, Wisconsin (WI-3), Arizona (AZ-1, AZ-6), New York (NY-17), west Texas."},
  {t:"22:00",l:"10:00 pm",txt:"Nevada (Lombardo vs. Ford), Montana, Utah."},
- {t:"23:00",l:"11:00 pm",txt:"California, Oregon, Washington — key House seats; California counts for days."},
+ {t:"23:00",l:"11:00 pm",txt:"California (CA-22, CA-48), Oregon, Washington (WA-3) — California counts for days, so House control may wait."},
  {t:"25:00",l:"1:00 am",txt:"Alaska's last polls close; first results. If the Senate hinges on Alaska, control may not be known tonight."}
 ];
 
@@ -526,6 +555,29 @@ const WATCH=[
  {n:"NewsNation",what:"\u201cDecision Desk 2026\u201d from 7 pm",free:false,links:[["NewsNation live","https://www.newsnationnow.com/live/"]]},
  {n:"CNN",what:"Live blog free; TV stream needs a TV login or CNN All Access",free:false,links:[["CNN live updates","https://edition.cnn.com/2026/11/03/politics/live-news/midterm-election-congress"]]}
 ];
+/* House battleground — Cook Political Report (Nov 2 Toss-ups; Oct 23 leans, updated for Nov 2 moves). held = party holding seat now. */
+const HOUSE=[
+ // Toss-ups (18)
+ ["CA-22","tu","R","David Valadao","Randy Villegas (D) vs. Valadao"],["CO-05","tu","R","Jeff Crank",""],["FL-14","tu","D","Kathy Castor",""],["FL-22","tu","D","Open (Frankel)",""],
+ ["IA-02","tu","R","Open (Hinson)",""],["KY-06","tu","R","Open (Barr)","Zach Dembo (D) vs. Ralph Alvarado (R)"],["MI-04","tu","R","Bill Huizenga",""],["MI-07","tu","R","Tom Barrett","William Lawrence (D) vs. Barrett"],
+ ["MI-10","tu","R","Open (James)",""],["MT-01","tu","R","Open (Zinke)",""],["NC-01","tu","D","Don Davis",""],["NY-17","tu","R","Mike Lawler","Cait Conley (D) vs. Lawler"],
+ ["OH-07","tu","R","Max Miller",""],["PA-01","tu","R","Brian Fitzpatrick",""],["SC-01","tu","R","Open (Mace)",""],["TX-15","tu","R","Monica De La Cruz",""],
+ ["TX-35","tu","D","Open (redrawn)","Johnny Garcia (D) vs. Carlos De La Cruz (R)"],["VA-01","tu","R","Rob Wittman",""],
+ // Lean D (18)
+ ["AZ-01","lnd","R","Open (Schweikert)",""],["AZ-06","lnd","R","Juan Ciscomani",""],["CA-48","lnd","R","Open (Issa)",""],["CO-08","lnd","R","Gabe Evans",""],
+ ["FL-25","lnd","D","Jared Moskowitz",""],["IA-01","lnd","R","Mariannette Miller-Meeks",""],["IA-03","lnd","R","Zach Nunn",""],["NC-11","lnd","R","Open (Edwards)",""],
+ ["NJ-07","lnd","R","Tom Kean Jr.",""],["NM-02","lnd","D","Gabe Vasquez",""],["OH-09","lnd","D","Marcy Kaptur",""],["PA-07","lnd","R","Ryan Mackenzie",""],
+ ["PA-08","lnd","R","Rob Bresnahan",""],["PA-10","lnd","R","Scott Perry",""],["TX-34","lnd","D","Vicente Gonzalez",""],["VA-02","lnd","R","Jen Kiggans","Elaine Luria (D) vs. Kiggans"],
+ ["WA-03","lnd","D","Marie Gluesenkamp Perez",""],["WI-03","lnd","R","Derrick Van Orden",""],
+ // Lean R (known, Oct 23)
+ ["AK-AL","lnr","R","Nick Begich III",""],["AL-02","lnr","D","Shomari Figures","Democratic seat redrawn toward GOP"],["AZ-02","lnr","R","Eli Crane",""],["CO-04","lnr","R","Lauren Boebert",""],
+ ["FL-13","lnr","R","Anna Paulina Luna",""],["FL-27","lnr","R","María Elvira Salazar",""],["ME-02","lnr","D","Open (Golden)",""],["MN-01","lnr","R","Brad Finstad",""],
+ ["NV-02","lnr","R","Open (Amodei)",""],["NY-21","lnr","R","Open",""],["OH-10","lnr","R","Mike Turner",""],["OH-15","lnr","R","Mike Carey",""],
+ ["TX-23","lnr","R","Open",""],["WI-01","lnr","R","Bryan Steil",""]
+].map(([id,r,held,inc,note])=>({id,st:id.slice(0,2),r,held,inc,note}));
+const HCOOK={sd:186,ld:18,lnd:18,tu:18,lnr:18,lr:17,sr:160,asof:"Nov 2"};
+const HBY={};HOUSE.forEach(h=>(HBY[h.st]=HBY[h.st]||[]).push(h));
+const hKey=h=>"H-"+h.id;
 /* ---------- helpers ---------- */
 const $=id=>document.getElementById(id);
 const esc=s=>String(s==null?"":s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
@@ -623,6 +675,7 @@ function renderForecasts(){
 /* ---------- map ---------- */
 let layer="SEN";
 function mapFill(st){
+  if(layer==="HSE"){const L=HBY[st];if(!L)return{fill:"var(--none)",called:false};const n=L.length;return{fill:n>=4?"var(--hs3)":n>=2?"var(--hs2)":"var(--hs1)",called:false,dark:n>=4};}
   const src=layer==="SEN"?SEN:GOV;const x=src[st];if(!x)return{fill:"var(--none)",called:false};
   const rc=raceOf(layer+"-"+st);
   if(rc.status==="D")return{fill:"var(--d3)",called:true};
@@ -630,7 +683,11 @@ function mapFill(st){
   if(rc.status==="I")return{fill:"var(--ind)",called:true};
   return{fill:RCOLOR[x.r],called:false};
 }
+function hRow(h){const rc=raceOf(hKey(h));const flip=h.held==="R"&&h.r==="lnd"?' <span class="flipmark">R-held, leans D</span>':h.held==="D"&&h.r==="lnr"?' <span class="flipmark" style="color:var(--r3)">D-held, leans R</span>':"";
+  return `<div class="hrow"><b>${h.id}</b> ${ratingTag(h.r)} ${callTag(rc.status)}${flip}<br><span class="small">${esc(h.inc)} (${h.held}-held)${h.note?" · "+esc(h.note):""}${voteLine(rc)?" · "+voteLine(rc):""}</span></div>`;}
 function stateInfo(st){
+  if(layer==="HSE"){const name=STATES[st].n,L=HBY[st];if(!L)return{title:name,html:`<b>${esc(name)} — House</b><br>No Cook toss-up or lean seats.`};
+    return{title:name,html:`<b>${esc(name)} — ${L.length} competitive House seat${L.length>1?"s":""}</b>`+L.map(hRow).join("")};}
   const src=layer==="SEN"?SEN:GOV,x=src[st],name=STATES[st].n;
   if(!x)return{title:name,html:"No "+(layer==="SEN"?"Senate":"governor")+" race in 2026."};
   const rc=raceOf(layer+"-"+st);
@@ -646,14 +703,15 @@ function stateInfo(st){
   return{title:name,html:h};
 }
 function renderMap(){
-  const tip=$("tip");let s='<svg viewBox="0 0 975 610" role="group" aria-label="U.S. map of '+(layer==="SEN"?"Senate":"governor")+' races"><defs><pattern id="tuHatch" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="8" height="8" fill="var(--tu)"/><line x1="0" y1="0" x2="0" y2="8" stroke="var(--ink2)" stroke-width="2" opacity=".45"/></pattern></defs>';
+  const tip=$("tip");let s='<svg viewBox="0 0 975 610" role="group" aria-label="U.S. map of '+(layer==="SEN"?"Senate":layer==="HSE"?"competitive House":"governor")+' races"><defs><pattern id="tuHatch" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="8" height="8" fill="var(--tu)"/><line x1="0" y1="0" x2="0" y2="8" stroke="var(--ink2)" stroke-width="2" opacity=".45"/></pattern></defs>';
   const small=new Set(["RI","DE","CT","NJ","MA","DC","MD","VT","NH","HI"]);
   for(const [st,o] of Object.entries(STATES)){const f=mapFill(st);const inf=stateInfo(st);
     const plain=inf.html.replace(/<[^>]+>/g," ").replace(/\s+/g," ").trim();
     s+=`<path class="st${f.called?" called":""}" d="${o.d}" fill="${f.fill}" data-st="${st}" tabindex="0" role="button" aria-label="${esc(plain)}"></path>`;}
   for(const [st,o] of Object.entries(STATES)){if(small.has(st))continue;const f=mapFill(st);
-    const dark=["var(--d3)","var(--r3)","var(--ind)"].includes(f.fill)||f.called;
-    s+=`<text class="lab${dark?" inv":""}" x="${o.c[0]}" y="${o.c[1]+4}" text-anchor="middle">${st}${f.called?"✓":""}</text>`;}
+    const dark=["var(--d3)","var(--r3)","var(--ind)"].includes(f.fill)||f.called||f.dark;
+    const cnt=layer==="HSE"&&HBY[st]?" "+HBY[st].length:"";
+    s+=`<text class="lab${dark?" inv":""}" x="${o.c[0]}" y="${o.c[1]+4}" text-anchor="middle">${st}${cnt}${f.called?"✓":""}</text>`;}
   $("map").innerHTML=s+"</svg>";
   const box=document.querySelector(".mapbox");
   $("map").querySelectorAll("path.st").forEach(p=>{
@@ -666,6 +724,11 @@ function renderMap(){
     const pick=()=>{const md=$("mapDetail");md.innerHTML=stateInfo(st).html;md.classList.add("on");tip.style.display="none";$("map").querySelectorAll("path.sel").forEach(x=>x.classList.remove("sel"));p.classList.add("sel");};
     p.addEventListener("click",pick);p.addEventListener("keydown",e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();pick()}});
   });
+  if(layer==="HSE"){
+    $("mapLegend").innerHTML=`<span><i class="sw" style="background:var(--hs1)"></i>1 competitive seat</span><span><i class="sw" style="background:var(--hs2)"></i>2–3</span><span><i class="sw" style="background:var(--hs3)"></i>4+</span><span><i class="sw" style="background:var(--none)"></i>None</span><span class="small">Number = toss-up + lean seats (Cook). Tap a state for districts.</span>`;
+    const order={tu:0,lnd:1,lnr:2};const rows=HOUSE.slice().sort((a,b)=>order[a.r]-order[b.r]||a.id.localeCompare(b.id));
+    $("mapTable").innerHTML="<table><thead><tr><th>District</th><th>Held by</th><th>Rating</th><th>Incumbent / race</th><th>Status</th></tr></thead><tbody>"+rows.map(h=>{const rc=raceOf(hKey(h));return `<tr><td><b>${h.id}</b></td><td>${h.held}</td><td>${ratingTag(h.r)}</td><td>${esc(h.inc)}${h.note?" · "+esc(h.note):""}</td><td>${callTag(rc.status)} ${voteLine(rc)}</td></tr>`}).join("")+"</tbody></table>";
+    return;}
   $("mapLegend").innerHTML=Object.keys(RLABEL).map(k=>`<span><i class="sw" style="background:${k==="tu"?"repeating-linear-gradient(45deg,var(--tu) 0 3px,var(--ink2) 3px 4px)":RCOLOR[k]}"></i>${RLABEL[k]}</span>`).join("")+`<span><i class="sw" style="background:var(--d3);outline:2px solid var(--ink)"></i>✓ Called D</span><span><i class="sw" style="background:var(--r3);outline:2px solid var(--ink)"></i>✓ Called R</span><span><i class="sw" style="background:var(--none)"></i>No race</span>`;
   const src=layer==="SEN"?SEN:GOV;const order={tu:0,lnd:1,lnr:2,sd:3,sr:4};
   const rows=Object.keys(src).sort((a,b)=>order[src[a].r]-order[src[b].r]||a.localeCompare(b));
@@ -673,6 +736,19 @@ function renderMap(){
 }
 document.querySelectorAll("[data-layer]").forEach(b=>b.addEventListener("click",()=>{layer=b.dataset.layer;document.querySelectorAll("[data-layer]").forEach(x=>x.setAttribute("aria-pressed",String(x===b)));$("mapDetail").innerHTML="";renderMap();labelTables();}));
 
+/* ---------- house section ---------- */
+function renderHouse(){
+  const segs=[["sd","Solid D",HCOOK.sd,"var(--d3)"],["ld","Likely D",HCOOK.ld,"var(--d2)"],["lnd","Lean D",HCOOK.lnd,"var(--d1)"],["tu","Toss-up",HCOOK.tu,"var(--tu)"],["lnr","Lean R",HCOOK.lnr,"var(--r1)"],["lr","Likely R",HCOOK.lr,"var(--r2)"],["sr","Solid R",HCOOK.sr,"var(--r3)"]];
+  const dFav=HCOOK.sd+HCOOK.ld+HCOOK.lnd,rFav=HCOOK.sr+HCOOK.lr+HCOOK.lnr;
+  $("hbar").innerHTML=segs.map(([k,l,n,c])=>`<div style="width:${n/435*100}%;background:${k==="tu"?"repeating-linear-gradient(45deg,var(--tu) 0 6px,color-mix(in srgb,var(--ink2) 35%,var(--tu)) 6px 8px)":c}" title="${l}: ${n}" class="${["lnd","tu","lnr"].includes(k)?"lt":""}">${n>=15?n:""}</div>`).join("")+`<span class="mark" style="left:${218/435*100}%"><em>218</em></span>`;
+  $("hbar").setAttribute("aria-label",`House ratings: Democrats favored in ${dFav} seats, Republicans in ${rFav}, ${HCOOK.tu} toss-ups. 218 needed.`);
+  $("hbarLegend").innerHTML=`<span><b>D favored ${dFav}</b></span><span>Toss-up ${HCOOK.tu}</span><span><b>R favored ${rFav}</b></span><span>| = 218 majority</span>`;
+  const tile=h=>{const rc=raceOf(hKey(h));const c=rc.status==="D"?"D":rc.status==="R"?"R":"";return `<div class="tile ${c?"c"+c:""}" title="${esc(h.inc)}"><b>${h.id}</b><span>${esc(h.inc.replace("Open ","Open "))}</span><em>${h.held}-held · ${c?(c==="D"?"✓ D win":"✓ R win"):"not called"}</em></div>`};
+  const tu=HOUSE.filter(h=>h.r==="tu");$("tuCount").textContent=`· ${tu.length} seats, ${tu.filter(h=>h.held==="R").length} R-held`;
+  $("tuTiles").innerHTML=tu.map(tile).join("");
+  $("flipTiles").innerHTML=HOUSE.filter(h=>h.r==="lnd"&&h.held==="R").map(tile).join("");
+  $("riskTiles").innerHTML=HOUSE.filter(h=>h.held==="D"&&(h.r==="tu"||h.r==="lnr")).map(tile).join("");
+}
 /* ---------- senate ladder ---------- */
 function renderLadder(){
   const flips=[
@@ -720,7 +796,7 @@ function renderTimeline(){
 
 /* ---------- other calls (notable results text) ---------- */
 function labelTables(){document.querySelectorAll("table").forEach(t=>{t.classList.add("rt");const hs=[...t.querySelectorAll("thead th")].map(th=>th.textContent);t.querySelectorAll("tbody tr").forEach(tr=>[...tr.children].forEach((td,i)=>{if(hs[i])td.setAttribute("data-label",hs[i]);if(!td.firstElementChild||!td.firstElementChild.classList.contains("tdv")||td.children.length>1){td.innerHTML=`<span class="tdv">${td.innerHTML}</span>`}}))})}
-function renderAll(){renderHeader();renderAlerts();renderKPIs();renderTally();renderForecasts();renderMap();renderLadder();renderMomentum();renderStatic();renderTimeline();labelTables();}
+function renderAll(){renderHeader();renderAlerts();renderKPIs();renderTally();renderForecasts();renderMap();renderLadder();renderHouse();renderMomentum();renderStatic();renderTimeline();labelTables();}
 renderAll();
 
 /* ---------- live polling of ./data.json ---------- */

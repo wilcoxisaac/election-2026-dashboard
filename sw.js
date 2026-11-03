@@ -1,5 +1,5 @@
 // Minimal offline support: network-first for everything, so live data is always fresh when online.
-const CACHE = "election26-v5";
+const CACHE = "election26-v6";
 const SHELL = ["./", "index.html", "data.json", "manifest.webmanifest", "icon-192.png", "apple-touch-icon.png"];
 self.addEventListener("install", e => { e.waitUntil(caches.open(CACHE).then(c => c.addAll(SHELL)).then(() => self.skipWaiting())); });
 self.addEventListener("activate", e => { e.waitUntil(self.clients.claim()); });
