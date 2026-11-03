@@ -128,6 +128,113 @@ details summary{cursor:pointer;font-weight:600;margin:6px 0}
 details>summary{list-style-position:outside}
 .toast{position:fixed;left:50%;bottom:20px;transform:translateX(-50%);max-width:min(560px,92vw);background:var(--ink);color:var(--bg);padding:12px 16px;border-radius:10px;box-shadow:0 8px 28px rgba(0,0,0,.3);z-index:20;font-size:.95rem;display:flex;gap:12px;align-items:center}
 .toast button{background:transparent;color:var(--bg);border-color:var(--bg);min-height:30px;padding:2px 10px}
+
+/* ===== responsive & readability pass ===== */
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+body{font-size:clamp(16px,15px + .25vw,18px);line-height:1.55}
+.wrap{max-width:1320px}
+.small{font-size:.86rem;line-height:1.5}
+.kicker{margin:4px 0 8px;color:var(--ink2);font-size:.85rem;font-weight:600}
+nav.toc{flex-wrap:nowrap;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none;padding-bottom:2px}
+nav.toc::-webkit-scrollbar{display:none}
+nav.toc a{white-space:nowrap;padding:8px 12px;min-height:36px;display:inline-flex;align-items:center}
+button{min-height:44px;padding:8px 14px}
+.card{padding:clamp(12px,2.5vw,20px)}
+section{margin:clamp(12px,2vw,20px) 0}
+h2{font-size:clamp(1.1rem,1rem + .6vw,1.35rem)}
+/* hero gauges: always three across */
+.hero{grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(8px,1.6vw,14px)}
+.gauge-card{padding:clamp(8px,2vw,16px)}
+.gauge-card h3{font-size:clamp(.85rem,.8rem + .5vw,1.05rem);margin-bottom:2px}
+.gauge-card .small{font-size:clamp(.7rem,.66rem + .3vw,.86rem)}
+/* tallies */
+.trow{grid-template-columns:96px minmax(0,1fr) 110px}
+/* ladder */
+.ladder li{display:grid;grid-template-columns:44px minmax(0,1fr);gap:12px;align-items:start;padding:12px 0}
+.ladder .n{font-size:1.05rem;padding:6px 0;margin-top:2px}
+.lmain{min-width:0}
+.lhead{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}
+.lhead b{font-size:1.05rem}
+.lsub{margin-top:2px;color:var(--ink)}
+.lsub .vs{color:var(--muted)}
+.lmeta{font-size:.86rem;color:var(--ink2);margin-top:4px;line-height:1.5}
+.ladder .pbar{max-width:none;height:10px;margin-top:8px}
+.tipflag{display:inline-block;margin-top:4px;font-size:.78rem;font-weight:800;color:var(--d3);text-transform:uppercase;letter-spacing:.04em}
+.ladder li.tipping{background:linear-gradient(90deg,color-mix(in srgb,var(--d1) 55%,transparent),transparent);border-radius:10px;padding-left:8px;padding-right:8px}
+.holds{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+.hold{display:inline-flex;align-items:center;gap:6px;padding:6px 10px;border-radius:8px;border:1px solid var(--line);font-weight:800;font-size:.9rem}
+.hold em{font-style:normal;font-weight:600;font-size:.78rem;color:var(--ink2)}
+.hold.ok{background:var(--d3);color:#fff;border-color:var(--d3)}.hold.ok em{color:#fff}
+.hold.lost{background:var(--r3);color:#fff;border-color:var(--r3)}.hold.lost em{color:#fff}
+/* feed */
+.feed li{grid-template-columns:64px 20px minmax(0,1fr)}
+/* map */
+#mapDetail.on{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:12px;margin-top:8px;font-size:.92rem;color:var(--ink)}
+#map path.st.sel{stroke:var(--ink);stroke-width:3}
+.tip{max-width:300px}
+/* wide screens: side-by-side panels */
+.duo{display:grid;gap:clamp(12px,2vw,20px);grid-template-columns:minmax(0,1fr)}
+.duo>section{margin:0}
+.duo{margin:clamp(12px,2vw,20px) 0}
+@media (min-width:1100px){
+  .duo-a{grid-template-columns:minmax(0,1.65fr) minmax(0,1fr);align-items:start}
+  .duo-b{grid-template-columns:minmax(0,1fr) minmax(0,1fr);align-items:start}
+  #latest{position:sticky;top:12px;max-height:calc(100vh - 24px);overflow:auto}
+}
+/* tablets / unfolded foldables (incl. iPhone Duo inner display ~626–890px) */
+@media (min-width:600px) and (max-width:1099px){
+  .duo-b{grid-template-columns:minmax(0,1fr) minmax(0,1fr);align-items:start}
+}
+@media (min-width:820px) and (max-width:1099px){
+  .duo-a{grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);align-items:start}
+}
+/* phones & folded covers (incl. iPhone Duo cover display ~466px) */
+@media (max-width:599px){
+  .trow{grid-template-columns:1fr auto;grid-template-areas:"lab num" "bar bar";gap:4px 10px}
+  .trow .tlab{grid-area:lab}.trow .tnum{grid-area:num;grid-column:auto}.trow .tbar{grid-area:bar}
+  .tbar{height:30px}
+  #map text.lab{font-size:20px}
+  .legend{gap:6px 10px}
+  header.top{gap:8px}
+  .meta{width:100%;justify-content:space-between}
+}
+@media (max-width:420px){
+  .wrap{padding-left:max(12px,env(safe-area-inset-left));padding-right:max(12px,env(safe-area-inset-right))}
+  .ladder li{grid-template-columns:38px minmax(0,1fr);gap:10px}
+}
+/* short landscape (phones on their side, Duo cover landscape) */
+@media (orientation:landscape) and (max-height:520px){
+  .gauge-card svg{max-height:110px}
+  .hero{grid-template-columns:repeat(3,minmax(0,1fr))}
+  #map svg{max-height:70vh;width:auto;margin:0 auto}
+}
+/* stacked tables on narrow screens */
+@media (max-width:760px){
+  table.rt thead{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+  table.rt,table.rt tbody,table.rt tr,table.rt td{display:block;width:100%}
+  table.rt tr{border:1px solid var(--line);border-radius:10px;padding:8px 12px;margin:0 0 10px;background:var(--surface)}
+  table.rt td{border:0;padding:5px 0;display:grid;grid-template-columns:minmax(90px,34%) minmax(0,1fr);gap:10px}
+  table.rt td::before{content:attr(data-label);font-size:.72rem;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);font-weight:700;padding-top:3px}
+  table.rt td:first-child{font-size:1.02rem}
+  .impact td:first-child{width:auto}
+}
+@media (min-width:1600px){.wrap{max-width:1480px}}
+
+.toast[hidden]{display:none!important}
+.tbar .U[style*="inset"]{justify-content:flex-start;padding-left:12px;z-index:2}
+#map text.lab,#map text.lab.inv{fill:#fff;stroke:rgba(0,0,0,.6);stroke-width:2.6px;paint-order:stroke;stroke-linejoin:round;font-size:12px;letter-spacing:.02em}
+.fbars{display:grid;gap:10px;margin:6px 0 4px}
+.fb{display:grid;grid-template-columns:minmax(120px,38%) minmax(0,1fr) 52px;gap:10px;align-items:center}
+.fbl{font-size:.9rem;font-weight:600;line-height:1.25;min-width:0}
+.fbl em{display:block;font-style:normal;font-weight:500;font-size:.74rem;color:var(--muted)}
+.fbt{position:relative;height:16px;border-radius:5px;background:color-mix(in srgb,var(--r1) 70%,transparent);overflow:hidden}
+.fbt i{position:absolute;left:50%;top:-2px;bottom:-2px;width:2px;background:var(--ink)}
+.fbf{display:block;height:100%;border-radius:5px 0 0 5px}.fbf.model{background:var(--d3)}.fbf.market{background:var(--d2)}
+.fbv{font-weight:800;font-variant-numeric:tabular-nums;text-align:right}
+@media (max-width:420px){.fb{grid-template-columns:1fr 48px;grid-template-areas:"l v" "t t";gap:4px 8px}.fbl{grid-area:l}.fbv{grid-area:v}.fbt{grid-area:t}}
+@media (min-width:600px) and (max-width:899px){.duo-b{grid-template-columns:minmax(0,1fr)!important}}
+@media (max-width:599px){#map text.lab,#map text.lab.inv{font-size:22px;stroke-width:4px}}
+table.rt .tag{width:max-content;max-width:100%}
 </style>
 </head>
 <body>
@@ -145,6 +252,7 @@ details>summary{list-style-position:outside}
   </div>
 </header>
 <p id="live" class="sr" aria-live="polite"></p>
+<p class="kicker">Chance of Democratic control · median of models &amp; markets</p>
 <nav class="toc" aria-label="Sections">
   <a href="#map-sec">Map</a><a href="#senate">Senate path</a><a href="#latest">Updates</a><a href="#momentum">Momentum</a><a href="#gov">Governors</a><a href="#courts">Courts</a><a href="#measures">Measures</a><a href="#tonight">Tonight</a>
 </nav>
@@ -153,9 +261,9 @@ details>summary{list-style-position:outside}
 <section id="overview" aria-labelledby="ov-h">
   <h2 id="ov-h" class="sr">Lay of the land</h2>
   <div class="grid hero">
-    <div class="card gauge-card"><h3>Senate · chance of D control</h3><div id="gSen"></div><div class="small" id="gSenSub"></div></div>
-    <div class="card gauge-card"><h3>House · chance of D control</h3><div id="gHouse"></div><div class="small" id="gHouseSub"></div></div>
-    <div class="card gauge-card"><h3>Both chambers</h3><div id="gSweep"></div><div class="small">Silver 82 · Polymarket 75 · DDHQ 63</div></div>
+    <div class="card gauge-card"><h3>Senate</h3><div id="gSen"></div><div class="small" id="gSenSub"></div></div>
+    <div class="card gauge-card"><h3>House</h3><div id="gHouse"></div><div class="small" id="gHouseSub"></div></div>
+    <div class="card gauge-card"><h3>Both</h3><div id="gSweep"></div><div class="small">Sweep · 3 sources</div></div>
   </div>
   <div class="card" style="margin-top:14px">
     <h3>Seats won tonight <span class="small">· black line = control</span></h3>
@@ -166,6 +274,7 @@ details>summary{list-style-position:outside}
   </div>
 </section>
 
+<div class="duo duo-a">
 <section id="map-sec" aria-labelledby="map-h" class="card">
   <div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;align-items:center">
     <h2 id="map-h">Battlefield map</h2>
@@ -180,11 +289,6 @@ details>summary{list-style-position:outside}
   <details><summary>Map data as a table</summary><div class="scroll" id="mapTable"></div></details>
 </section>
 
-<section id="senate" aria-labelledby="sen-h" class="card">
-  <h2 id="sen-h">Senate path to 51</h2>
-  <p class="small">Most → least likely D flip. Number = D seats if they win this race and every race above it.</p>
-  <ol class="ladder" id="ladder"></ol>
-</section>
 
 <section id="latest" aria-labelledby="up-h" class="card">
   <div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;align-items:center">
@@ -194,6 +298,17 @@ details>summary{list-style-position:outside}
   <ul class="brief" id="liveRead"></ul>
   <ul class="feed" id="alerts"></ul>
 </section>
+</div>
+<div class="duo duo-b">
+<section id="senate" aria-labelledby="sen-h" class="card">
+  <h2 id="sen-h">Senate path to 51</h2>
+  <p class="small">Most → least likely D flip. Number = D seats if they win this race and every race above it.</p>
+  <ol class="ladder" id="ladder"></ol>
+</section>
+
+
+
+
 
 <section aria-labelledby="fc-h" class="card">
   <h2 id="fc-h">Forecasts compared</h2>
@@ -203,7 +318,7 @@ details>summary{list-style-position:outside}
   </div>
   <details><summary>As table</summary><div class="scroll" id="fcTable"></div></details>
 </section>
-
+</div>
 <section id="momentum" aria-labelledby="mom-h">
   <h2 id="mom-h">Momentum</h2>
   <div class="grid g2">
@@ -416,14 +531,14 @@ function gauge(el,pct,label){
   <line x1="${cx}" y1="${cy-r-sw/2-3}" x2="${cx}" y2="${cy-r+sw/2+3}" stroke="var(--ink)" stroke-width="2"/>
   <circle cx="${nx.toFixed(1)}" cy="${ny.toFixed(1)}" r="8" fill="var(--card)" stroke="var(--ink)" stroke-width="3"/>
   <text x="${cx}" y="${cy-8}" text-anchor="middle" style="font-size:42px;font-weight:800;fill:var(--ink)">${pct}%</text>
-  <text x="${cx}" y="${cy+18}" text-anchor="middle" style="font-size:12px;fill:var(--ink2)">D control</text>
-  <text x="18" y="146" style="font-size:11px;fill:var(--muted)">R</text><text x="236" y="146" style="font-size:11px;fill:var(--muted)">D</text></svg>`;
+  <text x="${cx}" y="${cy+20}" text-anchor="middle" style="font-size:15px;font-weight:600;fill:var(--ink2)">D control</text>
+  <text x="30" y="146" text-anchor="middle" style="font-size:14px;font-weight:700;fill:var(--muted)">R</text><text x="230" y="146" text-anchor="middle" style="font-size:14px;font-weight:700;fill:var(--muted)">D</text></svg>`;
 }
 function renderKPIs(){
   const s=FC.senate.map(x=>x.p),h=FC.house.map(x=>x.p),w=FC.sweep.map(x=>x.p);
   gauge($("gSen"),Math.round(median(s)),"Senate");gauge($("gHouse"),Math.round(median(h)),"House");gauge($("gSweep"),Math.round(median(w)),"Both chambers");
-  $("gSenSub").textContent="Range "+Math.min(...s)+"–"+Math.max(...s)+"% · need net +4";
-  $("gHouseSub").textContent="Range "+Math.min(...h)+"–"+Math.round(Math.max(...h))+"% · need 218";
+  $("gSenSub").textContent=Math.min(...s)+"–"+Math.max(...s)+"% · need +4";
+  $("gHouseSub").textContent=Math.min(...h)+"–"+Math.round(Math.max(...h))+"% · need 218";
 }
 
 /* ---------- alerts feed + push-style toast ---------- */
@@ -460,16 +575,11 @@ function renderTally(){
 
 /* ---------- forecast bars ---------- */
 function barChart(el,rows){
-  const W=520,rowH=34,top=8,left=210,right=48,H=top+rows.length*rowH+24,iw=W-left-right;
-  let s=`<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="${rows.map(r=>r.src+' '+r.p+'%').join('; ')}">`;
-  [0,25,50,75,100].forEach(v=>{const x=left+iw*v/100;s+=`<line x1="${x}" x2="${x}" y1="${top}" y2="${H-20}" stroke="var(--grid)" ${v===50?'stroke="var(--ink)" stroke-width="1.5"':''}/><text x="${x}" y="${H-6}" text-anchor="middle">${v}%</text>`});
-  rows.forEach((r,i)=>{const y=top+i*rowH+6,w=iw*r.p/100;
-    s+=`<text x="${left-8}" y="${y+14}" text-anchor="end">${esc(r.src)}</text>`;
-    s+=`<rect x="${left}" y="${y}" width="${iw}" height="20" rx="4" fill="var(--r1)" opacity=".55"><title>${esc(r.src)}: R ${Math.round((100-r.p)*10)/10}%</title></rect>`;
-    s+=`<rect x="${left}" y="${y}" width="${w}" height="20" rx="4" fill="${r.kind==='market'?'var(--d2)':'var(--d3)'}"><title>${esc(r.src)} (${r.date}): ${r.p}% D</title></rect>`;
-    s+=`<text x="${left+w+6}" y="${y+14}" style="fill:var(--ink);font-weight:700">${r.p}%</text>`;
-  });
-  el.innerHTML=s+"</svg>"+`<div class="tlegend"><span><i class="sw" style="background:var(--d3)"></i>Statistical model</span><span><i class="sw" style="background:var(--d2)"></i>Prediction market</span><span><i class="sw" style="background:var(--r1)"></i>Republican share</span></div>`;
+  el.innerHTML=`<div class="fbars" role="list">${rows.map(r=>`<div class="fb" role="listitem" aria-label="${esc(r.src)}: ${r.p}% Democratic, as of ${esc(r.date)}">
+    <span class="fbl">${esc(r.src.replace("Prediction market: ","").replace(" (Nate Silver)","").replace(" model (MS NOW)",""))}<em>${r.kind==="market"?"market":"model"} · ${esc(r.date)}</em></span>
+    <span class="fbt"><span class="fbf ${r.kind}" style="width:${r.p}%"></span><i></i></span>
+    <span class="fbv">${r.p}%</span></div>`).join("")}</div>
+    <div class="tlegend"><span><i class="sw" style="background:var(--d3)"></i>Model</span><span><i class="sw" style="background:var(--d2)"></i>Market</span><span><i class="sw" style="background:var(--r1)"></i>Republican share</span><span>| = 50%</span></div>`;
 }
 function renderForecasts(){
   barChart($("fcSenate"),FC.senate);barChart($("fcHouse"),FC.house);
@@ -518,9 +628,9 @@ function renderMap(){
     const show=(ev)=>{const inf=stateInfo(st);tip.innerHTML=inf.html;tip.style.display="block";const r=box.getBoundingClientRect();
       let x,y;if(ev&&ev.clientX!=null){x=ev.clientX-r.left+12;y=ev.clientY-r.top+12}else{const b=p.getBoundingClientRect();x=b.left-r.left+b.width/2;y=b.top-r.top+b.height/2}
       x=Math.min(x,r.width-290);tip.style.left=Math.max(0,x)+"px";tip.style.top=y+"px";};
-    p.addEventListener("mousemove",show);p.addEventListener("mouseleave",()=>tip.style.display="none");
+    const coarse=matchMedia("(pointer:coarse)").matches;if(!coarse)p.addEventListener("mousemove",show);p.addEventListener("mouseleave",()=>tip.style.display="none");
     p.addEventListener("focus",()=>show());p.addEventListener("blur",()=>tip.style.display="none");
-    const pick=()=>{$("mapDetail").innerHTML=stateInfo(st).html;};
+    const pick=()=>{const md=$("mapDetail");md.innerHTML=stateInfo(st).html;md.classList.add("on");tip.style.display="none";$("map").querySelectorAll("path.sel").forEach(x=>x.classList.remove("sel"));p.classList.add("sel");};
     p.addEventListener("click",pick);p.addEventListener("keydown",e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();pick()}});
   });
   $("mapLegend").innerHTML=Object.keys(RLABEL).map(k=>`<span><i class="sw" style="background:${k==="tu"?"repeating-linear-gradient(45deg,var(--tu) 0 3px,var(--ink2) 3px 4px)":RCOLOR[k]}"></i>${RLABEL[k]}</span>`).join("")+`<span><i class="sw" style="background:var(--d3);outline:2px solid var(--ink)"></i>✓ Called D</span><span><i class="sw" style="background:var(--r3);outline:2px solid var(--ink)"></i>✓ Called R</span><span><i class="sw" style="background:var(--none)"></i>No race</span>`;
@@ -528,17 +638,24 @@ function renderMap(){
   const rows=Object.keys(src).sort((a,b)=>order[src[a].r]-order[src[b].r]||a.localeCompare(b));
   $("mapTable").innerHTML="<table><thead><tr><th>State</th><th>Held by</th><th>Rating</th><th>Candidates</th><th>Status</th></tr></thead><tbody>"+rows.map(st=>{const x=src[st],rc=raceOf(layer+"-"+st);return `<tr><td>${esc(STATES[st].n)}</td><td>${x.held}${x.open?" (open)":""}</td><td>${ratingTag(x.r,x.rating)}</td><td>${esc([x.d?"D "+x.d:"",x.rc?"R "+x.rc:""].filter(Boolean).join(" · "))}</td><td>${callTag(rc.status)} ${voteLine(rc)}</td></tr>`}).join("")+"</tbody></table>";
 }
-document.querySelectorAll("[data-layer]").forEach(b=>b.addEventListener("click",()=>{layer=b.dataset.layer;document.querySelectorAll("[data-layer]").forEach(x=>x.setAttribute("aria-pressed",String(x===b)));$("mapDetail").innerHTML="";renderMap();}));
+document.querySelectorAll("[data-layer]").forEach(b=>b.addEventListener("click",()=>{layer=b.dataset.layer;document.querySelectorAll("[data-layer]").forEach(x=>x.setAttribute("aria-pressed",String(x===b)));$("mapDetail").innerHTML="";renderMap();labelTables();}));
 
 /* ---------- senate ladder ---------- */
 function renderLadder(){
   const flips=[
     {st:"NC",p:90,approx:true},{st:"ME",p:77},{st:"TX",p:64},{st:"AK",p:63},{st:"OH",p:62},{st:"KS",p:57},{st:"IA",p:53},{st:"NE",p:45,approx:true}
   ];
-  let n=47;let html=`<li><span class="n">47</span><div><b>Starting point</b> — Democrats + 2 independents, assuming they hold all 13 of their seats up this year (Michigan most at risk: El-Sayed 76% model / 78% market; GA, NH, MN favored).</div><span>${["MI","GA","NH","MN"].map(s=>s+" "+callTag(raceOf("SEN-"+s).status)).join(" ")}</span></li>`;
+  const holds=["MI","GA","NH","MN"].map(st=>{const c=raceOf("SEN-"+st).status;return `<span class="hold ${c==="D"?"ok":c==="R"?"lost":""}">${st}<em>${c==="D"?"✓ held":c==="R"?"✗ lost":"pending"}</em></span>`}).join("");
+  let n=47;let html=`<li class="start"><span class="n">47</span><div class="lmain"><div class="lhead"><b>Starting point</b></div><div class="lsub">45 Democrats + 2 independents. Must also hold these 4 Democratic seats:</div><div class="holds">${holds}</div></div></li>`;
   flips.forEach(f=>{n++;const x=SEN[f.st],rc=raceOf("SEN-"+f.st);
-    const lost=rc.status==="R";if(lost)n--;
-    html+=`<li><span class="n${n>=51&&!lost?" win":""}">${lost?"—":n}</span><div><b>${esc(STATES[f.st].n)}</b> — ${esc(x.d)} vs. ${esc(x.rc)} <span class="small">(${esc(x.rating)})</span>${n===51&&!lost?' <b style="color:var(--d3)">← reaches 51 (tipping point)</b>':""}<div class="pbar" role="img" aria-label="${f.approx?"about ":""}${f.p}% Democratic"><span style="width:${f.p}%"></span><i></i></div><span class="small">${f.approx?"~":""}${f.p}% D${f.approx?" (estimate from rating / polls)":" (FiftyPlusOne)"}${x.mkt?" · "+esc(x.mkt):""} · ${esc(x.poll)}${voteLine(rc)?" · "+voteLine(rc):""}</span></div><span>${callTag(rc.status)}</span></li>`;});
+    const lost=rc.status==="R";if(lost)n--;const tip=n===51&&!lost;
+    html+=`<li class="${tip?"tipping":""}"><span class="n${n>=51&&!lost?" win":""}">${lost?"—":n}</span><div class="lmain">
+      <div class="lhead"><b>${esc(STATES[f.st].n)}</b>${callTag(rc.status)}</div>
+      ${tip?'<div class="tipflag">Tipping point — reaches 51</div>':""}
+      <div class="lsub">${esc(x.d)} <span class="vs">vs.</span> ${esc(x.rc)}</div>
+      <div class="pbar" role="img" aria-label="${f.approx?"about ":""}${f.p}% Democratic"><span style="width:${f.p}%"></span><i></i></div>
+      <div class="lmeta"><b>${f.approx?"~":""}${f.p}% D</b>${f.approx?" (est.)":""}${x.mkt?" · "+esc(x.mkt):""}<br>${esc(x.poll)}${voteLine(rc)?"<br>"+voteLine(rc):""}</div>
+    </div></li>`;});
   $("ladder").innerHTML=html;
 }
 
@@ -568,7 +685,8 @@ function renderTimeline(){
 }
 
 /* ---------- other calls (notable results text) ---------- */
-function renderAll(){renderHeader();renderAlerts();renderKPIs();renderTally();renderForecasts();renderMap();renderLadder();renderMomentum();renderStatic();renderTimeline();}
+function labelTables(){document.querySelectorAll("table").forEach(t=>{t.classList.add("rt");const hs=[...t.querySelectorAll("thead th")].map(th=>th.textContent);t.querySelectorAll("tbody tr").forEach(tr=>[...tr.children].forEach((td,i)=>{if(hs[i])td.setAttribute("data-label",hs[i]);if(!td.firstElementChild||!td.firstElementChild.classList.contains("tdv")||td.children.length>1){td.innerHTML=`<span class="tdv">${td.innerHTML}</span>`}}))})}
+function renderAll(){renderHeader();renderAlerts();renderKPIs();renderTally();renderForecasts();renderMap();renderLadder();renderMomentum();renderStatic();renderTimeline();labelTables();}
 renderAll();
 
 /* ---------- live polling of ./data.json ---------- */
