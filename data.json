@@ -1,0 +1,279 @@
+{
+ "updated": "2026-11-03T22:40:00Z",
+ "phase": "pre",
+ "phaseNote": "Polls have not closed yet. First closings: 6 p.m. ET (parts of Indiana and Kentucky). Figures below are final pre-election forecasts; race calls will appear here as AP / major networks project them.",
+ "liveRead": {
+  "senate": "Polls open. D favored (~76% median); need net +4. Tipping point: AK / OH.",
+  "house": "Polls open. D strongly favored (~94% median); 218 needed.",
+  "governors": "Cook: D +2 to +4. Toss-ups: GA, KS, NV."
+ },
+ "tally": {
+  "senate": {
+   "D": 0,
+   "R": 0,
+   "I": 0,
+   "note": "Called 2026 races only. Seats not up: 34 D-caucus, 31 R."
+  },
+  "house": {
+   "D": 0,
+   "R": 0,
+   "note": "Called races. 218 needed."
+  },
+  "governors": {
+   "D": 0,
+   "R": 0,
+   "I": 0,
+   "note": "Called races out of 36."
+  }
+ },
+ "races": {
+  "SEN-NC": {
+   "status": "uncalled",
+   "reporting": 0,
+   "d": null,
+   "r": null,
+   "calledBy": ""
+  },
+  "SEN-ME": {
+   "status": "uncalled",
+   "reporting": 0,
+   "d": null,
+   "r": null,
+   "calledBy": ""
+  },
+  "SEN-OH": {
+   "status": "uncalled",
+   "reporting": 0,
+   "d": null,
+   "r": null,
+   "calledBy": ""
+  },
+  "SEN-TX": {
+   "status": "uncalled",
+   "reporting": 0,
+   "d": null,
+   "r": null,
+   "calledBy": ""
+  },
+  "SEN-AK": {
+   "status": "uncalled",
+   "reporting": 0,
+   "d": null,
+   "r": null,
+   "calledBy": ""
+  },
+  "SEN-IA": {
+   "status": "uncalled",
+   "reporting": 0,
+   "d": null,
+   "r": null,
+   "calledBy": ""
+  },
+  "SEN-KS": {
+   "status": "uncalled",
+   "reporting": 0,
+   "d": null,
+   "r": null,
+   "calledBy": ""
+  },
+  "SEN-NE": {
+   "status": "uncalled",
+   "reporting": 0,
+   "d": null,
+   "r": null,
+   "calledBy": ""
+  },
+  "SEN-MI": {
+   "status": "uncalled",
+   "reporting": 0,
+   "d": null,
+   "r": null,
+   "calledBy": ""
+  },
+  "SEN-GA": {
+   "status": "uncalled",
+   "reporting": 0,
+   "d": null,
+   "r": null,
+   "calledBy": ""
+  },
+  "SEN-NH": {
+   "status": "uncalled",
+   "reporting": 0,
+   "d": null,
+   "r": null,
+   "calledBy": ""
+  },
+  "SEN-MN": {
+   "status": "uncalled",
+   "reporting": 0,
+   "d": null,
+   "r": null,
+   "calledBy": ""
+  },
+  "GOV-GA": {
+   "status": "uncalled",
+   "reporting": 0,
+   "d": null,
+   "r": null,
+   "calledBy": ""
+  },
+  "GOV-AZ": {
+   "status": "uncalled",
+   "reporting": 0,
+   "d": null,
+   "r": null,
+   "calledBy": ""
+  },
+  "GOV-MI": {
+   "status": "uncalled",
+   "reporting": 0,
+   "d": null,
+   "r": null,
+   "calledBy": ""
+  },
+  "GOV-WI": {
+   "status": "uncalled",
+   "reporting": 0,
+   "d": null,
+   "r": null,
+   "calledBy": ""
+  },
+  "GOV-PA": {
+   "status": "uncalled",
+   "reporting": 0,
+   "d": null,
+   "r": null,
+   "calledBy": ""
+  },
+  "GOV-KS": {
+   "status": "uncalled",
+   "reporting": 0,
+   "d": null,
+   "r": null,
+   "calledBy": ""
+  },
+  "GOV-NV": {
+   "status": "uncalled",
+   "reporting": 0,
+   "d": null,
+   "r": null,
+   "calledBy": ""
+  },
+  "GOV-IA": {
+   "status": "uncalled",
+   "reporting": 0,
+   "d": null,
+   "r": null,
+   "calledBy": ""
+  },
+  "GOV-OH": {
+   "status": "uncalled",
+   "reporting": 0,
+   "d": null,
+   "r": null,
+   "calledBy": ""
+  },
+  "GOV-AK": {
+   "status": "uncalled",
+   "reporting": 0,
+   "d": null,
+   "r": null,
+   "calledBy": ""
+  }
+ },
+ "otherCalls": [],
+ "momentum": [
+  {
+   "date": "2026-11-03",
+   "dir": "neutral",
+   "text": "Election Day opened with mostly technical and weather problems (Broward County system fault ~20 min; Westchester scanner delays). Early-vote turnout ran well above 2022.",
+   "source": "AP via WSLS",
+   "url": "https://www.wsls.com/news/politics/2026/11/03/election-day-arrives-after-a-surge-in-early-voting-with-observers-keeping-close-watch-at-the-polls/"
+  },
+  {
+   "date": "2026-11-03",
+   "dir": "D",
+   "text": "Maine on track for record midterm turnout, per Secretary of State Shenna Bellows \u2014 Maine Senate is a must-flip for Democrats.",
+   "source": "Fox News live",
+   "url": "https://www.foxnews.com/live-news/2026-midterm-elections-news-analysis-races-11-3-2026"
+  },
+  {
+   "date": "2026-11-03",
+   "dir": "R",
+   "text": "Appeals court lets DOJ warn election officials they could be prosecuted for not following its demands on voting procedures; another ruling allows requests to segregate suspected noncitizen ballots.",
+   "source": "CNN / Fox News live",
+   "url": "https://edition.cnn.com/2026/11/03/politics/live-news/midterm-election-congress"
+  },
+  {
+   "date": "2026-11-02",
+   "dir": "D",
+   "text": "Supreme Court declined the administration's emergency request to stop California from counting ~20,000 ballots DHS flagged as possible noncitizens.",
+   "source": "CNN",
+   "url": "https://edition.cnn.com/2026/11/03/politics/live-news/midterm-election-congress"
+  },
+  {
+   "date": "2026-11-02",
+   "dir": "D",
+   "text": "Final NYT/Siena polls: Democrats lead all seven Senate toss-ups \u2014 Talarico 50\u201343 (TX), Jackson 51\u201345 (ME), Brown 49\u201344 (OH), Peltola 48\u201346 (AK), Turek 48\u201347 (IA).",
+   "source": "Forbes",
+   "url": "https://www.forbes.com/sites/saradorn/2026/11/01/latest-polls-in-2026-midterms-democrats-lead-nearly-all-key-senate-races/"
+  },
+  {
+   "date": "2026-11-02",
+   "dir": "D",
+   "text": "Kalshi Senate odds for Democrats hit 74\u201375%, the platform's high, up from ~63% on Oct. 2. Republicans led this market as late as July (60% R peak).",
+   "source": "CNBC / Quartz",
+   "url": "https://www.cnbc.com/2026/11/02/prediction-market-traders-now-see-nearly-75percent-chance-of-democrats-winning-the-senate.html"
+  },
+  {
+   "date": "2026-11-02",
+   "dir": "R",
+   "text": "Polling-error risk: 2016, 2020 and 2024 polls understated Republicans by ~3\u20135 pts. A miss that size likely costs Democrats the Senate and narrows the House.",
+   "source": "Silver Bulletin via DC News Now",
+   "url": "https://www.dcnewsnow.com/news/politics/final-projections-give-democrats-high-odds-to-sweep-congress/"
+  },
+  {
+   "date": "2026-10-29",
+   "dir": "D",
+   "text": "Cook's final governor ratings moved four races toward Democrats (incl. Wisconsin to Lean D); Cook projects a Democratic net gain of 2\u20134 governorships.",
+   "source": "Cook Political Report",
+   "url": "https://www.cookpolitical.com/analysis/governors/2026-final-governors-ratings"
+  },
+  {
+   "date": "2026-10-23",
+   "dir": "D",
+   "text": "Cook moved 19 House races toward Democrats and none toward Republicans; Democrats now 'favored outright' in the 218 seats needed.",
+   "source": "The Hill",
+   "url": "https://thehill.com/homenews/campaign/6167727-cook-political-report-democrats-19-house-seats/"
+  },
+  {
+   "date": "2026-10-23",
+   "dir": "D",
+   "text": "Trump approval at record lows (CNN/SSRS 32%); NYT/Siena generic ballot D+11, CNN D+10.",
+   "source": "The Hill / Forbes",
+   "url": "https://www.forbes.com/sites/saradorn/2026/10/23/republicans-chances-of-maintaining-house-majority-have-all-but-evaporated-cook-political-report-says/"
+  },
+  {
+   "date": "2026-10-19",
+   "dir": "R",
+   "text": "Georgia governor remains a statistical tie: Rick Jackson (R) +1.6 over Keisha Lance Bottoms (D), even as Ossoff leads by ~7 for Senate.",
+   "source": "WRDW / Quantus",
+   "url": "https://www.wrdw.com/2026/10/19/who-will-win-ga-elections-new-poll-reveals-clues/"
+  },
+  {
+   "date": "2026-05-13",
+   "dir": "R",
+   "text": "Mid-decade redistricting and court rulings (incl. Louisiana v. Callais narrowing VRA majority-minority protections) shifted the House map toward the GOP; one model's GOP odds rose from 18.9% to 27.2% in a week.",
+   "source": "RacetotheWH",
+   "url": "https://racetothewh.com/house"
+  }
+ ],
+ "alerts": [
+  {
+   "t": "2026-11-03T22:40:00Z",
+   "dir": "neutral",
+   "text": "Live tracking on. First polls close 6 pm ET (IN, KY)."
+  }
+ ]
+}

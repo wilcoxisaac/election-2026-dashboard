@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0f1b2d">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Election '26">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<title>2026 Election Live: Path to Democratic Control</title>
+<meta name="description" content="Executive overview of the November 3, 2026 U.S. midterm elections: forecasts, live race calls, map, governors, courts and ballot measures.">
+<style>
+:root{
+  --bg:#f9f9f7;--surface:#fcfcfb;--card:#ffffff;--ink:#0b0b0b;--ink2:#52514e;--muted:#6f6d68;--grid:#e1e0d9;--line:#d8d6cf;
+  --d3:#1d5fb4;--d2:#4f8fe0;--d1:#a9c8f0;--tu:#bdbab0;--r1:#f2b0ac;--r2:#e2625e;--r3:#b42f2e;--none:#eeede8;--ind:#7a5fc9;
+  --good:#0a7d0a;--warn:#9a6400;--focus:#6250d6;
+  --radius:12px;
+}
+@media (prefers-color-scheme:dark){
+  :root{--bg:#0d0d0d;--surface:#1a1a19;--card:#161615;--ink:#f0efec;--ink2:#c3c2b7;--muted:#a3a198;--grid:#2c2c2a;--line:#3a3a37;
+  --d3:#3d86e8;--d2:#2f6cc0;--d1:#24456f;--tu:#5a5852;--r1:#6d2e2c;--r2:#b8403d;--r3:#e66767;--none:#242422;--ind:#9085e9;--good:#3fbf3f;--warn:#e0a92e}
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important;animation:none!important}}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+a{color:var(--d3)}
+:focus-visible{outline:3px solid var(--focus);outline-offset:2px;border-radius:4px}
+.skip{position:absolute;left:-999px;top:0;background:var(--ink);color:var(--bg);padding:8px 12px;z-index:9}
+.skip:focus{left:8px;top:8px}
+.wrap{max-width:1180px;margin:0 auto;padding:16px;padding-top:max(16px,env(safe-area-inset-top));padding-left:max(16px,env(safe-area-inset-left));padding-right:max(16px,env(safe-area-inset-right));padding-bottom:max(16px,env(safe-area-inset-bottom))}
+header.top{display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between;padding:8px 0 4px}
+h1{font-size:clamp(1.35rem,3vw,1.9rem);margin:0;letter-spacing:-.01em}
+h2{font-size:1.2rem;margin:0 0 4px}
+h3{font-size:1rem;margin:0 0 4px}
+.sub{color:var(--ink2);margin:2px 0 0;font-size:.95rem}
+.pill{display:inline-flex;align-items:center;gap:8px;padding:6px 12px;border-radius:999px;font-weight:600;font-size:.85rem;border:1px solid var(--line);background:var(--card)}
+.dot{width:10px;height:10px;border-radius:50%;background:var(--muted)}
+.pill.live .dot{background:#d03b3b;animation:pulse 1.6s infinite}
+.pill.final .dot{background:var(--good)}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(208,59,59,.6)}70%{box-shadow:0 0 0 8px rgba(208,59,59,0)}100%{box-shadow:0 0 0 0 rgba(208,59,59,0)}}
+.meta{display:flex;gap:10px;align-items:center;flex-wrap:wrap;color:var(--ink2);font-size:.85rem}
+button{font:inherit;cursor:pointer;border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:8px;padding:6px 12px;min-height:36px}
+button[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+nav.toc{display:flex;gap:6px;flex-wrap:wrap;margin:10px 0 14px;font-size:.85rem}
+nav.toc a{padding:4px 10px;border-radius:999px;background:var(--card);border:1px solid var(--line);text-decoration:none;color:var(--ink2)}
+section{margin:18px 0}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:16px}
+.grid{display:grid;gap:14px}
+.g4{grid-template-columns:repeat(4,1fr)}
+.g2{grid-template-columns:repeat(2,1fr)}
+.g3{grid-template-columns:repeat(3,1fr)}
+@media (max-width:900px){.g4{grid-template-columns:repeat(2,1fr)}.g3{grid-template-columns:1fr}}
+@media (max-width:640px){.g4,.g2{grid-template-columns:1fr}}
+.banner{border-left:5px solid var(--d3)}
+.banner p{margin:6px 0}
+.kpi .label{font-size:.85rem;color:var(--ink2);font-weight:600}
+.kpi .big{font-size:2.4rem;font-weight:750;line-height:1.1;margin:4px 0;font-variant-numeric:tabular-nums}
+.kpi .range{font-size:.85rem;color:var(--ink2)}
+.kpi .verdict{display:inline-block;margin-top:6px;font-size:.8rem;font-weight:700;padding:2px 8px;border-radius:6px;background:var(--d1);color:var(--ink)}
+.meter{height:10px;border-radius:5px;background:var(--r1);overflow:hidden;margin-top:8px;position:relative}
+.meter span{display:block;height:100%;background:var(--d3);border-radius:5px 0 0 5px}
+.meter i{position:absolute;left:50%;top:-2px;bottom:-2px;width:2px;background:var(--ink)}
+.tally{margin:6px 0 14px}
+.tbar{display:flex;height:34px;border-radius:8px;overflow:hidden;background:var(--none);position:relative;gap:2px}
+.tbar div{height:100%;display:flex;align-items:center;justify-content:center;font-size:.8rem;font-weight:700;color:#fff;white-space:nowrap;overflow:hidden}
+.tbar .D{background:var(--d3)}.tbar .Dh{background:var(--d2)}.tbar .R{background:var(--r3)}.tbar .Rh{background:var(--r2)}.tbar .I{background:var(--ind)}.tbar .U{background:transparent;color:var(--ink2)}
+.tbar .mark{position:absolute;top:-4px;bottom:-4px;width:3px;background:var(--ink);transform:translateX(-1px)}
+.tlegend{display:flex;flex-wrap:wrap;gap:12px;font-size:.8rem;color:var(--ink2);margin-top:6px}
+.sw{display:inline-block;width:12px;height:12px;border-radius:3px;vertical-align:-2px;margin-right:4px;border:1px solid rgba(0,0,0,.15)}
+.chart svg{width:100%;height:auto;display:block}
+.chart text{fill:var(--ink2);font-size:12px}
+.mapbox{position:relative}
+#map svg{width:100%;height:auto;display:block}
+#map path.st{stroke:var(--surface);stroke-width:1.2;cursor:pointer;transition:opacity .15s}
+#map path.st:hover,#map path.st:focus{stroke:var(--ink);stroke-width:2;outline:none}
+#map path.st.called{stroke:var(--ink);stroke-width:1.6}
+#map text.lab{font-size:10px;font-weight:700;pointer-events:none;fill:#0b0b0b}
+#map text.lab.inv{fill:#fff}
+.tip{position:absolute;pointer-events:none;background:var(--card);border:1px solid var(--line);box-shadow:0 4px 18px rgba(0,0,0,.18);border-radius:8px;padding:8px 10px;font-size:.85rem;max-width:280px;display:none;z-index:5}
+.legend{display:flex;flex-wrap:wrap;gap:10px;font-size:.8rem;color:var(--ink2);margin:8px 0}
+.toggle{display:flex;gap:6px;flex-wrap:wrap}
+table{width:100%;border-collapse:collapse;font-size:.9rem}
+th,td{text-align:left;padding:8px 6px;border-bottom:1px solid var(--grid);vertical-align:top}
+th{font-size:.78rem;text-transform:uppercase;letter-spacing:.04em;color:var(--muted)}
+td.num{font-variant-numeric:tabular-nums;white-space:nowrap}
+.scroll{overflow-x:auto}
+.tag{display:inline-block;font-size:.72rem;font-weight:700;padding:2px 7px;border-radius:6px;white-space:nowrap;color:#0b0b0b}
+.t-sd{background:var(--d3);color:#fff}.t-ld{background:var(--d2);color:#fff}.t-lnd{background:var(--d1)}.t-tu{background:var(--tu)}.t-lnr{background:var(--r1)}.t-lr{background:var(--r2);color:#fff}.t-sr{background:var(--r3);color:#fff}
+.t-call-D{background:var(--d3);color:#fff}.t-call-R{background:var(--r3);color:#fff}.t-call-I{background:var(--ind);color:#fff}.t-unc{background:var(--none);color:var(--ink2);border:1px solid var(--line)}
+@media (prefers-color-scheme:dark){.t-lnd,.t-tu,.t-lnr{color:#f0efec}}
+.ladder li{display:grid;grid-template-columns:28px 1fr auto;gap:10px;align-items:center;padding:8px 0;border-bottom:1px solid var(--grid)}
+.ladder{list-style:none;margin:0;padding:0}
+.ladder .n{font-weight:800;font-variant-numeric:tabular-nums;text-align:center;border-radius:6px;padding:2px 0;background:var(--none)}
+.ladder .n.win{background:var(--d1)}
+.ladder .pbar{height:8px;background:var(--r1);border-radius:4px;overflow:hidden;margin-top:4px;max-width:340px;position:relative}
+.ladder .pbar span{display:block;height:100%;background:var(--d3)}
+.ladder .pbar i{position:absolute;left:50%;top:0;bottom:0;width:2px;background:var(--ink)}
+.small{font-size:.82rem;color:var(--ink2)}
+.mom{list-style:none;margin:0;padding:0}
+.mom li{display:grid;grid-template-columns:34px 1fr;gap:10px;padding:10px 0;border-bottom:1px solid var(--grid)}
+.arrow{width:30px;height:30px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:900;color:#fff}
+.arrow.D{background:var(--d3)}.arrow.R{background:var(--r3)}.arrow.neutral{background:var(--muted)}
+.impact td:first-child{font-weight:700;width:18%}
+.tl{list-style:none;margin:0;padding:0}
+.tl li{display:grid;grid-template-columns:86px 1fr;gap:10px;padding:8px 0;border-bottom:1px solid var(--grid)}
+.tl li.past{opacity:.6}
+.tl li.next{background:linear-gradient(90deg,var(--d1),transparent);border-radius:8px;padding-left:6px}
+.tl .time{font-weight:800;font-variant-numeric:tabular-nums}
+footer{color:var(--ink2);font-size:.82rem;padding:20px 0 40px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+details summary{cursor:pointer;font-weight:600;margin:6px 0}
+.flipmark{font-weight:800;color:var(--d3)}
+.hero{grid-template-columns:repeat(3,1fr)}@media (max-width:760px){.hero{grid-template-columns:1fr}}
+.gauge-card{text-align:center}.gauge-card svg{width:100%;max-width:260px;height:auto}
+.trow{display:grid;grid-template-columns:84px 1fr 120px;gap:10px;align-items:center;margin:8px 0}
+.tlab{font-weight:700;font-size:.9rem}.tnum{font-size:.82rem;color:var(--ink2);font-variant-numeric:tabular-nums}
+@media (max-width:560px){.trow{grid-template-columns:70px 1fr}.tnum{grid-column:2}}
+.brief{margin:6px 0 10px;padding-left:18px}.brief li{margin:4px 0}
+.feed{list-style:none;margin:0;padding:0}.feed li{display:grid;grid-template-columns:70px 22px 1fr;gap:8px;padding:7px 0;border-bottom:1px solid var(--grid);font-size:.92rem;align-items:start}
+.feed .ft{color:var(--muted);font-variant-numeric:tabular-nums;font-size:.82rem}.feed li.new{background:linear-gradient(90deg,var(--d1),transparent);border-radius:6px}
+.fd{width:18px;height:18px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-size:.62rem;color:#fff;font-weight:900}
+.fd.D{background:var(--d3)}.fd.R{background:var(--r3)}.fd.neutral{background:var(--muted)}
+.arrow.mini{display:inline-flex;width:22px;height:22px;font-size:.8rem}
+details>summary{list-style-position:outside}
+.toast{position:fixed;left:50%;bottom:20px;transform:translateX(-50%);max-width:min(560px,92vw);background:var(--ink);color:var(--bg);padding:12px 16px;border-radius:10px;box-shadow:0 8px 28px rgba(0,0,0,.3);z-index:20;font-size:.95rem;display:flex;gap:12px;align-items:center}
+.toast button{background:transparent;color:var(--bg);border-color:var(--bg);min-height:30px;padding:2px 10px}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="wrap">
+<header class="top">
+  <div>
+    <h1>2026 Midterms: The Path to Democratic Control</h1>
+    <p class="sub">Nov. 3, 2026 · times ET</p>
+  </div>
+  <div class="meta">
+    <span id="phasePill" class="pill"><span class="dot" aria-hidden="true"></span><span id="phaseText">Pre-election</span></span>
+    <span>Updated <time id="updated">—</time></span>
+    <button id="refreshBtn" type="button" aria-label="Check for new results now">↻ Refresh</button>
+  </div>
+</header>
+<p id="live" class="sr" aria-live="polite"></p>
+<nav class="toc" aria-label="Sections">
+  <a href="#map-sec">Map</a><a href="#senate">Senate path</a><a href="#latest">Updates</a><a href="#momentum">Momentum</a><a href="#gov">Governors</a><a href="#courts">Courts</a><a href="#measures">Measures</a><a href="#tonight">Tonight</a>
+</nav>
+
+<main id="main">
+<section id="overview" aria-labelledby="ov-h">
+  <h2 id="ov-h" class="sr">Lay of the land</h2>
+  <div class="grid hero">
+    <div class="card gauge-card"><h3>Senate · chance of D control</h3><div id="gSen"></div><div class="small" id="gSenSub"></div></div>
+    <div class="card gauge-card"><h3>House · chance of D control</h3><div id="gHouse"></div><div class="small" id="gHouseSub"></div></div>
+    <div class="card gauge-card"><h3>Both chambers</h3><div id="gSweep"></div><div class="small">Silver 82 · Polymarket 75 · DDHQ 63</div></div>
+  </div>
+  <div class="card" style="margin-top:14px">
+    <h3>Seats won tonight <span class="small">· black line = control</span></h3>
+    <div class="trow"><span class="tlab">Senate</span><div class="tbar" id="senBar" role="img"></div><span class="tnum" id="senNum"></span></div>
+    <div class="trow"><span class="tlab">House</span><div class="tbar" id="houseBar" role="img"></div><span class="tnum" id="houseNum"></span></div>
+    <div class="trow"><span class="tlab">Governors</span><div class="tbar" id="govBar" role="img"></div><span class="tnum" id="govNum"></span></div>
+    <div class="tlegend"><span><i class="sw" style="background:var(--d2)"></i>D not up</span><span><i class="sw" style="background:var(--d3)"></i>D won</span><span><i class="sw" style="background:var(--ind)"></i>Ind. won</span><span><i class="sw" style="background:var(--r3)"></i>R won</span><span><i class="sw" style="background:var(--r2)"></i>R not up</span></div>
+  </div>
+</section>
+
+<section id="map-sec" aria-labelledby="map-h" class="card">
+  <div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;align-items:center">
+    <h2 id="map-h">Battlefield map</h2>
+    <div class="toggle" role="group" aria-label="Map layer">
+      <button type="button" data-layer="SEN" aria-pressed="true">Senate</button>
+      <button type="button" data-layer="GOV" aria-pressed="false">Governors</button>
+    </div>
+  </div>
+  <div class="legend" id="mapLegend"></div>
+  <div class="mapbox"><div id="map"></div><div class="tip" id="tip" role="status"></div></div>
+  <div id="mapDetail" class="small" aria-live="polite" style="min-height:1.5em"></div>
+  <details><summary>Map data as a table</summary><div class="scroll" id="mapTable"></div></details>
+</section>
+
+<section id="senate" aria-labelledby="sen-h" class="card">
+  <h2 id="sen-h">Senate path to 51</h2>
+  <p class="small">Most → least likely D flip. Number = D seats if they win this race and every race above it.</p>
+  <ol class="ladder" id="ladder"></ol>
+</section>
+
+<section id="latest" aria-labelledby="up-h" class="card">
+  <div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;align-items:center">
+    <h2 id="up-h">Latest updates</h2>
+    <button type="button" id="soundBtn" aria-pressed="false">🔔 Chime on new update: off</button>
+  </div>
+  <ul class="brief" id="liveRead"></ul>
+  <ul class="feed" id="alerts"></ul>
+</section>
+
+<section aria-labelledby="fc-h" class="card">
+  <h2 id="fc-h">Forecasts compared</h2>
+  <div class="grid g2">
+    <div class="chart"><h3>Senate</h3><div id="fcSenate"></div></div>
+    <div class="chart"><h3>House</h3><div id="fcHouse"></div></div>
+  </div>
+  <details><summary>As table</summary><div class="scroll" id="fcTable"></div></details>
+</section>
+
+<section id="momentum" aria-labelledby="mom-h">
+  <h2 id="mom-h">Momentum</h2>
+  <div class="grid g2">
+    <div class="card"><h3><span class="arrow D mini" aria-hidden="true">▲</span> Toward Democrats</h3><ul class="mom" id="momD"></ul></div>
+    <div class="card"><h3><span class="arrow R mini" aria-hidden="true">▼</span> Away from Democrats</h3><ul class="mom" id="momR"></ul></div>
+  </div>
+  <details class="card" style="margin-top:14px"><summary>Election Day conditions</summary><ul class="mom" id="momN"></ul></details>
+</section>
+
+<section id="impact" class="card"><details><summary><h2 style="display:inline">What control changes</h2></summary>
+  <p class="small">Filibuster and veto still apply; Trump is in office through Jan. 2029.</p>
+  <div class="scroll"><table class="impact" id="impactTable"></table></div></details></section>
+
+<section id="gov" class="card"><details open><summary><h2 style="display:inline">Key governor races</h2></summary>
+  <div class="scroll"><table id="govTable"></table></div></details></section>
+
+<section id="courts" class="card"><details><summary><h2 style="display:inline">Judicial races</h2></summary>
+  <div class="scroll"><table id="courtTable"></table></div></details></section>
+
+<section id="measures" class="card"><details><summary><h2 style="display:inline">Ballot measures &amp; legislatures</h2></summary>
+  <div class="scroll"><table id="bmTable"></table></div>
+  <h3 style="margin-top:14px">Legislative chambers in play</h3><ul id="legList" class="small"></ul></details></section>
+
+<section id="tonight" class="card"><details open><summary><h2 style="display:inline">Tonight (ET)</h2></summary>
+  <p class="small">Early mail/absentee counts often favor Democrats, then narrow. Maine reports slowly.</p>
+  <ol class="tl" id="timeline"></ol>
+  <p class="small"><a href="https://apnews.com/projects/election-results-2026/">AP results</a> · <a href="https://edition.cnn.com/2026/11/03/politics/live-news/midterm-election-congress">CNN live</a> · <a href="https://decisiondeskhq.com/">DDHQ</a></p></details></section>
+
+<section id="sources" class="card"><details><summary><h2 style="display:inline">Sources &amp; method</h2></summary>
+  <p class="small">Odds = latest published before polls closed; headline figure is the median of listed sources. Battleground ratings: Cook; others approximate. Data refreshes from AP / network calls on a schedule; open pages re-check every 60 s.</p>
+  <ul class="small" id="srcList"></ul></details></section>
+</main>
+<div id="toast" class="toast" role="status" aria-live="assertive" hidden></div>
+<footer>Built Nov. 3, 2026. Nonpartisan summary of published forecasts and results; not affiliated with any campaign or news organization.</footer>
+</div>
+
+<script id="states-data" type="application/json">__STATES__</script>
+<script id="seed-data" type="application/json">__DATA__</script>
+<script>
+(function(){
+"use strict";
+const STATES = JSON.parse(document.getElementById('states-data').textContent);
+let DATA = JSON.parse(document.getElementById('seed-data').textContent);
+
+/* ---------- static reference content ---------- */
+const FC = {
+  senate:[
+    {src:"Prediction market: Polymarket",p:78,date:"Nov 2, 8pm",url:"https://variety.com/2026/digital/news/midterm-elections-odds-prediction-spending-house-and-senate-1236938339/",kind:"market"},
+    {src:"FiftyPlusOne model (MS NOW)",p:77,date:"Nov 2",url:"https://www.ms.now/opinion/midterm-polls-house-senate-election",kind:"model"},
+    {src:"Silver Bulletin (Nate Silver)",p:76,date:"Oct 29",url:"https://natesilver.net/p/nate-silver-2026-midterm-election-polls-model",kind:"model"},
+    {src:"Prediction market: Kalshi",p:75,date:"Nov 2",url:"https://qz.com/prediction-markets-democrats-sweep-congress-election-day-110326",kind:"market"},
+    {src:"VoteHub",p:63,date:"Oct 29",url:"https://newsweek.com/who-win-midterms-polls-3-days-12641376",kind:"model"},
+    {src:"Decision Desk HQ",p:60,date:"Oct 29",url:"https://newsweek.com/who-win-midterms-polls-3-days-12641376",kind:"model"}
+  ],
+  house:[
+    {src:"Silver Bulletin (Nate Silver)",p:95.1,date:"Oct 29",url:"https://newsweek.com/who-win-midterms-polls-3-days-12641376",kind:"model",seats:"avg 240 D"},
+    {src:"Prediction market: Polymarket",p:95,date:"Nov 2",url:"https://variety.com/2026/digital/news/midterm-elections-odds-prediction-spending-house-and-senate-1236938339/",kind:"market"},
+    {src:"Prediction market: Kalshi",p:94.1,date:"Nov 2",url:"https://news.kalshi.com/p/2026-midterm-predictions",kind:"market"},
+    {src:"VoteHub",p:89,date:"Oct 29",url:"https://newsweek.com/who-win-midterms-polls-3-days-12641376",kind:"model"},
+    {src:"Decision Desk HQ",p:80,date:"Oct 29",url:"https://newsweek.com/who-win-midterms-polls-3-days-12641376",kind:"model",seats:"proj. 238 D"}
+  ],
+  sweep:[{src:"Silver Bulletin",p:82},{src:"Polymarket",p:75},{src:"Decision Desk HQ",p:63}]
+};
+
+/* rating codes: sd likely/solid D, lnd lean D, tu toss-up, lnr lean R, sr likely/solid R */
+const RLABEL={sd:"Solid/Likely D",lnd:"Lean D",tu:"Toss-up",lnr:"Lean R",sr:"Solid/Likely R"};
+const RCOLOR={sd:"var(--d3)",lnd:"var(--d1)",tu:"url(#tuHatch)",lnr:"var(--r1)",sr:"var(--r3)"};
+
+const SEN = {
+  NC:{r:"sd",held:"R",open:true,d:"Roy Cooper",rc:"Michael Whatley",poll:"Cooper +10.8 (RCP avg)",p:null,rating:"Likely D (Cook)",note:"Best Democratic pickup; open seat (Tillis retiring). Polls close 7:30."},
+  ME:{r:"tu",held:"R",d:"Troy Jackson",rc:"Sen. Susan Collins",poll:"Jackson +3.3 (RCP); NYT/Siena 51–45",p:77,mkt:"Polymarket 72%",rating:"Toss-up (Cook)",note:"Harris +6 state. No central election-night reporting — may be slow. Record turnout expected."},
+  TX:{r:"tu",held:"R",open:true,d:"James Talarico",rc:"Ken Paxton",poll:"Talarico +2.5 (RCP); NYT/Siena 50–43",p:64,mkt:"Kalshi 74%",rating:"Toss-up (Cook)",note:"Most polls close 8pm; west Texas 9pm."},
+  AK:{r:"tu",held:"R",d:"Mary Peltola",rc:"Sen. Dan Sullivan",poll:"Peltola +1.4 (RCP); NYT/Siena 48–46",p:63,mkt:"pollingforecast 71%",rating:"Toss-up (Cook)",note:"Likely tipping-point seat. Ranked-choice; first results ~1am ET, full count can take days."},
+  OH:{r:"tu",held:"R",d:"Sherrod Brown",rc:"Sen. Jon Husted (appointed)",poll:"Brown +2.8 (RCP); NYT/Siena 49–44",p:62,mkt:"Kalshi 70%",rating:"Toss-up (Cook)",note:"Special election for the rest of JD Vance's term. Polls close 7:30."},
+  KS:{r:"tu",held:"R",d:"Adam Hamilton",rc:"Sen. Roger Marshall",poll:"Hamilton +1.1 (Silver Bulletin avg, Oct 22)",p:57,mkt:"Polymarket 63%",rating:"Toss-up (Cook)",note:"A Trump double-digit state; a Democratic win here signals a wave."},
+  IA:{r:"tu",held:"R",open:true,d:"Josh Turek",rc:"Rep. Ashley Hinson",poll:"Hinson +0.3 (RCP); NYT/Siena Turek 48–47",p:53,mkt:"Polymarket ~50%",rating:"Toss-up (Cook)",note:"Closest race on the board. Absentees report first, so expect an early Democratic lead."},
+  NE:{r:"tu",held:"R",ind:true,d:"Dan Osborn (Independent)",rc:"Sen. Pete Ricketts",poll:"Ricketts +1.6 (Poliwave model)",p:null,rating:"Toss-up (Poliwave model)",note:"Osborn is an independent; a win helps Democrats' math even though he has not committed to caucus with them."},
+  SC:{r:"lnr",held:"R",d:"Democratic nominee",rc:"Republican nominee",poll:"R +1.9 (Poliwave model)",p:null,rating:"Reach seat (model toss-up)",note:"Reach target; listed by one model as a toss-up."},
+  FL:{r:"sr",held:"R",d:"Angie Nixon",rc:"Sen. Ashley Moody (appointed)",poll:"",p:null,rating:"Likely R (approx.)",note:"Special election for the rest of Marco Rubio's term."},
+  MI:{r:"tu",held:"D",open:true,d:"Abdul El-Sayed",rc:"Mike Rogers",poll:"El-Sayed +3 (Silver Bulletin avg)",p:76,mkt:"Polymarket 78%",rating:"Toss-up (Cook)",note:"Must-hold Democratic seat (Peters retiring)."},
+  GA:{r:"lnd",held:"D",d:"Sen. Jon Ossoff",rc:"Rep. Mike Collins",poll:"Ossoff +6.9 (Quantus, Oct)",p:null,rating:"Likely D hold (Cook/NPR)",note:"Runoff on Dec. 1 if no one tops 50%."},
+  NH:{r:"lnd",held:"D",open:true,d:"Rep. Chris Pappas",rc:"John E. Sununu",poll:"",p:null,rating:"Likely D hold (Silver Bulletin)",note:"Must-hold open seat (Shaheen retiring)."},
+  MN:{r:"lnd",held:"D",open:true,d:"Peggy Flanagan",rc:"Michele Tafoya",poll:"",p:null,rating:"Likely D hold (Silver Bulletin)",note:"Must-hold open seat (Smith retiring)."}
+};
+["CO","DE","IL","MA","NJ","NM","OR","RI","VA"].forEach(s=>SEN[s]={r:"sd",held:"D",rating:"Solid/Likely D",d:"",rc:"",poll:"",note:"Safe Democratic seat."});
+["AL","AR","ID","KY","LA","MS","MT","OK","SD","TN","WV","WY"].forEach(s=>SEN[s]={r:"sr",held:"R",rating:"Solid/Likely R",d:"",rc:"",poll:"",note:"Safe Republican seat."});
+
+const GOV = {
+  GA:{r:"tu",held:"R",d:"Keisha Lance Bottoms",rc:"Rick Jackson",rating:"Toss-up",open:true,note:"Polls essentially tied; Jackson (self-funding billionaire) has a money edge. Bottoms would be the first Black woman elected governor."},
+  KS:{r:"tu",held:"D",d:"Holscher",rc:"Masterson",rating:"Toss-up",open:true,note:"Democratic seat in a red state (Gov. Laura Kelly term-limited)."},
+  NV:{r:"tu",held:"R",d:"Ford",rc:"Gov. Joe Lombardo",rating:"Toss-up",note:"Only GOP incumbent in a pure toss-up; also has abortion measure Q6 on ballot."},
+  AZ:{r:"sd",held:"D",d:"Gov. Katie Hobbs",rc:"Andy Biggs",rating:"Likely D",note:"Battleground; election-administration fights loom for 2028."},
+  MI:{r:"lnd",held:"D",d:"Jocelyn Benson",rc:"John James",rating:"Lean D",open:true,note:"Three-way race: Detroit Mayor Mike Duggan running as an independent."},
+  WI:{r:"lnd",held:"D",d:"Crowley",rc:"Tom Tiffany",rating:"Lean D",open:true,note:"Moved from Toss-up to Lean D in Cook's final ratings (Evers retiring)."},
+  IA:{r:"lnd",held:"R",d:"Rob Sand",rc:"Lahn",rating:"Lean D (flip)",open:true,note:"Potential Democratic pickup (Reynolds retiring)."},
+  OH:{r:"lnd",held:"R",d:"Amy Acton",rc:"Vivek Ramaswamy",rating:"Lean D (flip)",open:true,note:"Potential Democratic pickup; controls a major redistricting state."},
+  AK:{r:"lnd",held:"R",d:"",rc:"",rating:"Lean D (flip)",open:true,note:"Open seat (Dunleavy term-limited); Cook rates Lean D."},
+  PA:{r:"sd",held:"D",d:"Gov. Josh Shapiro",rc:"Garrity",rating:"Solid D",note:"Shapiro is a likely 2028 presidential contender."}
+};
+["CA","CO","CT","HI","IL","MA","MD","ME","MN","NM","NY","RI"].forEach(s=>GOV[s]={r:"sd",held:"D",rating:"Solid D",note:"Safe Democratic."});
+GOV.OR={r:"lnd",held:"D",d:"Gov. Tina Kotek",rc:"",rating:"Lean D",note:""};
+["FL","NE","TX"].forEach(s=>GOV[s]={r:"lnr",held:"R",rating:"Lean R",note:"Competitive but Republican-leaning."});
+["AL","AR","ID","SC","SD","TN","WY","NH","OK","VT"].forEach(s=>GOV[s]={r:"sr",held:"R",rating:"Likely/Solid R",note:""});
+GOV.NH.note="Gov. Kelly Ayotte; RCP rates Leans GOP.";
+
+const IMPACT=[
+ ["Agenda","A Democratic House (and Senate) can block Republican bills — e.g., further tax, immigration-enforcement or spending priorities — and force negotiation. They cannot pass their own agenda over a veto.","Republicans keep the ability to pass budget-reconciliation bills (no filibuster) on taxes and spending, and to move the President's priorities with simple majorities."],
+ ["Budget & shutdowns","Must-pass spending and the debt limit require Democratic votes, giving Democrats leverage on funding levels and policy riders.","GOP controls the spending process; shutdown leverage shifts mainly to Senate Democrats via the filibuster."],
+ ["Oversight","House committees gain subpoena power to investigate the administration (e.g., election interference, tariffs, the Iran war, ethics). A House majority alone can impeach; removal needs 67 senators.","Oversight stays limited; committee investigations target GOP priorities."],
+ ["Judges & nominees","A Democratic Senate can reject or stall federal judges, cabinet picks and any Supreme Court nominee — the most durable consequence of Senate control.","Confirmations continue at pace, including any Supreme Court vacancy, shaping courts for decades."],
+ ["War & foreign policy","Greater odds that war-powers resolutions on Iran pass Congress (though a veto would likely stand).","Congress is unlikely to constrain military operations."],
+ ["Elections & 2028","Democratic governors in GA, OH, IA, NV, WI, MI, AZ, KS would hold veto power over new maps and election rules before 2028.","Republican governors could pursue further mid-decade redistricting and stricter voting rules where legislatures agree."]
+];
+
+const COURTS=[
+ {st:"North Carolina",type:"Partisan, 1 seat",c:"Justice Anita Earls (D, incumbent) vs. Sarah Stevens (R)",bal:"5–2 R",stakes:"If Earls wins, Democrats need 2 of 3 seats in 2028 to regain the majority; if Stevens wins, they need all 3."},
+ {st:"Michigan",type:"Partisan nominations, 2 seats",c:"Two seats on a court Democrats control 6–1",bal:"6–1 D",stakes:"Republicans cannot flip the court this year; best GOP case narrows it to 4–3 and sets up a 2028 fight."},
+ {st:"Montana",type:"Nonpartisan, 1 seat",c:"Judge Amy Eddy vs. Judge Dan Wilson",bal:"Ideologically close",stakes:"The one 2026 race that could directly shift a court's ideological balance (Eddy endorsed by Montana Conservation Voters)."},
+ {st:"Ohio",type:"Partisan, 2 seats",c:"Includes Justice Jennifer Brunner (D), the only Democrat on the court",bal:"6–1 R",stakes:"Determines whether Democrats keep any seat on the court that rules on Ohio's maps and voting laws."},
+ {st:"Washington",type:"Nonpartisan, multiple seats",c:"Several seats on a liberal-leaning court",bal:"Liberal majority",stakes:"Court may hear challenges to the state's new 9.9% tax on incomes over $1 million."},
+ {st:"Texas",type:"Partisan, Supreme Court & Court of Criminal Appeals",c:"Multiple seats",bal:"All R",stakes:"Republicans have not lost a seat in decades; a Democratic win would signal an unusual wave."}
+];
+
+const MEASURES=[
+ {st:"Missouri",m:"Abortion amendment",d:"Would undo the 2024 abortion-rights amendment (re-establishing a ban with limited exceptions) and add transgender-care restrictions to the constitution."},
+ {st:"Virginia",m:"Reproductive freedom, marriage, voting rights",d:"Protects abortion through the second trimester; removes the same-sex marriage ban; restores voting rights on release from prison."},
+ {st:"Nevada",m:"Question 6",d:"Second required vote to enshrine abortion rights to viability (passed with 64% in 2024)."},
+ {st:"Idaho",m:"Abortion to viability",d:"Would block bans on abortion before fetal viability."},
+ {st:"Alaska",m:"Ranked-choice voting",d:"Would end ranked-choice general elections and restore party primaries."},
+ {st:"Maryland, Missouri",m:"Redistricting",d:"Proposals that would change how congressional maps are drawn — relevant to 2028 House control."},
+ {st:"North Carolina, Ohio",m:"Voter ID",d:"Would place voter-ID requirements in the state constitution."},
+ {st:"AK, AZ, AR, KS, SD, WV",m:"Citizen-only voting",d:"Would add language limiting voting to U.S. citizens (largely affirms current law)."},
+ {st:"California",m:"Billionaire tax",d:"High-profile tax on billionaires' wealth."}
+];
+const LEGS=[
+ "Minnesota House — Democrats need +1 seat to restore a trifecta.",
+ "Michigan House — Democrats need +4 seats to restore a trifecta.",
+ "Arizona Senate (+3) and House (+4) — Democratic flip targets.",
+ "Pennsylvania Senate — Democrats need +3 seats.",
+ "North Carolina — Democrats need +1 seat to break the GOP's veto-proof supermajority."
+];
+
+const TIMELINE=[
+ {t:"18:00",l:"6:00 pm",txt:"First polls close (most of Indiana and Kentucky). Watch KY-6 (House toss-up) as an early wave signal."},
+ {t:"19:00",l:"7:00 pm",txt:"Georgia (Senate: Ossoff; Governor: Bottoms vs. Jackson), Virginia (VA-1, VA-2; VA-5 flipping would signal a big night), Florida, South Carolina."},
+ {t:"19:30",l:"7:30 pm",txt:"North Carolina (Cooper — expected first Democratic flip) and Ohio (Brown vs. Husted; Acton vs. Ramaswamy)."},
+ {t:"20:00",l:"8:00 pm",txt:"Maine (Collins — slow count), most of Texas (Talarico vs. Paxton), Kansas (most), Michigan (most), New Hampshire, Pennsylvania."},
+ {t:"21:00",l:"9:00 pm",txt:"Iowa (absentees first — early D lead may shrink), Nebraska (Osborn), Minnesota, Wisconsin, Arizona, New York, west Texas."},
+ {t:"22:00",l:"10:00 pm",txt:"Nevada (Lombardo vs. Ford), Montana, Utah."},
+ {t:"23:00",l:"11:00 pm",txt:"California, Oregon, Washington — key House seats; California counts for days."},
+ {t:"25:00",l:"1:00 am",txt:"Alaska's last polls close; first results. If the Senate hinges on Alaska, control may not be known tonight."}
+];
+
+const SOURCES=[
+ ["Cook Political Report — final governor ratings (Oct 29)","https://www.cookpolitical.com/analysis/governors/2026-final-governors-ratings"],
+ ["Cook Political Report — House ratings (Oct 23)","https://www.cookpolitical.com/print/ratings/races/house"],
+ ["The Hill — Cook shifts 19 House seats toward Democrats","https://thehill.com/homenews/campaign/6167727-cook-political-report-democrats-19-house-seats/"],
+ ["Newsweek — forecasters 3 days out (Silver Bulletin, DDHQ, VoteHub)","https://newsweek.com/who-win-midterms-polls-3-days-12641376"],
+ ["MS NOW / FiftyPlusOne — final Senate forecast","https://www.ms.now/opinion/midterm-polls-house-senate-election"],
+ ["Quartz — Kalshi final snapshot","https://qz.com/prediction-markets-democrats-sweep-congress-election-day-110326"],
+ ["Variety / Washington Post — Polymarket & Kalshi odds (Nov 2)","https://variety.com/2026/digital/news/midterm-elections-odds-prediction-spending-house-and-senate-1236938339/"],
+ ["Forbes — final NYT/Siena Senate polls","https://www.forbes.com/sites/saradorn/2026/11/01/latest-polls-in-2026-midterms-democrats-lead-nearly-all-key-senate-races/"],
+ ["Election Central — RCP Senate averages","https://www.uspresidentialelectionnews.com/2026-senate-polls/"],
+ ["Poliwave — Senate model","https://www.poliwave.com/us/senate"],
+ ["NBC News — governor races to watch","https://www.nbcnews.com/politics/2026-elections/governor-results"],
+ ["Ballotpedia — state supreme court elections","https://news.ballotpedia.org/2026/10/27/twenty-three-states-are-holding-state-supreme-court-elections-in-november-six-are-battlegrounds/"],
+ ["Ballotpedia — NC Supreme Court race","https://news.ballotpedia.org/2026/10/30/north-carolina-supreme-court-race-on-nov-3-could-shape-2028-majority/"],
+ ["Almanac of American Politics — state supreme court overview","https://almanacofamericanpolitics.substack.com/p/the-2026-state-supreme-court-contests"],
+ ["ABC News / AP — ballot measures","https://abcnews.com/amp/Politics/wireStory/trumps-agenda-meets-ballot-box-states-vote-abortion-137797442"],
+ ["MultiState — state legislatures to watch","https://multistate.us/insider/2026/11/3/state-elections-to-watch-closely-tonight"],
+ ["CNN — hour-by-hour poll closings","https://www.cnn.com/2026/11/02/politics/election-night-poll-closings-vis"],
+ ["270toWin — poll closing times","https://www.270towin.com/poll-closing-times/"]
+];
+
+/* ---------- helpers ---------- */
+const $=id=>document.getElementById(id);
+const esc=s=>String(s==null?"":s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const median=a=>{const s=[...a].sort((x,y)=>x-y),m=s.length>>1;return s.length%2?s[m]:(s[m-1]+s[m])/2};
+const fmtTime=iso=>{try{return new Date(iso).toLocaleString("en-US",{timeZone:"America/New_York",month:"short",day:"numeric",hour:"numeric",minute:"2-digit"})+" ET"}catch(e){return iso}};
+const raceOf=key=>(DATA.races||{})[key]||{status:"uncalled"};
+function callTag(st){
+  if(st==="D")return '<span class="tag t-call-D">✓ D win</span>';
+  if(st==="R")return '<span class="tag t-call-R">✓ R win</span>';
+  if(st==="I")return '<span class="tag t-call-I">✓ Ind. win</span>';
+  if(st==="runoff")return '<span class="tag t-tu">Runoff</span>';
+  return '<span class="tag t-unc">Not called</span>';
+}
+function ratingTag(r,label){return '<span class="tag t-'+(r==="sd"?"sd":r)+'">'+esc(label||RLABEL[r])+'</span>';}
+function voteLine(x){if(!x||x.d==null)return"";return esc((x.reporting||0)+"% in · D "+x.d+"% / R "+x.r+"%");}
+
+/* ---------- header ---------- */
+function renderHeader(){
+  const ph=DATA.phase||"pre";
+  const pill=$("phasePill");pill.className="pill "+(ph==="live"?"live":ph==="final"?"final":"");
+  $("phaseText").textContent=ph==="live"?"LIVE":ph==="final"?"Final / near-final":"Polls open";
+  $("updated").textContent=fmtTime(DATA.updated);$("updated").setAttribute("datetime",DATA.updated);
+  const lr=DATA.liveRead||{};
+  $("liveRead").innerHTML=[["Senate",lr.senate],["House",lr.house],["Governors",lr.governors]].filter(x=>x[1]).map(x=>`<li><b>${x[0]}:</b> ${esc(x[1])}</li>`).join("");
+}
+
+/* ---------- gauges ---------- */
+function gauge(el,pct,label){
+  const cx=130,cy=120,r=100,sw=22;
+  const pt=f=>{const a=Math.PI*(1-f);return [cx+r*Math.cos(a),cy-r*Math.sin(a)]};
+  const arc=(f0,f1)=>{const [x0,y0]=pt(f0),[x1,y1]=pt(f1);return `M${x0.toFixed(1)},${y0.toFixed(1)} A${r},${r} 0 0 1 ${x1.toFixed(1)},${y1.toFixed(1)}`};
+  const f=pct/100,[nx,ny]=pt(f),[tx0,ty0]=pt(.5);
+  el.innerHTML=`<svg viewBox="0 0 260 150" role="img" aria-label="${esc(label)}: ${pct}% chance of Democratic control">
+  <path d="${arc(0,1)}" fill="none" stroke="var(--r1)" stroke-width="${sw}"/>
+  <path d="${arc(0,f)}" fill="none" stroke="var(--d3)" stroke-width="${sw}"/>
+  <line x1="${cx}" y1="${cy-r-sw/2-3}" x2="${cx}" y2="${cy-r+sw/2+3}" stroke="var(--ink)" stroke-width="2"/>
+  <circle cx="${nx.toFixed(1)}" cy="${ny.toFixed(1)}" r="8" fill="var(--card)" stroke="var(--ink)" stroke-width="3"/>
+  <text x="${cx}" y="${cy-8}" text-anchor="middle" style="font-size:42px;font-weight:800;fill:var(--ink)">${pct}%</text>
+  <text x="${cx}" y="${cy+18}" text-anchor="middle" style="font-size:12px;fill:var(--ink2)">D control</text>
+  <text x="18" y="146" style="font-size:11px;fill:var(--muted)">R</text><text x="236" y="146" style="font-size:11px;fill:var(--muted)">D</text></svg>`;
+}
+function renderKPIs(){
+  const s=FC.senate.map(x=>x.p),h=FC.house.map(x=>x.p),w=FC.sweep.map(x=>x.p);
+  gauge($("gSen"),Math.round(median(s)),"Senate");gauge($("gHouse"),Math.round(median(h)),"House");gauge($("gSweep"),Math.round(median(w)),"Both chambers");
+  $("gSenSub").textContent="Range "+Math.min(...s)+"–"+Math.max(...s)+"% · need net +4";
+  $("gHouseSub").textContent="Range "+Math.min(...h)+"–"+Math.round(Math.max(...h))+"% · need 218";
+}
+
+/* ---------- alerts feed + push-style toast ---------- */
+let seenAlerts=null,soundOn=false,actx=null,unread=0;const baseTitle=document.title;
+function chime(){if(!soundOn||!actx)return;try{const o=actx.createOscillator(),g=actx.createGain();o.frequency.value=880;g.gain.setValueAtTime(.0001,actx.currentTime);g.gain.exponentialRampToValueAtTime(.25,actx.currentTime+.02);g.gain.exponentialRampToValueAtTime(.0001,actx.currentTime+.5);o.connect(g).connect(actx.destination);o.start();o.stop(actx.currentTime+.5);}catch(e){}}
+function toast(text){const t=$("toast");t.innerHTML=`<span>🔔 ${esc(text)}</span><button type="button" id="toastX" aria-label="Dismiss">✕</button>`;t.hidden=false;$("toastX").onclick=()=>{t.hidden=true};clearTimeout(toast._h);toast._h=setTimeout(()=>{t.hidden=true},12000);}
+function renderAlerts(){
+  const al=(DATA.alerts||[]).slice().sort((a,b)=>b.t.localeCompare(a.t));
+  const ids=new Set(al.map(a=>a.t+a.text));
+  const fresh=seenAlerts?al.filter(a=>!seenAlerts.has(a.t+a.text)):[];
+  $("alerts").innerHTML=al.slice(0,30).map(a=>{const tm=new Date(a.t).toLocaleTimeString("en-US",{timeZone:"America/New_York",hour:"numeric",minute:"2-digit"});
+    return `<li class="${fresh.includes(a)?"new":""}"><span class="ft">${tm}</span><span class="fd ${a.dir||"neutral"}" aria-label="${a.dir==="D"?"toward Democrats":a.dir==="R"?"away from Democrats":"neutral"}">${a.dir==="D"?"▲":a.dir==="R"?"▼":"•"}</span><span>${esc(a.text)}</span></li>`}).join("")||'<li><span></span><span></span><span class="small">No updates yet.</span></li>';
+  if(fresh.length){toast(fresh[0].text+(fresh.length>1?` (+${fresh.length-1} more)`:""));chime();if(document.hidden){unread+=fresh.length;document.title=`(${unread}) `+baseTitle;}}
+  seenAlerts=ids;
+}
+document.addEventListener("visibilitychange",()=>{if(!document.hidden){unread=0;document.title=baseTitle}});
+$("soundBtn").addEventListener("click",()=>{soundOn=!soundOn;try{if(soundOn&&!actx){actx=new (window.AudioContext||window.webkitAudioContext)()}if(actx&&actx.state==="suspended")actx.resume();}catch(e){soundOn=false}
+  $("soundBtn").setAttribute("aria-pressed",String(soundOn));$("soundBtn").textContent="🔔 Chime on new update: "+(soundOn?"on":"off");if(soundOn)chime();});
+
+/* ---------- tallies ---------- */
+function seg(cls,n,total,label){if(!n)return"";return `<div class="${cls}" style="width:${n/total*100}%" title="${esc(label)}">${n/total>0.04&&cls!=="U"?n:""}</div>`;}
+function renderTally(){
+  const t=DATA.tally;
+  const S=t.senate;const sd=S.D||0,sr=S.R||0,si=S.I||0,sun=35-sd-sr-si;
+  $("senBar").innerHTML=seg("Dh",34,100,"34 Democratic-caucus seats not up")+seg("D",sd,100,sd+" D wins tonight")+seg("I",si,100,si+" independent")+seg("U",sun,100,sun+" not yet called")+seg("R",sr,100,sr+" R wins tonight")+seg("Rh",31,100,"31 Republican seats not up")+'<span class="mark" style="left:51%"></span>';
+  $("senNum").textContent=`D ${34+sd+si} · R ${31+sr}`;$("senBar").setAttribute("aria-label",`Senate: Democrats ${34+sd} seats so far (34 not up plus ${sd} won tonight), independents ${si}, Republicans ${31+sr}, ${sun} races uncalled. 51 needed.`);
+  const H=t.house,hd=H.D||0,hr=H.R||0,hu=435-hd-hr;
+  $("houseBar").innerHTML=seg("D",hd,435,hd+" D")+seg("U",hu,435,hu+" uncalled")+seg("R",hr,435,hr+" R")+'<span class="mark" style="left:'+(218/435*100)+'%"></span>'+(hd+hr===0?'<div class="U" style="position:absolute;inset:0">None called yet</div>':"");
+  $("houseNum").textContent=`D ${hd} · R ${hr}`;$("houseBar").setAttribute("aria-label",`House: Democrats ${hd}, Republicans ${hr}, ${hu} uncalled. 218 needed.`);
+  const G=t.governors,gd=G.D||0,gr=G.R||0,gi=G.I||0,gu=36-gd-gr-gi;
+  $("govBar").innerHTML=seg("D",gd,36,gd+" D")+seg("I",gi,36,gi+" I")+seg("U",gu,36,gu+" uncalled")+seg("R",gr,36,gr+" R")+(gd+gr+gi===0?'<div class="U" style="position:absolute;inset:0">None called yet</div>':"");
+  $("govNum").textContent=`D ${gd} · R ${gr}`;$("govBar").setAttribute("aria-label",`Governors: Democrats ${gd}, Republicans ${gr}, ${gu} uncalled of 36.`);
+}
+
+/* ---------- forecast bars ---------- */
+function barChart(el,rows){
+  const W=520,rowH=34,top=8,left=210,right=48,H=top+rows.length*rowH+24,iw=W-left-right;
+  let s=`<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="${rows.map(r=>r.src+' '+r.p+'%').join('; ')}">`;
+  [0,25,50,75,100].forEach(v=>{const x=left+iw*v/100;s+=`<line x1="${x}" x2="${x}" y1="${top}" y2="${H-20}" stroke="var(--grid)" ${v===50?'stroke="var(--ink)" stroke-width="1.5"':''}/><text x="${x}" y="${H-6}" text-anchor="middle">${v}%</text>`});
+  rows.forEach((r,i)=>{const y=top+i*rowH+6,w=iw*r.p/100;
+    s+=`<text x="${left-8}" y="${y+14}" text-anchor="end">${esc(r.src)}</text>`;
+    s+=`<rect x="${left}" y="${y}" width="${iw}" height="20" rx="4" fill="var(--r1)" opacity=".55"><title>${esc(r.src)}: R ${Math.round((100-r.p)*10)/10}%</title></rect>`;
+    s+=`<rect x="${left}" y="${y}" width="${w}" height="20" rx="4" fill="${r.kind==='market'?'var(--d2)':'var(--d3)'}"><title>${esc(r.src)} (${r.date}): ${r.p}% D</title></rect>`;
+    s+=`<text x="${left+w+6}" y="${y+14}" style="fill:var(--ink);font-weight:700">${r.p}%</text>`;
+  });
+  el.innerHTML=s+"</svg>"+`<div class="tlegend"><span><i class="sw" style="background:var(--d3)"></i>Statistical model</span><span><i class="sw" style="background:var(--d2)"></i>Prediction market</span><span><i class="sw" style="background:var(--r1)"></i>Republican share</span></div>`;
+}
+function renderForecasts(){
+  barChart($("fcSenate"),FC.senate);barChart($("fcHouse"),FC.house);
+  const rows=[...FC.senate.map(r=>["Senate",r]),...FC.house.map(r=>["House",r])];
+  $("fcTable").innerHTML="<table><thead><tr><th>Chamber</th><th>Source</th><th>Type</th><th>D chance</th><th>As of</th></tr></thead><tbody>"+rows.map(([c,r])=>`<tr><td>${c}</td><td><a href="${r.url}">${esc(r.src)}</a>${r.seats?" ("+r.seats+")":""}</td><td>${r.kind}</td><td class="num">${r.p}%</td><td>${r.date}</td></tr>`).join("")+"</tbody></table>";
+}
+
+/* ---------- map ---------- */
+let layer="SEN";
+function mapFill(st){
+  const src=layer==="SEN"?SEN:GOV;const x=src[st];if(!x)return{fill:"var(--none)",called:false};
+  const rc=raceOf(layer+"-"+st);
+  if(rc.status==="D")return{fill:"var(--d3)",called:true};
+  if(rc.status==="R")return{fill:"var(--r3)",called:true};
+  if(rc.status==="I")return{fill:"var(--ind)",called:true};
+  return{fill:RCOLOR[x.r],called:false};
+}
+function stateInfo(st){
+  const src=layer==="SEN"?SEN:GOV,x=src[st],name=STATES[st].n;
+  if(!x)return{title:name,html:"No "+(layer==="SEN"?"Senate":"governor")+" race in 2026."};
+  const rc=raceOf(layer+"-"+st);
+  const flip=(x.held==="R"&&(x.r==="sd"||x.r==="lnd"))?' <span class="flipmark">R-held → favored D (flip)</span>':"";
+  let h=`<b>${esc(name)} — ${layer==="SEN"?"Senate":"Governor"}${st==="OH"&&layer==="SEN"?" (special)":st==="FL"&&layer==="SEN"?" (special)":""}</b><br>${ratingTag(x.r,x.rating)} ${callTag(rc.status)}${flip}<br>`;
+  if(x.d||x.rc)h+=`${x.d?"D: "+esc(x.d):""}${x.d&&x.rc?" · ":""}${x.rc?"R: "+esc(x.rc):""}<br>`;
+  h+=`Seat held by: ${x.held==="D"?"Democrats":"Republicans"}${x.open?" (open)":""}<br>`;
+  if(x.poll)h+=`Polls: ${esc(x.poll)}<br>`;
+  if(x.p)h+=`Model: ${x.p}% D (FiftyPlusOne)${x.mkt?" · "+esc(x.mkt):""}<br>`;
+  const v=voteLine(rc);if(v)h+=`Count: ${v}<br>`;
+  if(rc.calledBy)h+=`Called by ${esc(rc.calledBy)}<br>`;
+  if(x.note)h+=`<span class="small">${esc(x.note)}</span>`;
+  return{title:name,html:h};
+}
+function renderMap(){
+  const tip=$("tip");let s='<svg viewBox="0 0 975 610" role="group" aria-label="U.S. map of '+(layer==="SEN"?"Senate":"governor")+' races"><defs><pattern id="tuHatch" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="8" height="8" fill="var(--tu)"/><line x1="0" y1="0" x2="0" y2="8" stroke="var(--ink2)" stroke-width="2" opacity=".45"/></pattern></defs>';
+  const small=new Set(["RI","DE","CT","NJ","MA","DC","MD","VT","NH","HI"]);
+  for(const [st,o] of Object.entries(STATES)){const f=mapFill(st);const inf=stateInfo(st);
+    const plain=inf.html.replace(/<[^>]+>/g," ").replace(/\s+/g," ").trim();
+    s+=`<path class="st${f.called?" called":""}" d="${o.d}" fill="${f.fill}" data-st="${st}" tabindex="0" role="button" aria-label="${esc(plain)}"></path>`;}
+  for(const [st,o] of Object.entries(STATES)){if(small.has(st))continue;const f=mapFill(st);
+    const dark=["var(--d3)","var(--r3)","var(--ind)"].includes(f.fill)||f.called;
+    s+=`<text class="lab${dark?" inv":""}" x="${o.c[0]}" y="${o.c[1]+4}" text-anchor="middle">${st}${f.called?"✓":""}</text>`;}
+  $("map").innerHTML=s+"</svg>";
+  const box=document.querySelector(".mapbox");
+  $("map").querySelectorAll("path.st").forEach(p=>{
+    const st=p.dataset.st;
+    const show=(ev)=>{const inf=stateInfo(st);tip.innerHTML=inf.html;tip.style.display="block";const r=box.getBoundingClientRect();
+      let x,y;if(ev&&ev.clientX!=null){x=ev.clientX-r.left+12;y=ev.clientY-r.top+12}else{const b=p.getBoundingClientRect();x=b.left-r.left+b.width/2;y=b.top-r.top+b.height/2}
+      x=Math.min(x,r.width-290);tip.style.left=Math.max(0,x)+"px";tip.style.top=y+"px";};
+    p.addEventListener("mousemove",show);p.addEventListener("mouseleave",()=>tip.style.display="none");
+    p.addEventListener("focus",()=>show());p.addEventListener("blur",()=>tip.style.display="none");
+    const pick=()=>{$("mapDetail").innerHTML=stateInfo(st).html;};
+    p.addEventListener("click",pick);p.addEventListener("keydown",e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();pick()}});
+  });
+  $("mapLegend").innerHTML=Object.keys(RLABEL).map(k=>`<span><i class="sw" style="background:${k==="tu"?"repeating-linear-gradient(45deg,var(--tu) 0 3px,var(--ink2) 3px 4px)":RCOLOR[k]}"></i>${RLABEL[k]}</span>`).join("")+`<span><i class="sw" style="background:var(--d3);outline:2px solid var(--ink)"></i>✓ Called D</span><span><i class="sw" style="background:var(--r3);outline:2px solid var(--ink)"></i>✓ Called R</span><span><i class="sw" style="background:var(--none)"></i>No race</span>`;
+  const src=layer==="SEN"?SEN:GOV;const order={tu:0,lnd:1,lnr:2,sd:3,sr:4};
+  const rows=Object.keys(src).sort((a,b)=>order[src[a].r]-order[src[b].r]||a.localeCompare(b));
+  $("mapTable").innerHTML="<table><thead><tr><th>State</th><th>Held by</th><th>Rating</th><th>Candidates</th><th>Status</th></tr></thead><tbody>"+rows.map(st=>{const x=src[st],rc=raceOf(layer+"-"+st);return `<tr><td>${esc(STATES[st].n)}</td><td>${x.held}${x.open?" (open)":""}</td><td>${ratingTag(x.r,x.rating)}</td><td>${esc([x.d?"D "+x.d:"",x.rc?"R "+x.rc:""].filter(Boolean).join(" · "))}</td><td>${callTag(rc.status)} ${voteLine(rc)}</td></tr>`}).join("")+"</tbody></table>";
+}
+document.querySelectorAll("[data-layer]").forEach(b=>b.addEventListener("click",()=>{layer=b.dataset.layer;document.querySelectorAll("[data-layer]").forEach(x=>x.setAttribute("aria-pressed",String(x===b)));$("mapDetail").innerHTML="";renderMap();}));
+
+/* ---------- senate ladder ---------- */
+function renderLadder(){
+  const flips=[
+    {st:"NC",p:90,approx:true},{st:"ME",p:77},{st:"TX",p:64},{st:"AK",p:63},{st:"OH",p:62},{st:"KS",p:57},{st:"IA",p:53},{st:"NE",p:45,approx:true}
+  ];
+  let n=47;let html=`<li><span class="n">47</span><div><b>Starting point</b> — Democrats + 2 independents, assuming they hold all 13 of their seats up this year (Michigan most at risk: El-Sayed 76% model / 78% market; GA, NH, MN favored).</div><span>${["MI","GA","NH","MN"].map(s=>s+" "+callTag(raceOf("SEN-"+s).status)).join(" ")}</span></li>`;
+  flips.forEach(f=>{n++;const x=SEN[f.st],rc=raceOf("SEN-"+f.st);
+    const lost=rc.status==="R";if(lost)n--;
+    html+=`<li><span class="n${n>=51&&!lost?" win":""}">${lost?"—":n}</span><div><b>${esc(STATES[f.st].n)}</b> — ${esc(x.d)} vs. ${esc(x.rc)} <span class="small">(${esc(x.rating)})</span>${n===51&&!lost?' <b style="color:var(--d3)">← reaches 51 (tipping point)</b>':""}<div class="pbar" role="img" aria-label="${f.approx?"about ":""}${f.p}% Democratic"><span style="width:${f.p}%"></span><i></i></div><span class="small">${f.approx?"~":""}${f.p}% D${f.approx?" (estimate from rating / polls)":" (FiftyPlusOne)"}${x.mkt?" · "+esc(x.mkt):""} · ${esc(x.poll)}${voteLine(rc)?" · "+voteLine(rc):""}</span></div><span>${callTag(rc.status)}</span></li>`;});
+  $("ladder").innerHTML=html;
+}
+
+/* ---------- momentum ---------- */
+function renderMomentum(){
+  const m=(DATA.momentum||[]).slice().sort((a,b)=>b.date.localeCompare(a.date));
+  const item=e=>`<li><span class="arrow ${e.dir}" aria-label="${e.dir==="D"?"Toward Democrats":e.dir==="R"?"Away from Democrats":"Neutral"}">${e.dir==="D"?"▲":e.dir==="R"?"▼":"•"}</span><div><span class="small">${esc(e.date)}</span><br>${esc(e.text)} <span class="small">— <a href="${esc(e.url)}">${esc(e.source)}</a></span></div></li>`;
+  $("momD").innerHTML=m.filter(e=>e.dir==="D").map(item).join("");$("momN").innerHTML=m.filter(e=>e.dir==="neutral").map(item).join("")||'<li><span></span><div class="small">None reported.</div></li>';
+  $("momR").innerHTML=m.filter(e=>e.dir==="R").map(item).join("");
+}
+
+/* ---------- tables ---------- */
+function renderStatic(){
+  $("impactTable").innerHTML="<thead><tr><th>Area</th><th>If Democrats win control</th><th>If Republicans keep control</th></tr></thead><tbody>"+IMPACT.map(r=>`<tr><td>${r[0]}</td><td>${r[1]}</td><td>${r[2]}</td></tr>`).join("")+"</tbody>";
+  const g=["GA","KS","NV","OH","IA","AK","MI","WI","AZ","PA"];
+  $("govTable").innerHTML="<thead><tr><th>State</th><th>Held</th><th>Democrat</th><th>Republican</th><th>Rating</th><th>Why it matters</th><th>Status</th></tr></thead><tbody>"+g.map(s=>{const x=GOV[s],rc=raceOf("GOV-"+s);return `<tr><td><b>${STATES[s].n}</b></td><td>${x.held}${x.open?" (open)":""}</td><td>${esc(x.d||"—")}</td><td>${esc(x.rc||"—")}</td><td>${ratingTag(x.r,x.rating)}</td><td>${esc(x.note)}</td><td>${callTag(rc.status)}<br><span class="small">${voteLine(rc)}</span></td></tr>`}).join("")+"</tbody>";
+  $("courtTable").innerHTML="<thead><tr><th>State</th><th>Type</th><th>Contest</th><th>Current balance</th><th>What's at stake</th></tr></thead><tbody>"+COURTS.map(c=>`<tr><td><b>${c.st}</b></td><td>${c.type}</td><td>${esc(c.c)}</td><td class="num">${c.bal}</td><td>${esc(c.stakes)}</td></tr>`).join("")+"</tbody>";
+  $("bmTable").innerHTML="<thead><tr><th>State</th><th>Measure</th><th>What it does</th></tr></thead><tbody>"+MEASURES.map(m=>`<tr><td><b>${m.st}</b></td><td>${esc(m.m)}</td><td>${esc(m.d)}</td></tr>`).join("")+"</tbody>";
+  $("legList").innerHTML=LEGS.map(l=>`<li>${esc(l)}</li>`).join("");
+  $("srcList").innerHTML=SOURCES.map(s=>`<li><a href="${s[1]}">${esc(s[0])}</a></li>`).join("");
+}
+function renderTimeline(){
+  let mins;try{const p=new Intl.DateTimeFormat("en-US",{timeZone:"America/New_York",hour:"2-digit",minute:"2-digit",hour12:false,day:"2-digit"}).formatToParts(new Date());const g=t=>+p.find(x=>x.type===t).value;mins=(g("day")===4?24*60:g("day")===3?0:-9999)+ (g("hour")%24)*60+g("minute");}catch(e){mins=-9999}
+  let nextFound=false;
+  $("timeline").innerHTML=TIMELINE.map(t=>{const [h,m]=t.t.split(":").map(Number),tm=h*60+m;let cls="";if(mins>=tm)cls="past";else if(!nextFound&&mins>-9999){cls="next";nextFound=true}
+    return `<li class="${cls}"><span class="time">${t.l}${cls==="next"?'<br><span class="small">next up</span>':cls==="past"?'<br><span class="small">closed</span>':""}</span><span>${esc(t.txt)}</span></li>`}).join("");
+}
+
+/* ---------- other calls (notable results text) ---------- */
+function renderAll(){renderHeader();renderAlerts();renderKPIs();renderTally();renderForecasts();renderMap();renderLadder();renderMomentum();renderStatic();renderTimeline();}
+renderAll();
+
+/* ---------- live polling of ./data.json ---------- */
+async function poll(manual){
+  try{
+    const r=await fetch("data.json?t="+Date.now(),{cache:"no-store"});
+    if(!r.ok)throw new Error(r.status);
+    const nd=await r.json();
+    if(nd&&nd.updated&&(nd.updated!==DATA.updated||manual)){
+      const changed=nd.updated!==DATA.updated;DATA=nd;if(!poll._ok){seenAlerts=null;}poll._ok=true;renderAll();
+      if(changed)$("live").textContent="Results updated "+fmtTime(nd.updated)+". "+(nd.liveRead&&nd.liveRead.senate||"");
+    }
+  }catch(e){/* offline or single-file view: keep embedded data */}
+}
+$("refreshBtn").addEventListener("click",()=>{poll(true);renderTimeline();});
+poll(false);setInterval(()=>poll(false),60000);setInterval(renderTimeline,60000);
+document.addEventListener("visibilitychange",()=>{if(!document.hidden)poll(false)});
+try{if("serviceWorker" in navigator&&location.protocol==="https:"&&!/claude\.ai|claudeusercontent/.test(location.host)){navigator.serviceWorker.register("sw.js").catch(()=>{})}}catch(e){}
+})();
+</script>
+</body>
+</html>
