@@ -1,11 +1,11 @@
 {
-  "updated": "2026-11-04T15:22:44Z",
+  "updated": "2026-11-04T16:53:51Z",
   "phase": "live",
   "phaseNote": "Both chambers projected Democratic; Mississippi and Alaska Senate, Kansas and Alaska governor, several House seats uncalled.",
   "liveRead": {
-    "senate": "DDHQ, NBC, AP, CBS project D Senate control; Letlow (R) holds Louisiana; Alaska and Mississippi (Colom +43) uncalled.",
+    "senate": "DDHQ, NBC, AP, CBS project D Senate control; Alaska (Peltola +626) and Mississippi (Colom +43) still uncalled.",
     "house": "D control projected by AP, NBC, CNN, ABC, DDHQ; FL-27 recount, NY-17, AZ-1, MI-4, ME-2, MN-1 uncalled.",
-    "governors": "AP: Ford (D) unseats Lombardo in Nevada; Democrats flipped GA, OH, IA, TX, NV; Kansas and Alaska uncalled."
+    "governors": "Democrats flipped GA, OH, IA, TX, NV; Kansas (Holscher +~5,500) and Alaska (Kreiss-Tomkins 49%) uncalled."
   },
   "tally": {
     "senate": {
@@ -58,9 +58,9 @@
     "SEN-AK": {
       "status": "uncalled",
       "reporting": 0,
-      "d": null,
-      "r": null,
-      "calledBy": "Not projected; ranked-choice tabulation Nov. 18"
+      "d": 48.0,
+      "r": 47.7,
+      "calledBy": "Not projected; Peltola (D) leads Sullivan by 626 first-choice votes, 394/401 precincts; RCV tabulation Nov. 18"
     },
     "SEN-IA": {
       "status": "D",
@@ -151,7 +151,7 @@
       "reporting": 0,
       "d": null,
       "r": null,
-      "calledBy": "Not projected; Holscher (D) leads by ~5,557 votes"
+      "calledBy": "Not projected; Holscher (D) leads by ~5,557 votes; Masterson (R) seeks \"another look\"; mail ballots accepted through Nov. 6"
     },
     "GOV-NV": {
       "status": "D",
@@ -177,9 +177,9 @@
     "GOV-AK": {
       "status": "uncalled",
       "reporting": 0,
-      "d": null,
-      "r": null,
-      "calledBy": ""
+      "d": 49.0,
+      "r": 29.1,
+      "calledBy": "Not projected; Kreiss-Tomkins (D) at 49.0% first-choice, just under majority; RCV tabulation Nov. 18"
     },
     "SEN-VA": {
       "status": "D",
@@ -1047,16 +1047,6 @@
     {
       "t": "2026-11-04T05:54:27Z",
       "dir": "D",
-      "text": "AP: Rutinel (D) unseats Rep. Gabe Evans, flipping CO-8."
-    },
-    {
-      "t": "2026-11-04T05:54:27Z",
-      "dir": "D",
-      "text": "CBS: Bohannan (D) unseats Rep. Miller-Meeks, flipping IA-1."
-    },
-    {
-      "t": "2026-11-04T05:54:27Z",
-      "dir": "D",
       "text": "CBS/DDHQ: Bennett (D) defeats Rep. Tom Kean Jr., flipping NJ-7."
     },
     {
@@ -1243,6 +1233,16 @@
       "t": "2026-11-04T15:22:44Z",
       "dir": "neutral",
       "text": "MI-4: McCann (D) declares victory over Rep. Huizenga; AP has not called it."
+    },
+    {
+      "t": "2026-11-04T16:53:51Z",
+      "dir": "neutral",
+      "text": "Alaska Senate: Peltola (D) leads Sullivan (R) by 626 votes; tabulation Nov. 18."
+    },
+    {
+      "t": "2026-11-04T16:53:51Z",
+      "dir": "neutral",
+      "text": "Kansas governor: trailing by ~5,500, Masterson (R) calls for 'another look' at results."
     }
   ]
 }
