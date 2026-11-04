@@ -1,10 +1,10 @@
 {
-  "updated": "2026-11-04T18:37:56Z",
+  "updated": "2026-11-04T19:22:11Z",
   "phase": "live",
   "phaseNote": "Both chambers projected Democratic; Mississippi and Alaska Senate, Kansas and Alaska governor, several House seats uncalled.",
   "liveRead": {
     "senate": "DDHQ, NBC, AP, CBS project D Senate control; Alaska (Peltola +626) and Mississippi (Colom +43) still uncalled.",
-    "house": "D control projected by AP, NBC, CNN, ABC, DDHQ; NBC calls WA-3 for D; NY-17, AZ-1, MI-4, ME-2, MN-1, FL-27 uncalled.",
+    "house": "D control projected by AP, NBC, CNN, ABC, DDHQ; AP calls MI-4 flip; NY-17, AZ-1, ME-2, MN-1, FL-27 uncalled.",
     "governors": "Democrats flipped GA, OH, IA, TX, NV; Kansas (Holscher +~5,500) and Alaska (Kreiss-Tomkins 49%) uncalled."
   },
   "tally": {
@@ -15,9 +15,9 @@
       "note": "Called 2026 races only. Seats not up: 34 D-caucus, 31 R. DDHQ, NBC, AP, CBS project D control."
     },
     "house": {
-      "D": 229,
+      "D": 237,
       "R": 139,
-      "note": "Called races (AP tally via Fox News, plus NBC WA-3 call). 218 needed. AP, ABC, NBC, CNN, DDHQ project D control."
+      "note": "Called races (AP tally via Fox News, 2:20 PM ET). 218 needed. AP, ABC, NBC, CNN, DDHQ project D control."
     },
     "governors": {
       "D": 22,
@@ -686,11 +686,11 @@
       "calledBy": "Not projected; Salazar (R) leads Rodriguez by ~1,300 votes, recount expected (WLRN)"
     },
     "H-MI-04": {
-      "status": "uncalled",
+      "status": "D",
       "reporting": 95,
       "d": null,
       "r": null,
-      "calledBy": "Not projected; McCann (D) declared victory with slim lead, 95% in (Michigan Public)"
+      "calledBy": "AP (1:13 PM ET Nov. 4); McCann (D) unseats Rep. Huizenga"
     },
     "H-WA-03": {
       "status": "D",
@@ -1045,11 +1045,6 @@
   ],
   "alerts": [
     {
-      "t": "2026-11-04T05:54:27Z",
-      "dir": "D",
-      "text": "Van Orden (R) concedes WI-3 to Cooke (D); no network call yet."
-    },
-    {
       "t": "2026-11-04T06:14:51Z",
       "dir": "D",
       "text": "AP: Harvie (D) unseats Rep. Fitzpatrick, flipping PA-1."
@@ -1243,6 +1238,11 @@
       "t": "2026-11-04T18:37:56Z",
       "dir": "neutral",
       "text": "NBC: Rep. Gluesenkamp Perez (D) holds Washington's 3rd District over Braun."
+    },
+    {
+      "t": "2026-11-04T19:22:11Z",
+      "dir": "D",
+      "text": "AP: McCann (D) unseats Rep. Huizenga, flipping Michigan's 4th District."
     }
   ]
 }
