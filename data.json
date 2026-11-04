@@ -1,22 +1,22 @@
 {
- "updated": "2026-11-03T22:40:00Z",
- "phase": "pre",
- "phaseNote": "Polls have not closed yet. First closings: 6 p.m. ET (parts of Indiana and Kentucky). Figures below are final pre-election forecasts; race calls will appear here as AP / major networks project them.",
+ "updated": "2026-11-04T00:38:00Z",
+ "phase": "live",
+ "phaseNote": "Results coming in. First calls: Democrats hold Virginia Senate (AP, 7:00 pm ET).",
  "liveRead": {
-  "senate": "Polls open. D favored (~76% median); need net +4. Tipping point: AK / OH.",
-  "house": "Polls open. D strongly favored (~94% median); 218 needed.",
-  "governors": "Cook: D +2 to +4. Toss-ups: GA, KS, NV."
+  "senate": "AP: Warner (D) holds Virginia. NC and OH polls closed 7:30; still need net +4 flips.",
+  "house": "Early AP calls: D hold KY-3, FL-10; R hold KY-5. Battlegrounds not yet called.",
+  "governors": "No key governor races called yet; Georgia, Ohio, Florida counting."
  },
  "tally": {
   "senate": {
-   "D": 0,
+   "D": 1,
    "R": 0,
    "I": 0,
    "note": "Called 2026 races only. Seats not up: 34 D-caucus, 31 R."
   },
   "house": {
-   "D": 0,
-   "R": 0,
+   "D": 2,
+   "R": 1,
    "note": "Called races. 218 needed."
   },
   "governors": {
@@ -180,6 +180,13 @@
    "d": null,
    "r": null,
    "calledBy": ""
+  },
+  "SEN-VA": {
+   "status": "D",
+   "reporting": 1,
+   "d": null,
+   "r": null,
+   "calledBy": "AP (7:00 pm ET)"
   }
  },
  "otherCalls": [],
@@ -274,6 +281,16 @@
    "t": "2026-11-03T22:40:00Z",
    "dir": "neutral",
    "text": "Live tracking on. First polls close 6 pm ET (IN, KY)."
+  },
+  {
+   "t": "2026-11-04T00:00:00Z",
+   "dir": "neutral",
+   "text": "AP: Warner (D) wins Virginia Senate \u2014 Democratic hold, no change in balance."
+  },
+  {
+   "t": "2026-11-04T00:10:00Z",
+   "dir": "neutral",
+   "text": "AP early House calls: D hold KY-3, FL-10; R hold KY-5."
   }
  ]
 }
