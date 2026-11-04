@@ -1,10 +1,10 @@
 {
-  "updated": "2026-11-04T20:39:08Z",
+  "updated": "2026-11-04T21:58:00Z",
   "phase": "live",
   "phaseNote": "Both chambers projected Democratic; Mississippi and Alaska Senate, Kansas and Alaska governor, several House seats uncalled.",
   "liveRead": {
     "senate": "D control projected by DDHQ, NBC, AP, CBS; Mississippi (Colom +65) and Alaska (Peltola +626) uncalled.",
-    "house": "D control projected by AP, NBC, CNN, ABC, DDHQ; AP calls MI-4, MI-7, MI-10 flips; NY-17, AZ-1, ME-2, MN-1 uncalled.",
+    "house": "D control projected by AP, NBC, CNN, ABC, DDHQ; NY-17, AZ-1, ME-2, MN-1 uncalled; FL-27 heads to recount.",
     "governors": "Democrats flipped GA, OH, IA, TX, NV; Kansas (Holscher +~5,500) and Alaska (Kreiss-Tomkins 49%) uncalled."
   },
   "tally": {
@@ -683,7 +683,7 @@
       "reporting": 99,
       "d": null,
       "r": 50.2,
-      "calledBy": "Not projected; Salazar (R) leads Rodriguez by ~1,300 votes, recount expected (WLRN)"
+      "calledBy": "Not projected; Miami-Dade elections supervisor announced recount (margin 0.46%); cure deadline 5 PM Nov. 5"
     },
     "H-MI-04": {
       "status": "D",
@@ -791,11 +791,11 @@
       "calledBy": "Not projected; Johnson (D) leads Finstad by 324 votes"
     },
     "H-CA-48": {
-      "status": "uncalled",
-      "reporting": 47,
-      "d": 60.0,
-      "r": 40.0,
-      "calledBy": "Not projected"
+      "status": "D",
+      "reporting": 64,
+      "d": 59.4,
+      "r": 40.6,
+      "calledBy": "DDHQ (Nov. 3, 11:14 PM ET)"
     },
     "H-MI-07": {
       "status": "D",
@@ -1060,16 +1060,6 @@
   "alerts": [
     {
       "t": "2026-11-04T06:14:51Z",
-      "dir": "D",
-      "text": "DDHQ/NBC: Poindexter (D) defeats Rep. Max Miller, flipping OH-7."
-    },
-    {
-      "t": "2026-11-04T06:14:51Z",
-      "dir": "D",
-      "text": "AP and CBS also project Democratic Senate control, per reports."
-    },
-    {
-      "t": "2026-11-04T06:14:51Z",
       "dir": "neutral",
       "text": "Fox: Ayotte (R) holds New Hampshire governor; Blackburn (R) wins Tennessee."
     },
@@ -1257,6 +1247,16 @@
       "t": "2026-11-04T20:39:08Z",
       "dir": "neutral",
       "text": "Mississippi Senate: Colom (D) lead over Hyde-Smith grows to 65 votes; uncalled."
+    },
+    {
+      "t": "2026-11-04T21:58:00Z",
+      "dir": "D",
+      "text": "DDHQ: von Wilpert (D) defeats Desmond, flipping California's 48th District."
+    },
+    {
+      "t": "2026-11-04T21:58:00Z",
+      "dir": "neutral",
+      "text": "FL-27: Miami-Dade officials announce recount; Salazar (R) leads Rodriguez by 0.46%."
     }
   ]
 }
