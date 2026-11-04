@@ -1,15 +1,15 @@
 {
- "updated": "2026-11-04T03:24:11Z",
+ "updated": "2026-11-04T03:54:01Z",
  "phase": "live",
- "phaseNote": "DDHQ projects Democrats win the House; Senate control still unprojected with OH, TX, ME, MI uncalled.",
+ "phaseNote": "NBC, CNN and DDHQ project a Democratic House; Senate unprojected after Texas flip.",
  "liveRead": {
-  "senate": "Democrats 12-5 in called races; flips in NC and SC. Need net +2 more: OH, TX, ME, MI, IA, AK uncalled.",
-  "house": "DDHQ projected Democratic House control at 9:09 pm ET; new DDHQ flips in VA-2 and PA-7.",
-  "governors": "Bottoms (D) flip in Georgia; Foulkes (D) holds Rhode Island. OH, AZ, MI, WI still uncalled."
+  "senate": "Democrats 13-5 in called races; flips in NC, SC, TX. Net +1 more needed; OH, ME, MI, IA, AK uncalled.",
+  "house": "DDHQ, NBC News and CNN project Democratic House control; most battleground districts still counting.",
+  "governors": "DDHQ: Acton (D) flips Ohio, Sand (D) flips Iowa; Crowley, Pingree hold WI, ME. AZ, MI, NV, KS uncalled."
  },
  "tally": {
   "senate": {
-   "D": 12,
+   "D": 13,
    "R": 5,
    "I": 0,
    "note": "Called 2026 races only. Seats not up: 34 D-caucus, 31 R."
@@ -17,10 +17,10 @@
   "house": {
    "D": 15,
    "R": 2,
-   "note": "Called races. 218 needed. DDHQ projects D control."
+   "note": "Called races. 218 needed. DDHQ, NBC, CNN project D control."
   },
   "governors": {
-   "D": 9,
+   "D": 13,
    "R": 2,
    "I": 0,
    "note": "Called races out of 36."
@@ -49,11 +49,11 @@
    "calledBy": ""
   },
   "SEN-TX": {
-   "status": "uncalled",
+   "status": "D",
    "reporting": 29,
    "d": 59.0,
    "r": 40.0,
-   "calledBy": ""
+   "calledBy": "DDHQ (10:14 pm ET)"
   },
   "SEN-AK": {
    "status": "uncalled",
@@ -133,11 +133,11 @@
    "calledBy": ""
   },
   "GOV-WI": {
-   "status": "uncalled",
+   "status": "D",
    "reporting": 0,
    "d": null,
    "r": null,
-   "calledBy": ""
+   "calledBy": "DDHQ via Bloomberg"
   },
   "GOV-PA": {
    "status": "D",
@@ -161,18 +161,18 @@
    "calledBy": ""
   },
   "GOV-IA": {
-   "status": "uncalled",
+   "status": "D",
    "reporting": 0,
    "d": null,
    "r": null,
-   "calledBy": ""
+   "calledBy": "DDHQ via The Hill"
   },
   "GOV-OH": {
-   "status": "uncalled",
-   "reporting": 0,
-   "d": null,
-   "r": null,
-   "calledBy": ""
+   "status": "D",
+   "reporting": 76,
+   "d": 50.0,
+   "r": 46.0,
+   "calledBy": "DDHQ via The Hill"
   },
   "GOV-AK": {
    "status": "uncalled",
@@ -390,6 +390,13 @@
    "d": null,
    "r": null,
    "calledBy": "ABC News"
+  },
+  "GOV-ME": {
+   "status": "D",
+   "reporting": 0,
+   "d": null,
+   "r": null,
+   "calledBy": "DDHQ via The Hill"
   }
  },
  "otherCalls": [
@@ -437,6 +444,13 @@
   }
  ],
  "momentum": [
+  {
+   "date": "2026-11-03",
+   "dir": "D",
+   "text": "Decision Desk HQ projects James Talarico (D) defeats Ken Paxton in Texas (10:14 pm ET), Democrats' third Senate flip; one more net gain needed for control.",
+   "source": "Bloomberg / DDHQ",
+   "url": "https://www.bloomberg.com/news/articles/2026-11-04/democrat-talarico-wins-texas-senate-race-ddhq-projects"
+  },
   {
    "date": "2026-11-03",
    "dir": "D",
@@ -700,6 +714,31 @@
    "t": "2026-11-04T03:24:11Z",
    "dir": "neutral",
    "text": "Democrats hold NY-7, NY-10, NY-12 and NY-13."
+  },
+  {
+   "t": "2026-11-04T03:54:01Z",
+   "dir": "D",
+   "text": "DDHQ: Talarico (D) beats Paxton in Texas Senate \u2014 third Democratic flip."
+  },
+  {
+   "t": "2026-11-04T03:54:01Z",
+   "dir": "D",
+   "text": "DDHQ: Acton (D) defeats Ramaswamy, flipping Ohio governor."
+  },
+  {
+   "t": "2026-11-04T03:54:01Z",
+   "dir": "D",
+   "text": "DDHQ: Sand (D) wins Iowa governor, a Democratic flip."
+  },
+  {
+   "t": "2026-11-04T03:54:01Z",
+   "dir": "neutral",
+   "text": "DDHQ: Crowley (D) holds Wisconsin governor; Pingree (D) holds Maine."
+  },
+  {
+   "t": "2026-11-04T03:54:01Z",
+   "dir": "D",
+   "text": "NBC News and CNN also project Democrats win the House."
   }
  ]
 }
