@@ -1,10 +1,10 @@
 {
- "updated": "2026-11-04T12:14:36Z",
+ "updated": "2026-11-04T12:57:30Z",
  "phase": "live",
  "phaseNote": "Both chambers projected Democratic; Alaska and Mississippi Senate, Kansas and Alaska governor still uncalled.",
  "liveRead": {
   "senate": "DDHQ, NBC, AP, CBS project D Senate control; Letlow (R) holds Louisiana; Alaska and Mississippi (Colom +43) uncalled.",
-  "house": "D control projected by AP, NBC, CNN, ABC, DDHQ; Kaptur (OH-9) and Moskowitz (FL-25) hold; NY-17, AZ-1 uncalled.",
+  "house": "D control projected by AP, NBC, CNN, ABC, DDHQ; DDHQ/NBC: Davis (D) holds NC-1; NY-17, AZ-1, FL-27 uncalled.",
   "governors": "AP: Ford (D) unseats Lombardo in Nevada; Democrats flipped GA, OH, IA, TX, NV; Kansas and Alaska uncalled."
  },
  "tally": {
@@ -15,9 +15,9 @@
    "note": "Called 2026 races only. Seats not up: 34 D-caucus, 31 R. DDHQ, NBC, AP, CBS project D control."
   },
   "house": {
-   "D": 224,
+   "D": 225,
    "R": 135,
-   "note": "Called races (AP tally via Fox News). 218 needed. AP, ABC, NBC, CNN, DDHQ project D control."
+   "note": "Called races (AP tally via Fox News, plus DDHQ/NBC call in NC-1). 218 needed. AP, ABC, NBC, CNN, DDHQ project D control."
   },
   "governors": {
    "D": 22,
@@ -658,11 +658,11 @@
    "calledBy": ""
   },
   "H-NC-01": {
-   "status": "uncalled",
+   "status": "D",
    "reporting": 96,
    "d": 49.6,
-   "r": null,
-   "calledBy": "Not yet projected; Buckhout (R) conceded per Carolina Journal"
+   "r": 47.1,
+   "calledBy": "DDHQ, NBC"
   },
   "H-OH-09": {
    "status": "D",
@@ -996,11 +996,6 @@
  ],
  "alerts": [
   {
-   "t": "2026-11-04T04:38:18Z",
-   "dir": "D",
-   "text": "AP and ABC News also project Democrats win the House."
-  },
-  {
    "t": "2026-11-04T05:08:12Z",
    "dir": "D",
    "text": "DDHQ/The Hill: Leonard (D) ousts Rep. Carey, flipping OH-15."
@@ -1194,6 +1189,11 @@
    "t": "2026-11-04T12:14:36Z",
    "dir": "neutral",
    "text": "DDHQ: Rep. Jared Moskowitz (D) holds Florida's 25th District."
+  },
+  {
+   "t": "2026-11-04T12:57:30Z",
+   "dir": "neutral",
+   "text": "DDHQ, NBC: Rep. Don Davis (D) holds North Carolina's 1st District."
   }
  ]
 }
