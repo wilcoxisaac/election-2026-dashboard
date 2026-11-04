@@ -1,10 +1,10 @@
 {
- "updated": "2026-11-04T12:57:30Z",
+ "updated": "2026-11-04T13:53:44Z",
  "phase": "live",
  "phaseNote": "Both chambers projected Democratic; Alaska and Mississippi Senate, Kansas and Alaska governor still uncalled.",
  "liveRead": {
   "senate": "DDHQ, NBC, AP, CBS project D Senate control; Letlow (R) holds Louisiana; Alaska and Mississippi (Colom +43) uncalled.",
-  "house": "D control projected by AP, NBC, CNN, ABC, DDHQ; DDHQ/NBC: Davis (D) holds NC-1; NY-17, AZ-1, FL-27 uncalled.",
+  "house": "D control projected by AP, NBC, CNN, ABC, DDHQ; AP: Gonzalez (D) holds TX-34; NY-17, AZ-1, FL-27 uncalled.",
   "governors": "AP: Ford (D) unseats Lombardo in Nevada; Democrats flipped GA, OH, IA, TX, NV; Kansas and Alaska uncalled."
  },
  "tally": {
@@ -651,11 +651,11 @@
    "calledBy": ""
   },
   "H-TX-34": {
-   "status": "uncalled",
+   "status": "D",
    "reporting": 99,
    "d": 55.6,
    "r": null,
-   "calledBy": ""
+   "calledBy": "AP via Spectrum News"
   },
   "H-NC-01": {
    "status": "D",
@@ -998,11 +998,6 @@
   {
    "t": "2026-11-04T05:08:12Z",
    "dir": "D",
-   "text": "DDHQ/The Hill: Leonard (D) ousts Rep. Carey, flipping OH-15."
-  },
-  {
-   "t": "2026-11-04T05:08:12Z",
-   "dir": "D",
    "text": "DDHQ/The Hill: Mendoza (D) flips AZ-6 from Rep. Ciscomani."
   },
   {
@@ -1194,6 +1189,11 @@
    "t": "2026-11-04T12:57:30Z",
    "dir": "neutral",
    "text": "DDHQ, NBC: Rep. Don Davis (D) holds North Carolina's 1st District."
+  },
+  {
+   "t": "2026-11-04T13:53:44Z",
+   "dir": "neutral",
+   "text": "AP: Rep. Vicente Gonzalez (D) holds Texas's 34th District over Eric Flores."
   }
  ]
 }
