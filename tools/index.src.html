@@ -270,6 +270,24 @@ nav.toc a.watchlink .ldot{background:#fff}
 .tile em{font-style:normal;font-size:.72rem;color:var(--muted)}
 .tile.cD{background:var(--d3);border-color:var(--d3)}.tile.cR{background:var(--r3);border-color:var(--r3)}
 .tile.cD *,.tile.cR *{color:#fff!important}
+
+.pollsum{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin:8px 0}
+.pollsum>div{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:10px 12px;display:flex;flex-direction:column}
+.pollsum b{font-size:1.5rem;line-height:1.1;font-variant-numeric:tabular-nums}.pollsum span{font-size:.8rem;color:var(--ink2)}
+.pollsum .next b{font-size:1.15rem;color:var(--d3)}
+@media (max-width:560px){.pollsum{grid-template-columns:repeat(3,minmax(0,1fr))}.pollsum .next{grid-column:1/-1}}
+.pbar2{display:flex;height:12px;border-radius:6px;background:var(--none);overflow:hidden;margin:6px 0}
+.pbar2 .c{background:var(--ink2)}.pbar2 .p{background:repeating-linear-gradient(45deg,var(--ink2) 0 3px,var(--none) 3px 6px)}
+.pgroups{display:grid;gap:10px;margin-top:10px;align-items:start;grid-template-columns:repeat(auto-fill,minmax(260px,1fr))}
+.pgroup{border:1px solid var(--line);border-radius:12px;padding:10px 12px;background:var(--surface)}
+.pgroup:not(.done){border-color:var(--d2);box-shadow:inset 3px 0 0 var(--d3)}
+.ghead{margin-bottom:8px}.gst{font-weight:800;font-size:.92rem}.gst.done{color:var(--muted)}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.pchip{display:inline-flex;flex-direction:column;min-width:52px;padding:5px 8px;border-radius:8px;border:1px solid var(--line);background:var(--card);line-height:1.2}
+.pchip b{font-size:.92rem}.pchip i{font-style:normal;font-size:.68rem;font-weight:700;color:var(--d3);letter-spacing:.06em}
+.pchip em{font-style:normal;font-size:.66rem;color:var(--ink2);max-width:150px}
+.pchip.closed{background:var(--ink2);border-color:var(--ink2)}.pchip.closed b,.pchip.closed em{color:var(--card)}.pchip.closed i{color:var(--d1)}
+.pchip.partial{background:repeating-linear-gradient(45deg,color-mix(in srgb,var(--ink2) 22%,var(--card)) 0 6px,var(--card) 6px 12px)}
 </style>
 </head>
 <body>
@@ -289,7 +307,7 @@ nav.toc a.watchlink .ldot{background:#fff}
 <p id="live" class="sr" aria-live="polite"></p>
 <p class="kicker">Chance of Democratic control · median of models &amp; markets</p>
 <nav class="toc" aria-label="Sections">
-  <a href="#watch" class="watchlink"><span class="ldot" aria-hidden="true"></span>Watch live</a><a href="#map-sec">Map</a><a href="#senate">Senate path</a><a href="#house">House</a><a href="#latest">Updates</a><a href="#momentum">Momentum</a><a href="#gov">Governors</a><a href="#courts">Courts</a><a href="#measures">Measures</a><a href="#tonight">Tonight</a>
+  <a href="#watch" class="watchlink"><span class="ldot" aria-hidden="true"></span>Watch live</a><a href="#polls">Polls</a><a href="#map-sec">Map</a><a href="#senate">Senate path</a><a href="#house">House</a><a href="#latest">Updates</a><a href="#momentum">Momentum</a><a href="#gov">Governors</a><a href="#courts">Courts</a><a href="#measures">Measures</a><a href="#tonight">Tonight</a>
 </nav>
 
 <main id="main">
@@ -309,6 +327,15 @@ nav.toc a.watchlink .ldot{background:#fff}
   </div>
 </section>
 
+<section id="polls" class="card" aria-labelledby="polls-h">
+  <div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;align-items:baseline">
+    <h2 id="polls-h">Poll closings</h2><span class="small" id="pollsNow"></span>
+  </div>
+  <div class="pollsum" id="pollSum"></div>
+  <div class="pbar2" id="pollBar" role="img"></div>
+  <div class="tlegend"><span><i class="sw" style="background:var(--ink2)"></i>Closed</span><span><i class="sw" style="background:repeating-linear-gradient(45deg,var(--ink2) 0 3px,var(--none) 3px 6px)"></i>Partly closed</span><span><i class="sw" style="background:var(--none)"></i>Still open</span><span>S = Senate · G = Governor · H = competitive House seats</span></div>
+  <div id="pollGroups" class="pgroups"></div>
+</section>
 <div class="duo duo-a">
 <section id="map-sec" aria-labelledby="map-h" class="card">
   <div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;align-items:center">
@@ -578,6 +605,8 @@ const HOUSE=[
 const HCOOK={sd:186,ld:18,lnd:18,tu:18,lnr:18,lr:17,sr:160,asof:"Nov 2"};
 const HBY={};HOUSE.forEach(h=>(HBY[h.st]=HBY[h.st]||[]).push(h));
 const hKey=h=>"H-"+h.id;
+/* Poll closing times, ET, Nov 3 2026 (EST). [first, last] as hours after midnight Nov 3 (24 = midnight). Sources: 270toWin, CNN. */
+const POLLS={AL:[20,20],AK:[24,25],AZ:[21,21],AR:[20.5,20.5],CA:[23,23],CO:[21,21],CT:[20,20],DE:[20,20],DC:[20,20],FL:[19,20],GA:[19,19],HI:[24,24],ID:[22,23],IL:[20,20],IN:[18,19],IA:[21,21],KS:[20,21],KY:[18,19],LA:[21,21],ME:[20,20],MD:[20,20],MA:[20,20],MI:[20,21],MN:[21,21],MS:[20,20],MO:[20,20],MT:[22,22],NE:[21,21],NV:[22,22],NH:[19,20],NJ:[20,20],NM:[21,21],NY:[21,21],NC:[19.5,19.5],ND:[20,21],OH:[19.5,19.5],OK:[20,20],OR:[22,23],PA:[20,20],RI:[20,20],SC:[19,19],SD:[20,21],TN:[20,20],TX:[20,21],UT:[22,22],VT:[19,19],VA:[19,19],WA:[23,23],WV:[19.5,19.5],WI:[21,21],WY:[21,21]};
 /* ---------- helpers ---------- */
 const $=id=>document.getElementById(id);
 const esc=s=>String(s==null?"":s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
@@ -749,6 +778,29 @@ function renderHouse(){
   $("flipTiles").innerHTML=HOUSE.filter(h=>h.r==="lnd"&&h.held==="R").map(tile).join("");
   $("riskTiles").innerHTML=HOUSE.filter(h=>h.held==="D"&&(h.r==="tu"||h.r==="lnr")).map(tile).join("");
 }
+/* ---------- poll closings ---------- */
+function etMinutes(){return (Date.now()-Date.UTC(2026,10,3,5,0))/60000;}
+function fmtHr(h){const m=Math.round((h%1)*60),H=Math.floor(h)%24,ap=H>=12?"pm":"am",h12=H%12||12;return `${h12}:${String(m).padStart(2,"0")} ${ap}`+(h>=24?" (Wed)":"");}
+function fmtLeft(min){if(min<60)return Math.max(1,Math.round(min))+" min";const h=Math.floor(min/60),m=Math.round(min%60);return h+" hr"+(m?" "+m+" min":"");}
+function renderPolls(){
+  const now=etMinutes(),states=Object.keys(POLLS);
+  const st=k=>{const [f,l]=POLLS[k];return now>=l*60?"closed":now>=f*60?"partial":"open"};
+  const c={closed:0,partial:0,open:0};states.forEach(k=>c[st(k)]++);
+  const nextT=[...new Set(states.flatMap(k=>POLLS[k]))].sort((a,b)=>a-b).find(t=>t*60>now);
+  $("pollsNow").textContent="Now "+new Date().toLocaleTimeString("en-US",{timeZone:"America/New_York",hour:"numeric",minute:"2-digit"})+" ET";
+  $("pollSum").innerHTML=`<div><b>${c.closed}</b><span>closed</span></div><div><b>${c.partial}</b><span>partly closed</span></div><div><b>${c.open}</b><span>still open</span></div><div class="next">${nextT!=null?`<b>${fmtHr(nextT)}</b><span>next closing · in ${fmtLeft(nextT*60-now)}</span>`:`<b>All closed</b><span>last polls closed 1:00 am ET</span>`}</div>`;
+  $("pollBar").innerHTML=`<div class="c" style="width:${c.closed/51*100}%"></div><div class="p" style="width:${c.partial/51*100}%"></div>`;
+  $("pollBar").setAttribute("aria-label",`${c.closed} of 51 closed, ${c.partial} partly closed, ${c.open} open`);
+  const groups={};states.forEach(k=>{const l=POLLS[k][1];(groups[l]=groups[l]||[]).push(k)});
+  $("pollGroups").innerHTML=Object.keys(groups).map(Number).sort((a,b)=>a-b).map(t=>{
+    const closed=now>=t*60;const list=groups[t].sort();
+    const head=closed?`<span class="gst done">✓ Closed at ${fmtHr(t)}</span>`:`<span class="gst">Closes ${fmtHr(t)} · in ${fmtLeft(t*60-now)}</span>`;
+    return `<div class="pgroup ${closed?"done":""}"><div class="ghead">${head}</div><div class="chips">${list.map(k=>{
+      const s=st(k),[f,l]=POLLS[k];const tags=(SEN[k]?"S":"")+(GOV[k]?"G":"")+(HBY[k]?"H":"");
+      const note=f!==l?(s==="partial"?`part closed ${fmtHr(f)}; rest ${fmtHr(l)}`:s==="open"?`first ${fmtHr(f)}`:`first ${fmtHr(f)}`):"";
+      const label=`${STATES[k].n}: ${s==="closed"?"polls closed at "+fmtHr(l):s==="partial"?"partly closed since "+fmtHr(f)+", rest close "+fmtHr(l):"polls close "+(f!==l?fmtHr(f)+" to "+fmtHr(l):fmtHr(l))}${tags?", races: "+tags:""}`;
+      return `<span class="pchip ${s}" title="${esc(label)}" aria-label="${esc(label)}"><b>${k}</b>${tags?`<i>${tags.split("").join(" ")}</i>`:""}${note?`<em>${note}</em>`:""}</span>`}).join("")}</div></div>`}).join("");
+}
 /* ---------- senate ladder ---------- */
 function renderLadder(){
   const flips=[
@@ -796,7 +848,7 @@ function renderTimeline(){
 
 /* ---------- other calls (notable results text) ---------- */
 function labelTables(){document.querySelectorAll("table").forEach(t=>{t.classList.add("rt");const hs=[...t.querySelectorAll("thead th")].map(th=>th.textContent);t.querySelectorAll("tbody tr").forEach(tr=>[...tr.children].forEach((td,i)=>{if(hs[i])td.setAttribute("data-label",hs[i]);if(!td.firstElementChild||!td.firstElementChild.classList.contains("tdv")||td.children.length>1){td.innerHTML=`<span class="tdv">${td.innerHTML}</span>`}}))})}
-function renderAll(){renderHeader();renderAlerts();renderKPIs();renderTally();renderForecasts();renderMap();renderLadder();renderHouse();renderMomentum();renderStatic();renderTimeline();labelTables();}
+function renderAll(){renderHeader();renderAlerts();renderKPIs();renderTally();renderForecasts();renderMap();renderLadder();renderHouse();renderPolls();renderMomentum();renderStatic();renderTimeline();labelTables();}
 renderAll();
 
 /* ---------- live polling of ./data.json ---------- */
@@ -826,7 +878,7 @@ $("refreshBtn").addEventListener("click",async()=>{
     $("live").textContent=res==="new"?"New results loaded.":res==="same"?"Checked: no new results since "+fmtTime(DATA.updated)+".":"Could not reach the server.";
     setTimeout(()=>{lab.textContent="Refresh";btn.disabled=false;},2500);},wait);
 });
-poll(false);setInterval(()=>poll(false),60000);setInterval(renderTimeline,60000);
+poll(false);setInterval(()=>poll(false),60000);setInterval(renderTimeline,60000);setInterval(renderPolls,30000);
 document.addEventListener("visibilitychange",()=>{if(!document.hidden)poll(false)});
 try{if("serviceWorker" in navigator&&location.protocol==="https:"&&!/claude\.ai|claudeusercontent/.test(location.host)){navigator.serviceWorker.register("sw.js").catch(()=>{})}}catch(e){}
 })();
