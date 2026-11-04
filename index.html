@@ -68,6 +68,8 @@ section{margin:18px 0}
 .tbar{display:flex;height:34px;border-radius:8px;overflow:hidden;background:var(--none);position:relative;gap:2px}
 .tbar div{height:100%;display:flex;align-items:center;justify-content:center;font-size:.8rem;font-weight:700;color:#fff;white-space:nowrap;overflow:hidden}
 .tbar .D{background:var(--d3)}.tbar .Dh{background:var(--d2)}.tbar .R{background:var(--r3)}.tbar .Rh{background:var(--r2)}.tbar .I{background:var(--ind)}.tbar .U{background:transparent;color:var(--ink2)}
+.tbar .Df{background:var(--d3);background-image:repeating-linear-gradient(45deg,rgba(255,255,255,.3) 0 4px,transparent 4px 8px)}.tbar .Rf{background:var(--r3);background-image:repeating-linear-gradient(45deg,rgba(255,255,255,.3) 0 4px,transparent 4px 8px)}
+.tnote{font-size:.78rem;color:var(--ink2);margin:-2px 0 6px}
 .tbar .mark{position:absolute;top:-4px;bottom:-4px;width:3px;background:var(--ink);transform:translateX(-1px)}
 .tlegend{display:flex;flex-wrap:wrap;gap:12px;font-size:.8rem;color:var(--ink2);margin-top:6px}
 .sw{display:inline-block;width:12px;height:12px;border-radius:3px;vertical-align:-2px;margin-right:4px;border:1px solid rgba(0,0,0,.15)}
@@ -321,9 +323,10 @@ nav.toc a.watchlink .ldot{background:#fff}
   <div class="card" style="margin-top:14px">
     <h3>Seats won tonight <span class="small">· black line = control</span></h3>
     <div class="trow"><span class="tlab">Senate</span><div class="tbar" id="senBar" role="img"></div><span class="tnum" id="senNum"></span></div>
-    <div class="trow"><span class="tlab">House</span><div class="tbar" id="houseBar" role="img"></div><span class="tnum" id="houseNum"></span></div>
+    <div class="trow"><span class="tlab">House <span class="small" style="font-weight:400">· 50 key seats</span></span><div class="tbar" id="houseBar" role="img"></div><span class="tnum" id="houseNum"></span></div>
+    <div class="tnote" id="houseNote"></div>
     <div class="trow"><span class="tlab">Governors</span><div class="tbar" id="govBar" role="img"></div><span class="tnum" id="govNum"></span></div>
-    <div class="tlegend"><span><i class="sw" style="background:var(--d2)"></i>D not up</span><span><i class="sw" style="background:var(--d3)"></i>D won</span><span><i class="sw" style="background:var(--ind)"></i>Ind. won</span><span><i class="sw" style="background:var(--r3)"></i>R won</span><span><i class="sw" style="background:var(--r2)"></i>R not up</span></div>
+    <div class="tlegend"><span><i class="sw" style="background:var(--d2)"></i>D not up</span><span><i class="sw" style="background:var(--d3)"></i>D won</span><span><i class="sw" style="background:var(--ind)"></i>Ind. won</span><span><i class="sw" style="background:var(--r3)"></i>R won</span><span><i class="sw" style="background:var(--r2)"></i>R not up</span><span><i class="sw" style="background:var(--d3);background-image:repeating-linear-gradient(45deg,rgba(255,255,255,.4) 0 3px,transparent 3px 6px)"></i>Flip (House)</span></div>
   </div>
 </section>
 
@@ -679,9 +682,14 @@ function renderTally(){
   const S=t.senate;const sd=S.D||0,sr=S.R||0,si=S.I||0,sun=35-sd-sr-si;
   $("senBar").innerHTML=seg("Dh",34,100,"34 Democratic-caucus seats not up")+seg("D",sd,100,sd+" D wins tonight")+seg("I",si,100,si+" independent")+seg("U",sun,100,sun+" not yet called")+seg("R",sr,100,sr+" R wins tonight")+seg("Rh",31,100,"31 Republican seats not up")+'<span class="mark" style="left:51%"></span>';
   $("senNum").textContent=`D ${34+sd+si} · R ${31+sr}`;$("senBar").setAttribute("aria-label",`Senate: Democrats ${34+sd} seats so far (34 not up plus ${sd} won tonight), independents ${si}, Republicans ${31+sr}, ${sun} races uncalled. 51 needed.`);
-  const H=t.house,hd=H.D||0,hr=H.R||0,hu=435-hd-hr;
-  $("houseBar").innerHTML=seg("D",hd,435,hd+" D")+seg("U",hu,435,hu+" uncalled")+seg("R",hr,435,hr+" R")+'<span class="mark" style="left:'+(218/435*100)+'%"></span>'+(hd+hr===0?'<div class="U" style="position:absolute;inset:0">None called yet</div>':"");
-  $("houseNum").textContent=`D ${hd} · R ${hr}`;$("houseBar").setAttribute("aria-label",`House: Democrats ${hd}, Republicans ${hr}, ${hu} uncalled. 218 needed.`);
+  const H=t.house||{},R=DATA.races||{},hc={dh:0,df:0,rh:0,rf:0,u:0};
+  HOUSE.forEach(h=>{const st=(R["H-"+h.id]||{}).status;if(st==="D")hc[h.held==="D"?"dh":"df"]++;else if(st==="R")hc[h.held==="R"?"rh":"rf"]++;else hc.u++;});
+  const hn=HOUSE.length,hdw=hc.dh+hc.df,hrw=hc.rh+hc.rf;
+  $("houseBar").innerHTML=seg("D",hc.dh,hn,hc.dh+" D holds")+seg("Df",hc.df,hn,hc.df+" D flips (R-held)")+seg("U",hc.u,hn,hc.u+" not yet called")+seg("Rf",hc.rf,hn,hc.rf+" R flips (D-held)")+seg("R",hc.rh,hn,hc.rh+" R holds")+(hdw+hrw===0?'<div class="U" style="position:absolute;inset:0">None called yet</div>':"");
+  $("houseNum").textContent=`D ${hdw} · R ${hrw} · ${hc.u} left`;
+  $("houseBar").setAttribute("aria-label",`House battlegrounds: Democrats won ${hdw} of ${hn} (${hc.df} flips), Republicans won ${hrw} (${hc.rf} flips), ${hc.u} uncalled.`);
+  const hnote=(H.note||"").replace(/^Called races\.\s*/i,"").replace(/218 needed\.\s*/i,"").trim();
+  $("houseNote").textContent=`Net flips so far: D ${hc.df>=hc.rf?"+":""}${hc.df-hc.rf}.`+(hnote?" "+hnote:"");
   const G=t.governors,gd=G.D||0,gr=G.R||0,gi=G.I||0,gu=36-gd-gr-gi;
   $("govBar").innerHTML=seg("D",gd,36,gd+" D")+seg("I",gi,36,gi+" I")+seg("U",gu,36,gu+" uncalled")+seg("R",gr,36,gr+" R")+(gd+gr+gi===0?'<div class="U" style="position:absolute;inset:0">None called yet</div>':"");
   $("govNum").textContent=`D ${gd} · R ${gr}`;$("govBar").setAttribute("aria-label",`Governors: Democrats ${gd}, Republicans ${gr}, ${gu} uncalled of 36.`);

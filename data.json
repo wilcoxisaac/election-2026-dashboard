@@ -1,23 +1,23 @@
 {
- "updated": "2026-11-04T04:25:16Z",
+ "updated": "2026-11-04T04:38:18Z",
  "phase": "live",
- "phaseNote": "AP: Brown flips Ohio, Democrats' fifth Senate pickup; one more seat needed for control.",
+ "phaseNote": "DDHQ and NBC project Democratic control of both chambers; Iowa flip gives Democrats 51 Senate seats.",
  "liveRead": {
-  "senate": "Democrats at 50 seats after Ohio flip (AP); one more needed for control. MI, MN, ME, IA, AK, NE uncalled.",
-  "house": "DDHQ, NBC News and CNN project Democratic House control; Democrats add VA-1 and PA-10 flips.",
-  "governors": "CNN/ABC: Hinojosa (D) unseats Abbott in Texas; Becerra (D) wins California. NV, KS, AK uncalled."
+  "senate": "DDHQ, NBC project D Senate control; Turek (D) flips Iowa for 51 seats. MI, MN, ME, AK, NE uncalled.",
+  "house": "AP, ABC, NBC, CNN and DDHQ all project Democratic House control; battleground counts continue.",
+  "governors": "Democrats flipped GA, OH, IA, TX governorships per networks; NV, KS, AK still uncalled."
  },
  "tally": {
   "senate": {
-   "D": 16,
+   "D": 17,
    "R": 9,
    "I": 0,
-   "note": "Called 2026 races only. Seats not up: 34 D-caucus, 31 R."
+   "note": "Called 2026 races only. Seats not up: 34 D-caucus, 31 R. DDHQ, NBC project D control."
   },
   "house": {
    "D": 20,
    "R": 2,
-   "note": "Called races. 218 needed. DDHQ, NBC, CNN project D control."
+   "note": "Called races. 218 needed. AP, ABC, NBC, CNN, DDHQ project D control."
   },
   "governors": {
    "D": 18,
@@ -63,11 +63,11 @@
    "calledBy": ""
   },
   "SEN-IA": {
-   "status": "uncalled",
-   "reporting": 0,
-   "d": null,
-   "r": null,
-   "calledBy": ""
+   "status": "D",
+   "reporting": 78,
+   "d": 51.0,
+   "r": 45.0,
+   "calledBy": "DDHQ (~11:18 pm ET), NBC News"
   },
   "SEN-KS": {
    "status": "D",
@@ -535,6 +535,20 @@
   {
    "date": "2026-11-03",
    "dir": "D",
+   "text": "Decision Desk HQ and NBC News project Democrats win Senate control after Josh Turek (D) flips Iowa, giving Democrats full control of Congress.",
+   "source": "Bloomberg / DDHQ",
+   "url": "https://www.bloomberg.com/news/articles/2026-11-04/democrats-win-control-of-the-senate-ddhq-projects"
+  },
+  {
+   "date": "2026-11-03",
+   "dir": "D",
+   "text": "DDHQ projects Josh Turek (D) defeats Ashley Hinson in Iowa (~11:18 pm ET), 51%\u201345% with 78% counted.",
+   "source": "The Hill / DDHQ",
+   "url": "https://thehill.com/homenews/campaign/6178947-democrat-josh-turek-flips-senate-seat-in-iowa-2026-midterms/amp/"
+  },
+  {
+   "date": "2026-11-03",
+   "dir": "D",
    "text": "AP projects Sherrod Brown (D) defeats Sen. Jon Husted in Ohio (11:10 pm ET), Democrats' fifth Senate flip, bringing them to 50 seats.",
    "source": "GV Wire / AP",
    "url": "https://gvwire.com/2026/11/03/sherrod-brown-wins-ohio-senate-special-election-ap-says/"
@@ -674,21 +688,6 @@
   }
  ],
  "alerts": [
-  {
-   "t": "2026-11-04T01:23:51Z",
-   "dir": "neutral",
-   "text": "AP: Democrats hold Senate seats in DE, IL, MA, NJ and RI."
-  },
-  {
-   "t": "2026-11-04T01:23:51Z",
-   "dir": "neutral",
-   "text": "DDHQ: Moody (R) wins Florida Senate special \u2014 Republican hold."
-  },
-  {
-   "t": "2026-11-04T01:23:51Z",
-   "dir": "neutral",
-   "text": "Moskowitz (D) holds FL-23 (DDHQ via The Hill)."
-  },
   {
    "t": "2026-11-04T01:53:18Z",
    "dir": "D",
@@ -873,6 +872,21 @@
    "t": "2026-11-04T04:25:16Z",
    "dir": "neutral",
    "text": "NBC/AP: Republicans hold Senate seats in AR, AL and TN."
+  },
+  {
+   "t": "2026-11-04T04:38:18Z",
+   "dir": "D",
+   "text": "DDHQ/NBC: Turek (D) flips Iowa Senate \u2014 sixth Democratic pickup."
+  },
+  {
+   "t": "2026-11-04T04:38:18Z",
+   "dir": "D",
+   "text": "DDHQ and NBC project Democrats win control of the Senate."
+  },
+  {
+   "t": "2026-11-04T04:38:18Z",
+   "dir": "D",
+   "text": "AP and ABC News also project Democrats win the House."
   }
  ]
 }
