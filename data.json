@@ -1,10 +1,10 @@
 {
-  "updated": "2026-11-04T15:10:14Z",
+  "updated": "2026-11-04T15:22:44Z",
   "phase": "live",
   "phaseNote": "Both chambers projected Democratic; Mississippi and Alaska Senate, Kansas and Alaska governor, several House seats uncalled.",
   "liveRead": {
     "senate": "DDHQ, NBC, AP, CBS project D Senate control; Letlow (R) holds Louisiana; Alaska and Mississippi (Colom +43) uncalled.",
-    "house": "D control projected by AP, NBC, CNN, ABC, DDHQ; AP tally 228 D, 139 R; FL-27 recount, NY-17, AZ-1, ME-2 uncalled.",
+    "house": "D control projected by AP, NBC, CNN, ABC, DDHQ; FL-27 recount, NY-17, AZ-1, MI-4, ME-2, MN-1 uncalled.",
     "governors": "AP: Ford (D) unseats Lombardo in Nevada; Democrats flipped GA, OH, IA, TX, NV; Kansas and Alaska uncalled."
   },
   "tally": {
@@ -689,8 +689,8 @@
       "status": "uncalled",
       "reporting": 95,
       "d": null,
-      "r": 50.3,
-      "calledBy": ""
+      "r": null,
+      "calledBy": "Not projected; McCann (D) declared victory with slim lead, 95% in (Michigan Public)"
     },
     "H-WA-03": {
       "status": "uncalled",
@@ -1046,11 +1046,6 @@
   "alerts": [
     {
       "t": "2026-11-04T05:54:27Z",
-      "dir": "neutral",
-      "text": "AP: Klobuchar (D) wins Minnesota governor, holding the seat."
-    },
-    {
-      "t": "2026-11-04T05:54:27Z",
       "dir": "D",
       "text": "AP: Rutinel (D) unseats Rep. Gabe Evans, flipping CO-8."
     },
@@ -1243,6 +1238,11 @@
       "t": "2026-11-04T14:57:54Z",
       "dir": "neutral",
       "text": "FL-27 headed to recount; Salazar (R) leads Rodriguez (D) by ~1,300 votes."
+    },
+    {
+      "t": "2026-11-04T15:22:44Z",
+      "dir": "neutral",
+      "text": "MI-4: McCann (D) declares victory over Rep. Huizenga; AP has not called it."
     }
   ]
 }
