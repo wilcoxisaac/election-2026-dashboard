@@ -1,21 +1,21 @@
 {
- "updated": "2026-11-04T00:52:42Z",
+ "updated": "2026-11-04T01:23:51Z",
  "phase": "live",
- "phaseNote": "Results coming in. D holds VA and GA Senate; R holds West Virginia Senate.",
+ "phaseNote": "Results coming in. Democrats win FL-22; Senate holds so far for both parties, no flips.",
  "liveRead": {
-  "senate": "D holds VA (AP), GA (NBC/CBS/DDHQ); R holds WV (DDHQ). NC, OH counting; need net +4 flips.",
-  "house": "Early AP calls: D hold KY-3, FL-10; R hold KY-5. Battlegrounds not yet called.",
-  "governors": "No key governor races called yet; Georgia, Ohio, Florida counting."
+  "senate": "D holds 8 called seats incl. NH, GA; R holds WV, FL. No flips yet; need net +4. OH, NC, ME counting.",
+  "house": "DDHQ: Democrat wins FL-22, a newly GOP-drawn seat; D holds FL-23. No control projection; 218 needed.",
+  "governors": "No governor races called yet; Florida, Georgia, Ohio, New Hampshire still counting."
  },
  "tally": {
   "senate": {
-   "D": 2,
-   "R": 1,
+   "D": 8,
+   "R": 2,
    "I": 0,
    "note": "Called 2026 races only. Seats not up: 34 D-caucus, 31 R."
   },
   "house": {
-   "D": 2,
+   "D": 4,
    "R": 1,
    "note": "Called races. 218 needed."
   },
@@ -43,9 +43,9 @@
   },
   "SEN-OH": {
    "status": "uncalled",
-   "reporting": 0,
-   "d": null,
-   "r": null,
+   "reporting": 26,
+   "d": 61.0,
+   "r": 35.0,
    "calledBy": ""
   },
   "SEN-TX": {
@@ -92,17 +92,17 @@
   },
   "SEN-GA": {
    "status": "D",
-   "reporting": 24,
-   "d": 66.4,
-   "r": 33.6,
+   "reporting": 47,
+   "d": 64.4,
+   "r": 35.6,
    "calledBy": "NBC News, CBS News, DDHQ"
   },
   "SEN-NH": {
-   "status": "uncalled",
-   "reporting": 0,
-   "d": null,
-   "r": null,
-   "calledBy": ""
+   "status": "D",
+   "reporting": 8,
+   "d": 61.8,
+   "r": 36.4,
+   "calledBy": "DDHQ (8:00 pm ET); Sununu conceded"
   },
   "SEN-MN": {
    "status": "uncalled",
@@ -194,9 +194,65 @@
    "d": null,
    "r": null,
    "calledBy": "DDHQ via The Hill (~7:30 pm ET)"
+  },
+  "SEN-DE": {
+   "status": "D",
+   "reporting": 0,
+   "d": null,
+   "r": null,
+   "calledBy": "AP"
+  },
+  "SEN-IL": {
+   "status": "D",
+   "reporting": 0,
+   "d": null,
+   "r": null,
+   "calledBy": "AP"
+  },
+  "SEN-MA": {
+   "status": "D",
+   "reporting": 0,
+   "d": null,
+   "r": null,
+   "calledBy": "AP"
+  },
+  "SEN-NJ": {
+   "status": "D",
+   "reporting": 0,
+   "d": null,
+   "r": null,
+   "calledBy": "AP"
+  },
+  "SEN-RI": {
+   "status": "D",
+   "reporting": 0,
+   "d": null,
+   "r": null,
+   "calledBy": "AP"
+  },
+  "SEN-FL": {
+   "status": "R",
+   "reporting": 0,
+   "d": null,
+   "r": null,
+   "calledBy": "DDHQ via Bloomberg"
+  },
+  "H-FL-22": {
+   "status": "D",
+   "reporting": 95,
+   "d": 52.2,
+   "r": 47.8,
+   "calledBy": "DDHQ (8:05 pm ET)"
   }
  },
- "otherCalls": [],
+ "otherCalls": [
+  {
+   "race": "FL-23",
+   "winner": "D",
+   "text": "Moskowitz (D) holds FL-23",
+   "calledBy": "DDHQ via The Hill"
+  }
+ ],
  "momentum": [
   {
    "date": "2026-11-03",
@@ -308,6 +364,31 @@
    "t": "2026-11-04T00:52:42Z",
    "dir": "neutral",
    "text": "Capito (R) wins West Virginia Senate (DDHQ/The Hill) \u2014 Republican hold."
+  },
+  {
+   "t": "2026-11-04T01:23:51Z",
+   "dir": "D",
+   "text": "DDHQ: Dandiya (D) wins FL-22, a newly GOP-drawn House seat."
+  },
+  {
+   "t": "2026-11-04T01:23:51Z",
+   "dir": "neutral",
+   "text": "DDHQ: Pappas (D) beats Sununu in New Hampshire Senate \u2014 Democratic hold."
+  },
+  {
+   "t": "2026-11-04T01:23:51Z",
+   "dir": "neutral",
+   "text": "AP: Democrats hold Senate seats in DE, IL, MA, NJ and RI."
+  },
+  {
+   "t": "2026-11-04T01:23:51Z",
+   "dir": "neutral",
+   "text": "DDHQ: Moody (R) wins Florida Senate special \u2014 Republican hold."
+  },
+  {
+   "t": "2026-11-04T01:23:51Z",
+   "dir": "neutral",
+   "text": "Moskowitz (D) holds FL-23 (DDHQ via The Hill)."
   }
  ]
 }
