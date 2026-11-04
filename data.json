@@ -1,16 +1,16 @@
 {
- "updated": "2026-11-04T00:38:00Z",
+ "updated": "2026-11-04T00:52:42Z",
  "phase": "live",
- "phaseNote": "Results coming in. First calls: Democrats hold Virginia Senate (AP, 7:00 pm ET).",
+ "phaseNote": "Results coming in. D holds VA and GA Senate; R holds West Virginia Senate.",
  "liveRead": {
-  "senate": "AP: Warner (D) holds Virginia. NC and OH polls closed 7:30; still need net +4 flips.",
+  "senate": "D holds VA (AP), GA (NBC/CBS/DDHQ); R holds WV (DDHQ). NC, OH counting; need net +4 flips.",
   "house": "Early AP calls: D hold KY-3, FL-10; R hold KY-5. Battlegrounds not yet called.",
   "governors": "No key governor races called yet; Georgia, Ohio, Florida counting."
  },
  "tally": {
   "senate": {
-   "D": 1,
-   "R": 0,
+   "D": 2,
+   "R": 1,
    "I": 0,
    "note": "Called 2026 races only. Seats not up: 34 D-caucus, 31 R."
   },
@@ -91,11 +91,11 @@
    "calledBy": ""
   },
   "SEN-GA": {
-   "status": "uncalled",
-   "reporting": 0,
-   "d": null,
-   "r": null,
-   "calledBy": ""
+   "status": "D",
+   "reporting": 24,
+   "d": 66.4,
+   "r": 33.6,
+   "calledBy": "NBC News, CBS News, DDHQ"
   },
   "SEN-NH": {
    "status": "uncalled",
@@ -187,6 +187,13 @@
    "d": null,
    "r": null,
    "calledBy": "AP (7:00 pm ET)"
+  },
+  "SEN-WV": {
+   "status": "R",
+   "reporting": 0,
+   "d": null,
+   "r": null,
+   "calledBy": "DDHQ via The Hill (~7:30 pm ET)"
   }
  },
  "otherCalls": [],
@@ -291,6 +298,16 @@
    "t": "2026-11-04T00:10:00Z",
    "dir": "neutral",
    "text": "AP early House calls: D hold KY-3, FL-10; R hold KY-5."
+  },
+  {
+   "t": "2026-11-04T00:37:00Z",
+   "dir": "neutral",
+   "text": "NBC/DDHQ: Ossoff (D) wins Georgia Senate \u2014 Democratic hold."
+  },
+  {
+   "t": "2026-11-04T00:52:42Z",
+   "dir": "neutral",
+   "text": "Capito (R) wins West Virginia Senate (DDHQ/The Hill) \u2014 Republican hold."
   }
  ]
 }
