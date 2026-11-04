@@ -1,38 +1,38 @@
 {
- "updated": "2026-11-04T01:23:51Z",
+ "updated": "2026-11-04T01:53:18Z",
  "phase": "live",
- "phaseNote": "Results coming in. Democrats win FL-22; Senate holds so far for both parties, no flips.",
+ "phaseNote": "Results coming in. Cooper flips North Carolina Senate seat, the first Senate pickup of the night.",
  "liveRead": {
-  "senate": "D holds 8 called seats incl. NH, GA; R holds WV, FL. No flips yet; need net +4. OH, NC, ME counting.",
-  "house": "DDHQ: Democrat wins FL-22, a newly GOP-drawn seat; D holds FL-23. No control projection; 218 needed.",
-  "governors": "No governor races called yet; Florida, Georgia, Ohio, New Hampshire still counting."
+  "senate": "AP: Cooper (D) flips NC, first pickup; Democrats need net +3 more. OH, TX, ME, MI still counting.",
+  "house": "Few House races called; Democrats won FL-22. No network has projected House control; 218 needed.",
+  "governors": "D holds PA, IL, MD, MA; Donalds (R) keeps Florida GOP (DDHQ). GA, OH, AZ, MI uncalled."
  },
  "tally": {
   "senate": {
-   "D": 8,
-   "R": 2,
+   "D": 9,
+   "R": 4,
    "I": 0,
    "note": "Called 2026 races only. Seats not up: 34 D-caucus, 31 R."
   },
   "house": {
    "D": 4,
-   "R": 1,
+   "R": 2,
    "note": "Called races. 218 needed."
   },
   "governors": {
-   "D": 0,
-   "R": 0,
+   "D": 4,
+   "R": 1,
    "I": 0,
    "note": "Called races out of 36."
   }
  },
  "races": {
   "SEN-NC": {
-   "status": "uncalled",
+   "status": "D",
    "reporting": 0,
-   "d": null,
-   "r": null,
-   "calledBy": ""
+   "d": 66.8,
+   "r": 31.6,
+   "calledBy": "AP (8:23 pm ET), CBS News, ABC News"
   },
   "SEN-ME": {
    "status": "uncalled",
@@ -43,16 +43,16 @@
   },
   "SEN-OH": {
    "status": "uncalled",
-   "reporting": 26,
-   "d": 61.0,
-   "r": 35.0,
+   "reporting": 33,
+   "d": 58.0,
+   "r": 39.0,
    "calledBy": ""
   },
   "SEN-TX": {
    "status": "uncalled",
-   "reporting": 0,
-   "d": null,
-   "r": null,
+   "reporting": 23,
+   "d": 60.0,
+   "r": 38.0,
    "calledBy": ""
   },
   "SEN-AK": {
@@ -140,11 +140,11 @@
    "calledBy": ""
   },
   "GOV-PA": {
-   "status": "uncalled",
+   "status": "D",
    "reporting": 0,
    "d": null,
    "r": null,
-   "calledBy": ""
+   "calledBy": "ABC News (~8:01 pm ET)"
   },
   "GOV-KS": {
    "status": "uncalled",
@@ -243,6 +243,48 @@
    "d": 52.2,
    "r": 47.8,
    "calledBy": "DDHQ (8:05 pm ET)"
+  },
+  "SEN-KY": {
+   "status": "R",
+   "reporting": 0,
+   "d": null,
+   "r": null,
+   "calledBy": "DDHQ via The Hill"
+  },
+  "SEN-OK": {
+   "status": "R",
+   "reporting": 0,
+   "d": null,
+   "r": null,
+   "calledBy": "DDHQ via The Hill"
+  },
+  "GOV-IL": {
+   "status": "D",
+   "reporting": 0,
+   "d": null,
+   "r": null,
+   "calledBy": "ABC News (~8:01 pm ET)"
+  },
+  "GOV-MD": {
+   "status": "D",
+   "reporting": 0,
+   "d": null,
+   "r": null,
+   "calledBy": "ABC News (~8:01 pm ET)"
+  },
+  "GOV-MA": {
+   "status": "D",
+   "reporting": 0,
+   "d": null,
+   "r": null,
+   "calledBy": "AP, ABC News (8:00 pm ET)"
+  },
+  "GOV-FL": {
+   "status": "R",
+   "reporting": 0,
+   "d": null,
+   "r": null,
+   "calledBy": "DDHQ (8:28 pm ET)"
   }
  },
  "otherCalls": [
@@ -251,9 +293,22 @@
    "winner": "D",
    "text": "Moskowitz (D) holds FL-23",
    "calledBy": "DDHQ via The Hill"
+  },
+  {
+   "race": "AL-01",
+   "winner": "R",
+   "text": "Carl (R) wins AL-01",
+   "calledBy": "DDHQ via The Hill"
   }
  ],
  "momentum": [
+  {
+   "date": "2026-11-03",
+   "dir": "D",
+   "text": "AP projects Roy Cooper (D) defeats Michael Whatley in North Carolina, flipping a GOP-held Senate seat \u2014 Democrats' first pickup of the night.",
+   "source": "WBTV / AP",
+   "url": "https://www.wbtv.com/2026/11/04/roy-cooper-wins-2026-us-senate-race-north-carolina-ap-projects/"
+  },
   {
    "date": "2026-11-03",
    "dir": "neutral",
@@ -389,6 +444,26 @@
    "t": "2026-11-04T01:23:51Z",
    "dir": "neutral",
    "text": "Moskowitz (D) holds FL-23 (DDHQ via The Hill)."
+  },
+  {
+   "t": "2026-11-04T01:53:18Z",
+   "dir": "D",
+   "text": "AP: Cooper (D) wins North Carolina Senate \u2014 first Democratic Senate flip."
+  },
+  {
+   "t": "2026-11-04T01:53:18Z",
+   "dir": "neutral",
+   "text": "ABC: Democrats hold governorships in PA (Shapiro), IL, MD and MA."
+  },
+  {
+   "t": "2026-11-04T01:53:18Z",
+   "dir": "neutral",
+   "text": "DDHQ: Donalds (R) wins Florida governor \u2014 Republican hold."
+  },
+  {
+   "t": "2026-11-04T01:53:18Z",
+   "dir": "neutral",
+   "text": "DDHQ/The Hill: Republicans hold Kentucky (Barr) and Oklahoma (Hern) Senate seats."
   }
  ]
 }
