@@ -1,10 +1,10 @@
 {
-  "updated": "2026-11-04T19:22:11Z",
+  "updated": "2026-11-04T20:39:08Z",
   "phase": "live",
   "phaseNote": "Both chambers projected Democratic; Mississippi and Alaska Senate, Kansas and Alaska governor, several House seats uncalled.",
   "liveRead": {
-    "senate": "DDHQ, NBC, AP, CBS project D Senate control; Alaska (Peltola +626) and Mississippi (Colom +43) still uncalled.",
-    "house": "D control projected by AP, NBC, CNN, ABC, DDHQ; AP calls MI-4 flip; NY-17, AZ-1, ME-2, MN-1, FL-27 uncalled.",
+    "senate": "D control projected by DDHQ, NBC, AP, CBS; Mississippi (Colom +65) and Alaska (Peltola +626) uncalled.",
+    "house": "D control projected by AP, NBC, CNN, ABC, DDHQ; AP calls MI-4, MI-7, MI-10 flips; NY-17, AZ-1, ME-2, MN-1 uncalled.",
     "governors": "Democrats flipped GA, OH, IA, TX, NV; Kansas (Holscher +~5,500) and Alaska (Kreiss-Tomkins 49%) uncalled."
   },
   "tally": {
@@ -736,10 +736,10 @@
     },
     "SEN-MS": {
       "status": "uncalled",
-      "reporting": 96,
+      "reporting": 97,
       "d": 48.9,
       "r": 48.9,
-      "calledBy": null
+      "calledBy": "Not projected; Colom (D) leads Hyde-Smith by 65 votes as of 1 PM ET Nov. 4 (TPM); ~44,000 ballots left per NBC"
     },
     "SEN-LA": {
       "status": "R",
@@ -796,6 +796,20 @@
       "d": 60.0,
       "r": 40.0,
       "calledBy": "Not projected"
+    },
+    "H-MI-07": {
+      "status": "D",
+      "reporting": 99,
+      "d": 50.9,
+      "r": 47.8,
+      "calledBy": "AP (~2:15 PM ET Nov. 4); Lawrence (D) unseats Rep. Barrett"
+    },
+    "H-MI-10": {
+      "status": "D",
+      "reporting": 0,
+      "d": null,
+      "r": null,
+      "calledBy": "AP (Nov. 4, via Washington Post); Hines (D) flips open seat"
     }
   },
   "otherCalls": [
@@ -1047,21 +1061,6 @@
     {
       "t": "2026-11-04T06:14:51Z",
       "dir": "D",
-      "text": "AP: Harvie (D) unseats Rep. Fitzpatrick, flipping PA-1."
-    },
-    {
-      "t": "2026-11-04T06:14:51Z",
-      "dir": "D",
-      "text": "AP: Cooke (D) unseats Rep. Van Orden, flipping WI-3."
-    },
-    {
-      "t": "2026-11-04T06:14:51Z",
-      "dir": "D",
-      "text": "CBS: Pulido (D) defeats Rep. De La Cruz, flipping TX-15."
-    },
-    {
-      "t": "2026-11-04T06:14:51Z",
-      "dir": "D",
       "text": "DDHQ/NBC: Poindexter (D) defeats Rep. Max Miller, flipping OH-7."
     },
     {
@@ -1243,6 +1242,21 @@
       "t": "2026-11-04T19:22:11Z",
       "dir": "D",
       "text": "AP: McCann (D) unseats Rep. Huizenga, flipping Michigan's 4th District."
+    },
+    {
+      "t": "2026-11-04T20:39:08Z",
+      "dir": "D",
+      "text": "AP: Lawrence (D) unseats Rep. Barrett, flipping Michigan's 7th District."
+    },
+    {
+      "t": "2026-11-04T20:39:08Z",
+      "dir": "D",
+      "text": "AP: Hines (D) defeats Bouchard, flipping Michigan's 10th District."
+    },
+    {
+      "t": "2026-11-04T20:39:08Z",
+      "dir": "neutral",
+      "text": "Mississippi Senate: Colom (D) lead over Hyde-Smith grows to 65 votes; uncalled."
     }
   ]
 }
