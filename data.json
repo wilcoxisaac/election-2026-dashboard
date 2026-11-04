@@ -1,15 +1,15 @@
 {
- "updated": "2026-11-04T02:23:46Z",
+ "updated": "2026-11-04T02:54:19Z",
  "phase": "live",
- "phaseNote": "Results coming in. Bottoms flips Georgia governor; Democrats flip KY-6, NC-11 and PA-8.",
+ "phaseNote": "DDHQ projects Democrats win the House; Senate control still unprojected.",
  "liveRead": {
-  "senate": "Cooper's NC flip is the only Senate pickup so far; Democrats need net +3 more. OH, TX, ME, MI uncalled.",
-  "house": "DDHQ: Democrats flip KY-6, NC-11, PA-8 and FL-22. No network has projected House control; 218 needed.",
-  "governors": "NBC: Bottoms (D) flips Georgia; AP: Hochul holds NY. OH, AZ, MI, WI governor races still uncalled."
+  "senate": "Democrats 10-5 in called races; NC is the only flip. Need net +3 more: OH, TX, ME, MI, IA, AK uncalled.",
+  "house": "DDHQ projected Democratic House control at 9:09 pm ET; flips include KY-6, NC-11, PA-8, FL-22.",
+  "governors": "Bottoms (D) flip in Georgia; Weiser (D), Lamont (D), Barlow (R) win. OH, AZ, MI, WI uncalled."
  },
  "tally": {
   "senate": {
-   "D": 9,
+   "D": 10,
    "R": 5,
    "I": 0,
    "note": "Called 2026 races only. Seats not up: 34 D-caucus, 31 R."
@@ -17,11 +17,11 @@
   "house": {
    "D": 9,
    "R": 2,
-   "note": "Called races. 218 needed."
+   "note": "Called races. 218 needed. DDHQ projects D control."
   },
   "governors": {
-   "D": 6,
-   "R": 1,
+   "D": 8,
+   "R": 2,
    "I": 0,
    "note": "Called races out of 36."
   }
@@ -327,6 +327,34 @@
    "d": null,
    "r": null,
    "calledBy": "NBC News"
+  },
+  "GOV-CO": {
+   "status": "D",
+   "reporting": 0,
+   "d": null,
+   "r": null,
+   "calledBy": "AP (~9:20 pm ET)"
+  },
+  "GOV-WY": {
+   "status": "R",
+   "reporting": 0,
+   "d": null,
+   "r": null,
+   "calledBy": "AP"
+  },
+  "GOV-CT": {
+   "status": "D",
+   "reporting": 0,
+   "d": null,
+   "r": null,
+   "calledBy": "AP"
+  },
+  "SEN-CO": {
+   "status": "D",
+   "reporting": 0,
+   "d": null,
+   "r": null,
+   "calledBy": "CBS News"
   }
  },
  "otherCalls": [
@@ -350,6 +378,13 @@
   }
  ],
  "momentum": [
+  {
+   "date": "2026-11-03",
+   "dir": "D",
+   "text": "Decision Desk HQ projects Democrats win control of the U.S. House (9:09 pm ET); Senate control not yet projected.",
+   "source": "Bloomberg / DDHQ",
+   "url": "https://www.bloomberg.com/news/articles/2026-11-04/democrats-win-control-of-the-house-ddhq-projects"
+  },
   {
    "date": "2026-11-03",
    "dir": "D",
@@ -549,6 +584,26 @@
    "t": "2026-11-04T02:23:46Z",
    "dir": "neutral",
    "text": "NBC: Castor (D) holds FL-14; ABC: Sykes (D) holds OH-13."
+  },
+  {
+   "t": "2026-11-04T02:38:38Z",
+   "dir": "D",
+   "text": "DDHQ projects Democrats win control of the House."
+  },
+  {
+   "t": "2026-11-04T02:54:19Z",
+   "dir": "neutral",
+   "text": "AP: Weiser (D) wins Colorado governor; Lamont (D) holds Connecticut."
+  },
+  {
+   "t": "2026-11-04T02:54:19Z",
+   "dir": "neutral",
+   "text": "CBS: Hickenlooper (D) holds Colorado Senate seat."
+  },
+  {
+   "t": "2026-11-04T02:54:19Z",
+   "dir": "neutral",
+   "text": "AP: Barlow (R) wins Wyoming governor \u2014 Republican hold."
   }
  ]
 }
