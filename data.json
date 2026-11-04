@@ -1,16 +1,16 @@
 {
-  "updated": "2026-11-04T07:54:02Z",
+  "updated": "2026-11-04T08:25:16Z",
   "phase": "live",
   "phaseNote": "Both chambers projected Democratic; Alaska Senate, NV/KS/AK governors and some House seats still counting.",
   "liveRead": {
-    "senate": "DDHQ, NBC, AP, CBS project D Senate control; Alaska uncalled, ranked-choice tabulation Nov. 18.",
+    "senate": "DDHQ, NBC, AP, CBS project D Senate control; AP called Montana for Alme (R); Alaska, Mississippi, Louisiana uncalled.",
     "house": "D control projected by AP, NBC, CNN, ABC, DDHQ; AP tally 224 D, 135 R; D flipped IA-2, IA-3, WI-1, TX-23.",
     "governors": "Democrats flipped GA, OH, IA, TX; NV, KS, AK uncalled, Holscher (D) narrowly leads in Kansas."
   },
   "tally": {
     "senate": {
       "D": 20,
-      "R": 10,
+      "R": 11,
       "I": 0,
       "note": "Called 2026 races only. Seats not up: 34 D-caucus, 31 R. DDHQ, NBC, AP, CBS project D control."
     },
@@ -726,6 +726,13 @@
       "d": null,
       "r": null,
       "calledBy": "NBC News; AP"
+    },
+    "SEN-MT": {
+      "status": "R",
+      "reporting": 78,
+      "d": 11.9,
+      "r": 47.7,
+      "calledBy": "AP"
     }
   },
   "otherCalls": [
@@ -977,11 +984,6 @@
     {
       "t": "2026-11-04T04:25:16Z",
       "dir": "D",
-      "text": "AP: Stelson (D) ousts Perry in PA-10, a Republican-held seat."
-    },
-    {
-      "t": "2026-11-04T04:25:16Z",
-      "dir": "D",
       "text": "DDHQ/NBC: Taylor (D) defeats Wittman, flipping VA-1."
     },
     {
@@ -1173,6 +1175,11 @@
       "t": "2026-11-04T07:54:02Z",
       "dir": "neutral",
       "text": "AP: Sanders (R) holds Arkansas governor; Green (D) holds Hawaii."
+    },
+    {
+      "t": "2026-11-04T08:25:16Z",
+      "dir": "neutral",
+      "text": "AP: Kurt Alme (R) wins Montana Senate over independent Seth Bodnar."
     }
   ]
 }
