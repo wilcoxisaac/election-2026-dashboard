@@ -1,10 +1,10 @@
 {
- "updated": "2026-11-04T10:08:07Z",
+ "updated": "2026-11-04T12:14:36Z",
  "phase": "live",
- "phaseNote": "Both chambers projected for Democrats; Mississippi and Alaska Senate, Kansas and Alaska governor still uncalled.",
+ "phaseNote": "Both chambers projected Democratic; Alaska and Mississippi Senate, Kansas and Alaska governor still uncalled.",
  "liveRead": {
   "senate": "DDHQ, NBC, AP, CBS project D Senate control; Letlow (R) holds Louisiana; Alaska and Mississippi (Colom +43) uncalled.",
-  "house": "D control projected by AP, NBC, CNN, ABC, DDHQ; AP tally 224 D, 135 R; D flipped IA-2, IA-3, WI-1, TX-23.",
+  "house": "D control projected by AP, NBC, CNN, ABC, DDHQ; Kaptur (OH-9) and Moskowitz (FL-25) hold; NY-17, AZ-1 uncalled.",
   "governors": "AP: Ford (D) unseats Lombardo in Nevada; Democrats flipped GA, OH, IA, TX, NV; Kansas and Alaska uncalled."
  },
  "tally": {
@@ -637,11 +637,11 @@
    "calledBy": "AP (via Fox News results)"
   },
   "H-FL-25": {
-   "status": "uncalled",
+   "status": "D",
    "reporting": 99,
    "d": 51.3,
    "r": null,
-   "calledBy": ""
+   "calledBy": "DDHQ (via Bloomberg)"
   },
   "H-AZ-01": {
    "status": "uncalled",
@@ -662,14 +662,14 @@
    "reporting": 96,
    "d": 49.6,
    "r": null,
-   "calledBy": ""
+   "calledBy": "Not yet projected; Buckhout (R) conceded per Carolina Journal"
   },
   "H-OH-09": {
-   "status": "uncalled",
+   "status": "D",
    "reporting": 66,
    "d": 50.2,
    "r": null,
-   "calledBy": ""
+   "calledBy": "AP"
   },
   "H-FL-13": {
    "status": "uncalled",
@@ -998,16 +998,6 @@
   {
    "t": "2026-11-04T04:38:18Z",
    "dir": "D",
-   "text": "DDHQ/NBC: Turek (D) flips Iowa Senate — sixth Democratic pickup."
-  },
-  {
-   "t": "2026-11-04T04:38:18Z",
-   "dir": "D",
-   "text": "DDHQ and NBC project Democrats win control of the Senate."
-  },
-  {
-   "t": "2026-11-04T04:38:18Z",
-   "dir": "D",
    "text": "AP and ABC News also project Democrats win the House."
   },
   {
@@ -1194,6 +1184,16 @@
    "t": "2026-11-04T10:08:07Z",
    "dir": "D",
    "text": "AP: Aaron Ford (D) defeats Gov. Lombardo (R), flipping Nevada governorship."
+  },
+  {
+   "t": "2026-11-04T12:14:36Z",
+   "dir": "neutral",
+   "text": "AP: Rep. Marcy Kaptur (D) holds Ohio's 9th District over Derek Merrin."
+  },
+  {
+   "t": "2026-11-04T12:14:36Z",
+   "dir": "neutral",
+   "text": "DDHQ: Rep. Jared Moskowitz (D) holds Florida's 25th District."
   }
  ]
 }
