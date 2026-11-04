@@ -1,26 +1,26 @@
 {
- "updated": "2026-11-04T01:53:18Z",
+ "updated": "2026-11-04T02:23:46Z",
  "phase": "live",
- "phaseNote": "Results coming in. Cooper flips North Carolina Senate seat, the first Senate pickup of the night.",
+ "phaseNote": "Results coming in. Bottoms flips Georgia governor; Democrats flip KY-6, NC-11 and PA-8.",
  "liveRead": {
-  "senate": "AP: Cooper (D) flips NC, first pickup; Democrats need net +3 more. OH, TX, ME, MI still counting.",
-  "house": "Few House races called; Democrats won FL-22. No network has projected House control; 218 needed.",
-  "governors": "D holds PA, IL, MD, MA; Donalds (R) keeps Florida GOP (DDHQ). GA, OH, AZ, MI uncalled."
+  "senate": "Cooper's NC flip is the only Senate pickup so far; Democrats need net +3 more. OH, TX, ME, MI uncalled.",
+  "house": "DDHQ: Democrats flip KY-6, NC-11, PA-8 and FL-22. No network has projected House control; 218 needed.",
+  "governors": "NBC: Bottoms (D) flips Georgia; AP: Hochul holds NY. OH, AZ, MI, WI governor races still uncalled."
  },
  "tally": {
   "senate": {
    "D": 9,
-   "R": 4,
+   "R": 5,
    "I": 0,
    "note": "Called 2026 races only. Seats not up: 34 D-caucus, 31 R."
   },
   "house": {
-   "D": 4,
+   "D": 9,
    "R": 2,
    "note": "Called races. 218 needed."
   },
   "governors": {
-   "D": 4,
+   "D": 6,
    "R": 1,
    "I": 0,
    "note": "Called races out of 36."
@@ -112,11 +112,11 @@
    "calledBy": ""
   },
   "GOV-GA": {
-   "status": "uncalled",
+   "status": "D",
    "reporting": 0,
    "d": null,
    "r": null,
-   "calledBy": ""
+   "calledBy": "NBC News"
   },
   "GOV-AZ": {
    "status": "uncalled",
@@ -285,6 +285,48 @@
    "d": null,
    "r": null,
    "calledBy": "DDHQ (8:28 pm ET)"
+  },
+  "SEN-WY": {
+   "status": "R",
+   "reporting": 0,
+   "d": null,
+   "r": null,
+   "calledBy": "AP"
+  },
+  "GOV-NY": {
+   "status": "D",
+   "reporting": 0,
+   "d": null,
+   "r": null,
+   "calledBy": "AP"
+  },
+  "H-KY-06": {
+   "status": "D",
+   "reporting": 92,
+   "d": 55.0,
+   "r": 41.2,
+   "calledBy": "DDHQ (9:07 pm ET)"
+  },
+  "H-NC-11": {
+   "status": "D",
+   "reporting": 0,
+   "d": null,
+   "r": null,
+   "calledBy": "DDHQ (8:28 pm ET)"
+  },
+  "H-PA-08": {
+   "status": "D",
+   "reporting": 0,
+   "d": null,
+   "r": null,
+   "calledBy": "DDHQ"
+  },
+  "H-FL-14": {
+   "status": "D",
+   "reporting": 0,
+   "d": null,
+   "r": null,
+   "calledBy": "NBC News"
   }
  },
  "otherCalls": [
@@ -299,9 +341,22 @@
    "winner": "R",
    "text": "Carl (R) wins AL-01",
    "calledBy": "DDHQ via The Hill"
+  },
+  {
+   "race": "OH-13",
+   "winner": "D",
+   "text": "Sykes (D) holds OH-13",
+   "calledBy": "ABC News"
   }
  ],
  "momentum": [
+  {
+   "date": "2026-11-03",
+   "dir": "D",
+   "text": "NBC projects Keisha Lance Bottoms wins Georgia governor, flipping the office to Democrats.",
+   "source": "NBC News",
+   "url": "https://www.nbcnews.com/politics/2026-election/keisha-lance-bottoms-georgia-governor-win-democrats-flip-jackson-rcna603348"
+  },
   {
    "date": "2026-11-03",
    "dir": "D",
@@ -464,6 +519,36 @@
    "t": "2026-11-04T01:53:18Z",
    "dir": "neutral",
    "text": "DDHQ/The Hill: Republicans hold Kentucky (Barr) and Oklahoma (Hern) Senate seats."
+  },
+  {
+   "t": "2026-11-04T02:23:46Z",
+   "dir": "D",
+   "text": "NBC: Bottoms (D) wins Georgia governor, a Democratic flip."
+  },
+  {
+   "t": "2026-11-04T02:23:46Z",
+   "dir": "D",
+   "text": "DDHQ: Dembo (D) wins KY-6, a Republican-held open seat."
+  },
+  {
+   "t": "2026-11-04T02:23:46Z",
+   "dir": "D",
+   "text": "DDHQ: Ager (D) wins NC-11, flipping a Republican-held seat."
+  },
+  {
+   "t": "2026-11-04T02:23:46Z",
+   "dir": "D",
+   "text": "DDHQ: Cognetti (D) wins PA-8, flipping a Republican-held seat."
+  },
+  {
+   "t": "2026-11-04T02:23:46Z",
+   "dir": "neutral",
+   "text": "AP: Hochul (D) holds New York governor; Hageman (R) wins Wyoming Senate."
+  },
+  {
+   "t": "2026-11-04T02:23:46Z",
+   "dir": "neutral",
+   "text": "NBC: Castor (D) holds FL-14; ABC: Sykes (D) holds OH-13."
   }
  ]
 }
