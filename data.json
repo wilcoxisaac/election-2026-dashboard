@@ -1,9 +1,9 @@
 {
-  "updated": "2026-11-04T08:25:16Z",
+  "updated": "2026-11-04T08:52:20Z",
   "phase": "live",
-  "phaseNote": "Both chambers projected Democratic; Alaska Senate, NV/KS/AK governors and some House seats still counting.",
+  "phaseNote": "Both chambers projected Democratic; AK and MS Senate, NV/KS/AK governors and some House seats still counting.",
   "liveRead": {
-    "senate": "DDHQ, NBC, AP, CBS project D Senate control; AP called Montana for Alme (R); Alaska, Mississippi, Louisiana uncalled.",
+    "senate": "DDHQ, NBC, AP, CBS project D Senate control; Alaska, Louisiana uncalled, Mississippi within 28 votes.",
     "house": "D control projected by AP, NBC, CNN, ABC, DDHQ; AP tally 224 D, 135 R; D flipped IA-2, IA-3, WI-1, TX-23.",
     "governors": "Democrats flipped GA, OH, IA, TX; NV, KS, AK uncalled, Holscher (D) narrowly leads in Kansas."
   },
@@ -733,6 +733,13 @@
       "d": 11.9,
       "r": 47.7,
       "calledBy": "AP"
+    },
+    "SEN-MS": {
+      "status": "uncalled",
+      "reporting": 97,
+      "d": null,
+      "r": null,
+      "calledBy": null
     }
   },
   "otherCalls": [
@@ -835,7 +842,7 @@
     {
       "date": "2026-11-03",
       "dir": "D",
-      "text": "DDHQ projects Josh Turek (D) defeats Ashley Hinson in Iowa (~11:18 pm ET), 51%\u201345% with 78% counted.",
+      "text": "DDHQ projects Josh Turek (D) defeats Ashley Hinson in Iowa (~11:18 pm ET), 51%–45% with 78% counted.",
       "source": "The Hill / DDHQ",
       "url": "https://thehill.com/homenews/campaign/6178947-democrat-josh-turek-flips-senate-seat-in-iowa-2026-midterms/amp/"
     },
@@ -891,7 +898,7 @@
     {
       "date": "2026-11-03",
       "dir": "D",
-      "text": "AP projects Roy Cooper (D) defeats Michael Whatley in North Carolina, flipping a GOP-held Senate seat \u2014 Democrats' first pickup of the night.",
+      "text": "AP projects Roy Cooper (D) defeats Michael Whatley in North Carolina, flipping a GOP-held Senate seat — Democrats' first pickup of the night.",
       "source": "WBTV / AP",
       "url": "https://www.wbtv.com/2026/11/04/roy-cooper-wins-2026-us-senate-race-north-carolina-ap-projects/"
     },
@@ -905,7 +912,7 @@
     {
       "date": "2026-11-03",
       "dir": "D",
-      "text": "Maine on track for record midterm turnout, per Secretary of State Shenna Bellows \u2014 Maine Senate is a must-flip for Democrats.",
+      "text": "Maine on track for record midterm turnout, per Secretary of State Shenna Bellows — Maine Senate is a must-flip for Democrats.",
       "source": "Fox News live",
       "url": "https://www.foxnews.com/live-news/2026-midterm-elections-news-analysis-races-11-3-2026"
     },
@@ -926,28 +933,28 @@
     {
       "date": "2026-11-02",
       "dir": "D",
-      "text": "Final NYT/Siena polls: Democrats lead all seven Senate toss-ups \u2014 Talarico 50\u201343 (TX), Jackson 51\u201345 (ME), Brown 49\u201344 (OH), Peltola 48\u201346 (AK), Turek 48\u201347 (IA).",
+      "text": "Final NYT/Siena polls: Democrats lead all seven Senate toss-ups — Talarico 50–43 (TX), Jackson 51–45 (ME), Brown 49–44 (OH), Peltola 48–46 (AK), Turek 48–47 (IA).",
       "source": "Forbes",
       "url": "https://www.forbes.com/sites/saradorn/2026/11/01/latest-polls-in-2026-midterms-democrats-lead-nearly-all-key-senate-races/"
     },
     {
       "date": "2026-11-02",
       "dir": "D",
-      "text": "Kalshi Senate odds for Democrats hit 74\u201375%, the platform's high, up from ~63% on Oct. 2. Republicans led this market as late as July (60% R peak).",
+      "text": "Kalshi Senate odds for Democrats hit 74–75%, the platform's high, up from ~63% on Oct. 2. Republicans led this market as late as July (60% R peak).",
       "source": "CNBC / Quartz",
       "url": "https://www.cnbc.com/2026/11/02/prediction-market-traders-now-see-nearly-75percent-chance-of-democrats-winning-the-senate.html"
     },
     {
       "date": "2026-11-02",
       "dir": "R",
-      "text": "Polling-error risk: 2016, 2020 and 2024 polls understated Republicans by ~3\u20135 pts. A miss that size likely costs Democrats the Senate and narrows the House.",
+      "text": "Polling-error risk: 2016, 2020 and 2024 polls understated Republicans by ~3–5 pts. A miss that size likely costs Democrats the Senate and narrows the House.",
       "source": "Silver Bulletin via DC News Now",
       "url": "https://www.dcnewsnow.com/news/politics/final-projections-give-democrats-high-odds-to-sweep-congress/"
     },
     {
       "date": "2026-10-29",
       "dir": "D",
-      "text": "Cook's final governor ratings moved four races toward Democrats (incl. Wisconsin to Lean D); Cook projects a Democratic net gain of 2\u20134 governorships.",
+      "text": "Cook's final governor ratings moved four races toward Democrats (incl. Wisconsin to Lean D); Cook projects a Democratic net gain of 2–4 governorships.",
       "source": "Cook Political Report",
       "url": "https://www.cookpolitical.com/analysis/governors/2026-final-governors-ratings"
     },
@@ -983,13 +990,8 @@
   "alerts": [
     {
       "t": "2026-11-04T04:25:16Z",
-      "dir": "D",
-      "text": "DDHQ/NBC: Taylor (D) defeats Wittman, flipping VA-1."
-    },
-    {
-      "t": "2026-11-04T04:25:16Z",
       "dir": "neutral",
-      "text": "ABC/CBS: Becerra (D) wins California governor \u2014 Democratic hold."
+      "text": "ABC/CBS: Becerra (D) wins California governor — Democratic hold."
     },
     {
       "t": "2026-11-04T04:25:16Z",
@@ -1004,7 +1006,7 @@
     {
       "t": "2026-11-04T04:38:18Z",
       "dir": "D",
-      "text": "DDHQ/NBC: Turek (D) flips Iowa Senate \u2014 sixth Democratic pickup."
+      "text": "DDHQ/NBC: Turek (D) flips Iowa Senate — sixth Democratic pickup."
     },
     {
       "t": "2026-11-04T04:38:18Z",
@@ -1044,7 +1046,7 @@
     {
       "t": "2026-11-04T05:54:27Z",
       "dir": "D",
-      "text": "CNN: Jackson (D) defeats Sen. Collins in Maine \u2014 seventh Democratic Senate flip."
+      "text": "CNN: Jackson (D) defeats Sen. Collins in Maine — seventh Democratic Senate flip."
     },
     {
       "t": "2026-11-04T05:54:27Z",
@@ -1180,6 +1182,11 @@
       "t": "2026-11-04T08:25:16Z",
       "dir": "neutral",
       "text": "AP: Kurt Alme (R) wins Montana Senate over independent Seth Bodnar."
+    },
+    {
+      "t": "2026-11-04T08:52:20Z",
+      "dir": "neutral",
+      "text": "Mississippi Senate uncalled: Colom (D) led Hyde-Smith (R) by 28 votes, ~97% in."
     }
   ]
 }
