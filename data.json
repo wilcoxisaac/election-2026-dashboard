@@ -1,11 +1,11 @@
 {
- "updated": "2026-11-04T03:08:41Z",
+ "updated": "2026-11-04T03:24:11Z",
  "phase": "live",
- "phaseNote": "DDHQ projects Democrats win the House; Senate control still unprojected after SC upset.",
+ "phaseNote": "DDHQ projects Democrats win the House; Senate control still unprojected with OH, TX, ME, MI uncalled.",
  "liveRead": {
   "senate": "Democrats 12-5 in called races; flips in NC and SC. Need net +2 more: OH, TX, ME, MI, IA, AK uncalled.",
-  "house": "DDHQ projected Democratic House control at 9:09 pm ET; flips include KY-6, NC-11, PA-8, FL-22.",
-  "governors": "Bottoms (D) flip in Georgia; Weiser (D), Lamont (D), Barlow (R) win. OH, AZ, MI, WI uncalled."
+  "house": "DDHQ projected Democratic House control at 9:09 pm ET; new DDHQ flips in VA-2 and PA-7.",
+  "governors": "Bottoms (D) flip in Georgia; Foulkes (D) holds Rhode Island. OH, AZ, MI, WI still uncalled."
  },
  "tally": {
   "senate": {
@@ -15,12 +15,12 @@
    "note": "Called 2026 races only. Seats not up: 34 D-caucus, 31 R."
   },
   "house": {
-   "D": 9,
+   "D": 15,
    "R": 2,
    "note": "Called races. 218 needed. DDHQ projects D control."
   },
   "governors": {
-   "D": 8,
+   "D": 9,
    "R": 2,
    "I": 0,
    "note": "Called races out of 36."
@@ -43,16 +43,16 @@
   },
   "SEN-OH": {
    "status": "uncalled",
-   "reporting": 33,
-   "d": 58.0,
-   "r": 39.0,
+   "reporting": 37,
+   "d": 56.0,
+   "r": 40.0,
    "calledBy": ""
   },
   "SEN-TX": {
    "status": "uncalled",
-   "reporting": 23,
-   "d": 60.0,
-   "r": 38.0,
+   "reporting": 29,
+   "d": 59.0,
+   "r": 40.0,
    "calledBy": ""
   },
   "SEN-AK": {
@@ -92,9 +92,9 @@
   },
   "SEN-GA": {
    "status": "D",
-   "reporting": 47,
-   "d": 64.4,
-   "r": 35.6,
+   "reporting": 63,
+   "d": 62.0,
+   "r": 38.0,
    "calledBy": "NBC News, CBS News, DDHQ"
   },
   "SEN-NH": {
@@ -369,6 +369,27 @@
    "d": null,
    "r": null,
    "calledBy": "AP (8:00 pm ET)"
+  },
+  "H-VA-02": {
+   "status": "D",
+   "reporting": 0,
+   "d": null,
+   "r": null,
+   "calledBy": "DDHQ via Bloomberg"
+  },
+  "H-PA-07": {
+   "status": "D",
+   "reporting": 0,
+   "d": null,
+   "r": null,
+   "calledBy": "DDHQ via Bloomberg"
+  },
+  "GOV-RI": {
+   "status": "D",
+   "reporting": 0,
+   "d": null,
+   "r": null,
+   "calledBy": "ABC News"
   }
  },
  "otherCalls": [
@@ -389,6 +410,30 @@
    "winner": "D",
    "text": "Sykes (D) holds OH-13",
    "calledBy": "ABC News"
+  },
+  {
+   "race": "NY-10",
+   "winner": "D",
+   "text": "Lander (D) wins NY-10",
+   "calledBy": "DDHQ via Bloomberg"
+  },
+  {
+   "race": "NY-12",
+   "winner": "D",
+   "text": "Lasher (D) wins NY-12",
+   "calledBy": "DDHQ via Bloomberg"
+  },
+  {
+   "race": "NY-13",
+   "winner": "D",
+   "text": "Avila Chevalier (D) wins NY-13",
+   "calledBy": "Washington Examiner"
+  },
+  {
+   "race": "NY-07",
+   "winner": "D",
+   "text": "Valdez (D) wins NY-7",
+   "calledBy": "Washington Examiner"
   }
  ],
  "momentum": [
@@ -635,6 +680,26 @@
    "t": "2026-11-04T03:08:41Z",
    "dir": "neutral",
    "text": "AP: Luj\u00e1n (D) holds New Mexico Senate seat."
+  },
+  {
+   "t": "2026-11-04T03:24:11Z",
+   "dir": "D",
+   "text": "DDHQ: Luria (D) wins VA-2, flipping Kiggans' Republican-held seat."
+  },
+  {
+   "t": "2026-11-04T03:24:11Z",
+   "dir": "D",
+   "text": "DDHQ: Brooks (D) wins PA-7, flipping a Republican-held seat."
+  },
+  {
+   "t": "2026-11-04T03:24:11Z",
+   "dir": "neutral",
+   "text": "ABC: Foulkes (D) holds Rhode Island governor."
+  },
+  {
+   "t": "2026-11-04T03:24:11Z",
+   "dir": "neutral",
+   "text": "Democrats hold NY-7, NY-10, NY-12 and NY-13."
   }
  ]
 }
