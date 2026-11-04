@@ -1,11 +1,11 @@
 {
- "updated": "2026-11-04T09:38:40Z",
+ "updated": "2026-11-04T10:08:07Z",
  "phase": "live",
- "phaseNote": "Both chambers projected Democratic; AK and MS Senate, NV/KS/AK governors and some House seats still counting.",
+ "phaseNote": "Both chambers projected for Democrats; Mississippi and Alaska Senate, Kansas and Alaska governor still uncalled.",
  "liveRead": {
   "senate": "DDHQ, NBC, AP, CBS project D Senate control; Letlow (R) holds Louisiana; Alaska and Mississippi (Colom +43) uncalled.",
   "house": "D control projected by AP, NBC, CNN, ABC, DDHQ; AP tally 224 D, 135 R; D flipped IA-2, IA-3, WI-1, TX-23.",
-  "governors": "Democrats flipped GA, OH, IA, TX; NV, KS, AK uncalled, Holscher (D) narrowly leads in Kansas."
+  "governors": "AP: Ford (D) unseats Lombardo in Nevada; Democrats flipped GA, OH, IA, TX, NV; Kansas and Alaska uncalled."
  },
  "tally": {
   "senate": {
@@ -20,7 +20,7 @@
    "note": "Called races (AP tally via Fox News). 218 needed. AP, ABC, NBC, CNN, DDHQ project D control."
   },
   "governors": {
-   "D": 21,
+   "D": 22,
    "R": 9,
    "I": 0,
    "note": "Called races out of 36."
@@ -154,11 +154,11 @@
    "calledBy": "Not projected; Holscher (D) leads by ~5,557 votes"
   },
   "GOV-NV": {
-   "status": "uncalled",
+   "status": "D",
    "reporting": 0,
    "d": null,
    "r": null,
-   "calledBy": ""
+   "calledBy": "AP"
   },
   "GOV-IA": {
    "status": "D",
@@ -996,11 +996,6 @@
  ],
  "alerts": [
   {
-   "t": "2026-11-04T04:25:16Z",
-   "dir": "neutral",
-   "text": "NBC/AP: Republicans hold Senate seats in AR, AL and TN."
-  },
-  {
    "t": "2026-11-04T04:38:18Z",
    "dir": "D",
    "text": "DDHQ/NBC: Turek (D) flips Iowa Senate — sixth Democratic pickup."
@@ -1194,6 +1189,11 @@
    "t": "2026-11-04T09:38:40Z",
    "dir": "neutral",
    "text": "Mississippi Senate still uncalled: Colom (D) leads Hyde-Smith by 43 votes, ~96% in."
+  },
+  {
+   "t": "2026-11-04T10:08:07Z",
+   "dir": "D",
+   "text": "AP: Aaron Ford (D) defeats Gov. Lombardo (R), flipping Nevada governorship."
   }
  ]
 }
