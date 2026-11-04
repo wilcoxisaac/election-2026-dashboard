@@ -1,26 +1,26 @@
 {
- "updated": "2026-11-04T03:54:01Z",
+ "updated": "2026-11-04T04:08:05Z",
  "phase": "live",
- "phaseNote": "NBC, CNN and DDHQ project a Democratic House; Senate unprojected after Texas flip.",
+ "phaseNote": "Democrats project House win; Senate unprojected after Kansas flip, Democrats' fourth pickup.",
  "liveRead": {
-  "senate": "Democrats 13-5 in called races; flips in NC, SC, TX. Net +1 more needed; OH, ME, MI, IA, AK uncalled.",
+  "senate": "Democrats flipped NC, SC, TX and KS (DDHQ); holding MI and MN would reach 51. OH, ME, IA, AK uncalled.",
   "house": "DDHQ, NBC News and CNN project Democratic House control; most battleground districts still counting.",
-  "governors": "DDHQ: Acton (D) flips Ohio, Sand (D) flips Iowa; Crowley, Pingree hold WI, ME. AZ, MI, NV, KS uncalled."
+  "governors": "DDHQ/CBS: Hobbs holds Arizona; Benson holds Michigan; Acton, Sand flip OH, IA. NV, KS, AK uncalled."
  },
  "tally": {
   "senate": {
-   "D": 13,
-   "R": 5,
+   "D": 14,
+   "R": 6,
    "I": 0,
    "note": "Called 2026 races only. Seats not up: 34 D-caucus, 31 R."
   },
   "house": {
-   "D": 15,
+   "D": 17,
    "R": 2,
    "note": "Called races. 218 needed. DDHQ, NBC, CNN project D control."
   },
   "governors": {
-   "D": 13,
+   "D": 16,
    "R": 2,
    "I": 0,
    "note": "Called races out of 36."
@@ -70,11 +70,11 @@
    "calledBy": ""
   },
   "SEN-KS": {
-   "status": "uncalled",
+   "status": "D",
    "reporting": 0,
    "d": null,
    "r": null,
-   "calledBy": ""
+   "calledBy": "DDHQ via Bloomberg, The Hill"
   },
   "SEN-NE": {
    "status": "uncalled",
@@ -119,18 +119,18 @@
    "calledBy": "NBC News"
   },
   "GOV-AZ": {
-   "status": "uncalled",
+   "status": "D",
    "reporting": 0,
    "d": null,
    "r": null,
-   "calledBy": ""
+   "calledBy": "DDHQ via Bloomberg; CBS News"
   },
   "GOV-MI": {
-   "status": "uncalled",
+   "status": "D",
    "reporting": 0,
    "d": null,
    "r": null,
-   "calledBy": ""
+   "calledBy": "DDHQ via The Hill"
   },
   "GOV-WI": {
    "status": "D",
@@ -397,6 +397,20 @@
    "d": null,
    "r": null,
    "calledBy": "DDHQ via The Hill"
+  },
+  "SEN-SD": {
+   "reporting": 0,
+   "d": null,
+   "r": null,
+   "status": "R",
+   "calledBy": "DDHQ via The Hill"
+  },
+  "GOV-NM": {
+   "reporting": 0,
+   "d": null,
+   "r": null,
+   "status": "D",
+   "calledBy": "DDHQ via The Hill"
   }
  },
  "otherCalls": [
@@ -445,6 +459,13 @@
  ],
  "momentum": [
   {
+   "date": "2026-11-04",
+   "dir": "D",
+   "text": "DDHQ projects Democrat Adam Hamilton flips Kansas Senate seat, Democrats' fourth Senate pickup.",
+   "source": "Bloomberg (DDHQ)",
+   "url": "https://bloomberg.com/news/articles/2026-11-04/democrat-hamilton-wins-kansas-senate-race-ddhq-projects"
+  },
+  {
    "date": "2026-11-03",
    "dir": "D",
    "text": "Decision Desk HQ projects James Talarico (D) defeats Ken Paxton in Texas (10:14 pm ET), Democrats' third Senate flip; one more net gain needed for control.",
@@ -475,7 +496,7 @@
   {
    "date": "2026-11-03",
    "dir": "D",
-   "text": "AP projects Roy Cooper (D) defeats Michael Whatley in North Carolina, flipping a GOP-held Senate seat \u2014 Democrats' first pickup of the night.",
+   "text": "AP projects Roy Cooper (D) defeats Michael Whatley in North Carolina, flipping a GOP-held Senate seat — Democrats' first pickup of the night.",
    "source": "WBTV / AP",
    "url": "https://www.wbtv.com/2026/11/04/roy-cooper-wins-2026-us-senate-race-north-carolina-ap-projects/"
   },
@@ -489,7 +510,7 @@
   {
    "date": "2026-11-03",
    "dir": "D",
-   "text": "Maine on track for record midterm turnout, per Secretary of State Shenna Bellows \u2014 Maine Senate is a must-flip for Democrats.",
+   "text": "Maine on track for record midterm turnout, per Secretary of State Shenna Bellows — Maine Senate is a must-flip for Democrats.",
    "source": "Fox News live",
    "url": "https://www.foxnews.com/live-news/2026-midterm-elections-news-analysis-races-11-3-2026"
   },
@@ -510,28 +531,28 @@
   {
    "date": "2026-11-02",
    "dir": "D",
-   "text": "Final NYT/Siena polls: Democrats lead all seven Senate toss-ups \u2014 Talarico 50\u201343 (TX), Jackson 51\u201345 (ME), Brown 49\u201344 (OH), Peltola 48\u201346 (AK), Turek 48\u201347 (IA).",
+   "text": "Final NYT/Siena polls: Democrats lead all seven Senate toss-ups — Talarico 50–43 (TX), Jackson 51–45 (ME), Brown 49–44 (OH), Peltola 48–46 (AK), Turek 48–47 (IA).",
    "source": "Forbes",
    "url": "https://www.forbes.com/sites/saradorn/2026/11/01/latest-polls-in-2026-midterms-democrats-lead-nearly-all-key-senate-races/"
   },
   {
    "date": "2026-11-02",
    "dir": "D",
-   "text": "Kalshi Senate odds for Democrats hit 74\u201375%, the platform's high, up from ~63% on Oct. 2. Republicans led this market as late as July (60% R peak).",
+   "text": "Kalshi Senate odds for Democrats hit 74–75%, the platform's high, up from ~63% on Oct. 2. Republicans led this market as late as July (60% R peak).",
    "source": "CNBC / Quartz",
    "url": "https://www.cnbc.com/2026/11/02/prediction-market-traders-now-see-nearly-75percent-chance-of-democrats-winning-the-senate.html"
   },
   {
    "date": "2026-11-02",
    "dir": "R",
-   "text": "Polling-error risk: 2016, 2020 and 2024 polls understated Republicans by ~3\u20135 pts. A miss that size likely costs Democrats the Senate and narrows the House.",
+   "text": "Polling-error risk: 2016, 2020 and 2024 polls understated Republicans by ~3–5 pts. A miss that size likely costs Democrats the Senate and narrows the House.",
    "source": "Silver Bulletin via DC News Now",
    "url": "https://www.dcnewsnow.com/news/politics/final-projections-give-democrats-high-odds-to-sweep-congress/"
   },
   {
    "date": "2026-10-29",
    "dir": "D",
-   "text": "Cook's final governor ratings moved four races toward Democrats (incl. Wisconsin to Lean D); Cook projects a Democratic net gain of 2\u20134 governorships.",
+   "text": "Cook's final governor ratings moved four races toward Democrats (incl. Wisconsin to Lean D); Cook projects a Democratic net gain of 2–4 governorships.",
    "source": "Cook Political Report",
    "url": "https://www.cookpolitical.com/analysis/governors/2026-final-governors-ratings"
   },
@@ -573,7 +594,7 @@
   {
    "t": "2026-11-04T00:00:00Z",
    "dir": "neutral",
-   "text": "AP: Warner (D) wins Virginia Senate \u2014 Democratic hold, no change in balance."
+   "text": "AP: Warner (D) wins Virginia Senate — Democratic hold, no change in balance."
   },
   {
    "t": "2026-11-04T00:10:00Z",
@@ -583,12 +604,12 @@
   {
    "t": "2026-11-04T00:37:00Z",
    "dir": "neutral",
-   "text": "NBC/DDHQ: Ossoff (D) wins Georgia Senate \u2014 Democratic hold."
+   "text": "NBC/DDHQ: Ossoff (D) wins Georgia Senate — Democratic hold."
   },
   {
    "t": "2026-11-04T00:52:42Z",
    "dir": "neutral",
-   "text": "Capito (R) wins West Virginia Senate (DDHQ/The Hill) \u2014 Republican hold."
+   "text": "Capito (R) wins West Virginia Senate (DDHQ/The Hill) — Republican hold."
   },
   {
    "t": "2026-11-04T01:23:51Z",
@@ -598,7 +619,7 @@
   {
    "t": "2026-11-04T01:23:51Z",
    "dir": "neutral",
-   "text": "DDHQ: Pappas (D) beats Sununu in New Hampshire Senate \u2014 Democratic hold."
+   "text": "DDHQ: Pappas (D) beats Sununu in New Hampshire Senate — Democratic hold."
   },
   {
    "t": "2026-11-04T01:23:51Z",
@@ -608,7 +629,7 @@
   {
    "t": "2026-11-04T01:23:51Z",
    "dir": "neutral",
-   "text": "DDHQ: Moody (R) wins Florida Senate special \u2014 Republican hold."
+   "text": "DDHQ: Moody (R) wins Florida Senate special — Republican hold."
   },
   {
    "t": "2026-11-04T01:23:51Z",
@@ -618,7 +639,7 @@
   {
    "t": "2026-11-04T01:53:18Z",
    "dir": "D",
-   "text": "AP: Cooper (D) wins North Carolina Senate \u2014 first Democratic Senate flip."
+   "text": "AP: Cooper (D) wins North Carolina Senate — first Democratic Senate flip."
   },
   {
    "t": "2026-11-04T01:53:18Z",
@@ -628,7 +649,7 @@
   {
    "t": "2026-11-04T01:53:18Z",
    "dir": "neutral",
-   "text": "DDHQ: Donalds (R) wins Florida governor \u2014 Republican hold."
+   "text": "DDHQ: Donalds (R) wins Florida governor — Republican hold."
   },
   {
    "t": "2026-11-04T01:53:18Z",
@@ -683,17 +704,17 @@
   {
    "t": "2026-11-04T02:54:19Z",
    "dir": "neutral",
-   "text": "AP: Barlow (R) wins Wyoming governor \u2014 Republican hold."
+   "text": "AP: Barlow (R) wins Wyoming governor — Republican hold."
   },
   {
    "t": "2026-11-04T03:08:41Z",
    "dir": "D",
-   "text": "AP/CBS/DDHQ: Andrews (D) beats Graham in South Carolina Senate \u2014 second Democratic flip."
+   "text": "AP/CBS/DDHQ: Andrews (D) beats Graham in South Carolina Senate — second Democratic flip."
   },
   {
    "t": "2026-11-04T03:08:41Z",
    "dir": "neutral",
-   "text": "AP: Luj\u00e1n (D) holds New Mexico Senate seat."
+   "text": "AP: Luján (D) holds New Mexico Senate seat."
   },
   {
    "t": "2026-11-04T03:24:11Z",
@@ -718,7 +739,7 @@
   {
    "t": "2026-11-04T03:54:01Z",
    "dir": "D",
-   "text": "DDHQ: Talarico (D) beats Paxton in Texas Senate \u2014 third Democratic flip."
+   "text": "DDHQ: Talarico (D) beats Paxton in Texas Senate — third Democratic flip."
   },
   {
    "t": "2026-11-04T03:54:01Z",
@@ -739,6 +760,31 @@
    "t": "2026-11-04T03:54:01Z",
    "dir": "D",
    "text": "NBC News and CNN also project Democrats win the House."
+  },
+  {
+   "t": "2026-11-04T04:08:05Z",
+   "dir": "D",
+   "text": "DDHQ: Hamilton (D) flips Kansas Senate seat — fourth Democratic pickup."
+  },
+  {
+   "t": "2026-11-04T04:08:05Z",
+   "dir": "D",
+   "text": "DDHQ/CBS: Hobbs (D) holds Arizona governor, defeating Biggs."
+  },
+  {
+   "t": "2026-11-04T04:08:05Z",
+   "dir": "D",
+   "text": "DDHQ: Benson (D) wins Michigan governor, holding the seat."
+  },
+  {
+   "t": "2026-11-04T04:08:05Z",
+   "dir": "neutral",
+   "text": "DDHQ: Haaland (D) holds New Mexico governor; Rounds (R) holds South Dakota Senate."
+  },
+  {
+   "t": "2026-11-04T04:08:05Z",
+   "dir": "D",
+   "text": "DDHQ: Powell (D) wins Nebraska's 2nd District, a Republican-held seat."
   }
  ]
 }
