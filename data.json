@@ -455,6 +455,18 @@
    "winner": "D",
    "text": "Valdez (D) wins NY-7",
    "calledBy": "Washington Examiner"
+  },
+  {
+   "race": "NE-02",
+   "winner": "D",
+   "text": "Powell (D) wins NE-02, a GOP-held seat",
+   "calledBy": "DDHQ via Bloomberg"
+  },
+  {
+   "race": "FL-24",
+   "winner": "D",
+   "text": "Gilbert (D) holds FL-24",
+   "calledBy": "DDHQ via The Hill"
   }
  ],
  "momentum": [
