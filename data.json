@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-04T21:58:00Z",
+  "updated": "2026-11-04T23:38:48Z",
   "phase": "live",
   "phaseNote": "Both chambers projected Democratic; Mississippi and Alaska Senate, Kansas and Alaska governor, several House seats uncalled.",
   "liveRead": {
@@ -810,6 +810,13 @@
       "d": null,
       "r": null,
       "calledBy": "AP (Nov. 4, via Washington Post); Hines (D) flips open seat"
+    },
+    "H-CO-05": {
+      "status": "uncalled",
+      "reporting": 0,
+      "d": 50.9,
+      "r": 45.8,
+      "calledBy": "Not projected; Killin (D) leads Rep. Crank (R) by 13,000+ in El Paso County, 30,000+ ballots left"
     }
   },
   "otherCalls": [
