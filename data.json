@@ -1,1031 +1,1178 @@
 {
- "updated": "2026-11-04T07:08:00Z",
- "phase": "live",
- "phaseNote": "Both chambers projected Democratic; Alaska Senate and NV, KS, AK governor races still counting.",
- "liveRead": {
-  "senate": "DDHQ, NBC, AP, CBS project D Senate control; DDHQ projects Ricketts (R) holds Nebraska. Alaska uncalled.",
-  "house": "AP, ABC, NBC, CNN, DDHQ project D House control; DDHQ adds Villegas (D) flip of CA-22.",
-  "governors": "Democrats flipped GA, OH, IA, TX; Kotek (D) holds Oregon. NV, KS, AK still uncalled."
- },
- "tally": {
-  "senate": {
-   "D": 20,
-   "R": 10,
-   "I": 0,
-   "note": "Called 2026 races only. Seats not up: 34 D-caucus, 31 R. DDHQ, NBC, AP, CBS project D control."
-  },
-  "house": {
-   "D": 31,
-   "R": 2,
-   "note": "Called races. 218 needed. AP, ABC, NBC, CNN, DDHQ project D control."
-  },
-  "governors": {
-   "D": 20,
-   "R": 6,
-   "I": 0,
-   "note": "Called races out of 36."
-  }
- },
- "races": {
-  "SEN-NC": {
-   "status": "D",
-   "reporting": 0,
-   "d": 66.8,
-   "r": 31.6,
-   "calledBy": "AP (8:23 pm ET), CBS News, ABC News"
-  },
-  "SEN-ME": {
-   "status": "D",
-   "reporting": 68,
-   "d": null,
-   "r": null,
-   "calledBy": "CNN (~12:15 am ET); Collins conceded"
-  },
-  "SEN-OH": {
-   "status": "D",
-   "reporting": 87,
-   "d": 48.6,
-   "r": 46.5,
-   "calledBy": "AP (11:10 pm ET)"
-  },
-  "SEN-TX": {
-   "status": "D",
-   "reporting": 29,
-   "d": 59.0,
-   "r": 40.0,
-   "calledBy": "DDHQ (10:14 pm ET), AP (11:12 pm ET), ABC News"
-  },
-  "SEN-AK": {
-   "status": "uncalled",
-   "reporting": 0,
-   "d": null,
-   "r": null,
-   "calledBy": ""
-  },
-  "SEN-IA": {
-   "status": "D",
-   "reporting": 78,
-   "d": 51.0,
-   "r": 45.0,
-   "calledBy": "DDHQ (~11:18 pm ET), NBC News"
-  },
-  "SEN-KS": {
-   "status": "D",
-   "reporting": 0,
-   "d": null,
-   "r": null,
-   "calledBy": "DDHQ via Bloomberg, The Hill"
-  },
-  "SEN-NE": {
-   "status": "R",
-   "reporting": 0,
-   "d": null,
-   "r": null,
-   "calledBy": "DDHQ via Bloomberg, The Hill"
-  },
-  "SEN-MI": {
-   "status": "D",
-   "reporting": 0,
-   "d": null,
-   "r": null,
-   "calledBy": "DDHQ via The Hill (~1:20 am ET)"
-  },
-  "SEN-GA": {
-   "status": "D",
-   "reporting": 63,
-   "d": 62.0,
-   "r": 38.0,
-   "calledBy": "NBC News, CBS News, DDHQ"
-  },
-  "SEN-NH": {
-   "status": "D",
-   "reporting": 8,
-   "d": 61.8,
-   "r": 36.4,
-   "calledBy": "DDHQ (8:00 pm ET); Sununu conceded"
-  },
-  "SEN-MN": {
-   "status": "D",
-   "reporting": 0,
-   "d": null,
-   "r": null,
-   "calledBy": "AP"
-  },
-  "GOV-GA": {
-   "status": "D",
-   "reporting": 0,
-   "d": null,
-   "r": null,
-   "calledBy": "NBC News"
-  },
-  "GOV-AZ": {
-   "status": "D",
-   "reporting": 0,
-   "d": null,
-   "r": null,
-   "calledBy": "DDHQ via Bloomberg; CBS News"
-  },
-  "GOV-MI": {
-   "status": "D",
-   "reporting": 0,
-   "d": null,
-   "r": null,
-   "calledBy": "DDHQ via The Hill"
-  },
-  "GOV-WI": {
-   "status": "D",
-   "reporting": 0,
-   "d": null,
-   "r": null,
-   "calledBy": "DDHQ via Bloomberg"
-  },
-  "GOV-PA": {
-   "status": "D",
-   "reporting": 0,
-   "d": null,
-   "r": null,
-   "calledBy": "ABC News (~8:01 pm ET)"
-  },
-  "GOV-KS": {
-   "status": "uncalled",
-   "reporting": 0,
-   "d": null,
-   "r": null,
-   "calledBy": ""
-  },
-  "GOV-NV": {
-   "status": "uncalled",
-   "reporting": 0,
-   "d": null,
-   "r": null,
-   "calledBy": ""
-  },
-  "GOV-IA": {
-   "status": "D",
-   "reporting": 0,
-   "d": null,
-   "r": null,
-   "calledBy": "DDHQ via The Hill"
-  },
-  "GOV-OH": {
-   "status": "D",
-   "reporting": 76,
-   "d": 50.0,
-   "r": 46.0,
-   "calledBy": "DDHQ via The Hill; AP (11:04 pm ET)"
-  },
-  "GOV-AK": {
-   "status": "uncalled",
-   "reporting": 0,
-   "d": null,
-   "r": null,
-   "calledBy": ""
-  },
-  "SEN-VA": {
-   "status": "D",
-   "reporting": 1,
-   "d": null,
-   "r": null,
-   "calledBy": "AP (7:00 pm ET)"
-  },
-  "SEN-WV": {
-   "status": "R",
-   "reporting": 0,
-   "d": null,
-   "r": null,
-   "calledBy": "DDHQ via The Hill (~7:30 pm ET)"
-  },
-  "SEN-DE": {
-   "status": "D",
-   "reporting": 0,
-   "d": null,
-   "r": null,
-   "calledBy": "AP"
-  },
-  "SEN-IL": {
-   "status": "D",
-   "reporting": 0,
-   "d": null,
-   "r": null,
-   "calledBy": "AP"
-  },
-  "SEN-MA": {
-   "status": "D",
-   "reporting": 0,
-   "d": null,
-   "r": null,
-   "calledBy": "AP"
-  },
-  "SEN-NJ": {
-   "status": "D",
-   "reporting": 0,
-   "d": null,
-   "r": null,
-   "calledBy": "AP"
-  },
-  "SEN-RI": {
-   "status": "D",
-   "reporting": 0,
-   "d": null,
-   "r": null,
-   "calledBy": "AP"
-  },
-  "SEN-FL": {
-   "status": "R",
-   "reporting": 0,
-   "d": null,
-   "r": null,
-   "calledBy": "DDHQ via Bloomberg"
-  },
-  "H-FL-22": {
-   "status": "D",
-   "reporting": 95,
-   "d": 52.2,
-   "r": 47.8,
-   "calledBy": "DDHQ (8:05 pm ET)"
-  },
-  "SEN-KY": {
-   "status": "R",
-   "reporting": 0,
-   "d": null,
-   "r": null,
-   "calledBy": "DDHQ via The Hill"
-  },
-  "SEN-OK": {
-   "status": "R",
-   "reporting": 0,
-   "d": null,
-   "r": null,
-   "calledBy": "DDHQ via The Hill"
-  },
-  "GOV-IL": {
-   "status": "D",
-   "reporting": 0,
-   "d": null,
-   "r": null,
-   "calledBy": "ABC News (~8:01 pm ET)"
-  },
-  "GOV-MD": {
-   "status": "D",
-   "reporting": 0,
-   "d": null,
-   "r": null,
-   "calledBy": "ABC News (~8:01 pm ET)"
-  },
-  "GOV-MA": {
-   "status": "D",
-   "reporting": 0,
-   "d": null,
-   "r": null,
-   "calledBy": "AP, ABC News (8:00 pm ET)"
-  },
-  "GOV-FL": {
-   "status": "R",
-   "reporting": 0,
-   "d": null,
-   "r": null,
-   "calledBy": "DDHQ (8:28 pm ET)"
-  },
-  "SEN-WY": {
-   "status": "R",
-   "reporting": 0,
-   "d": null,
-   "r": null,
-   "calledBy": "AP"
-  },
-  "GOV-NY": {
-   "status": "D",
-   "reporting": 0,
-   "d": null,
-   "r": null,
-   "calledBy": "AP"
-  },
-  "H-KY-06": {
-   "status": "D",
-   "reporting": 92,
-   "d": 55.0,
-   "r": 41.2,
-   "calledBy": "DDHQ (9:07 pm ET)"
-  },
-  "H-NC-11": {
-   "status": "D",
-   "reporting": 0,
-   "d": null,
-   "r": null,
-   "calledBy": "DDHQ (8:28 pm ET)"
-  },
-  "H-PA-08": {
-   "status": "D",
-   "reporting": 0,
-   "d": null,
-   "r": null,
-   "calledBy": "DDHQ"
-  },
-  "H-FL-14": {
-   "status": "D",
-   "reporting": 0,
-   "d": null,
-   "r": null,
-   "calledBy": "NBC News"
-  },
-  "GOV-CO": {
-   "status": "D",
-   "reporting": 0,
-   "d": null,
-   "r": null,
-   "calledBy": "AP (~9:20 pm ET)"
-  },
-  "GOV-WY": {
-   "status": "R",
-   "reporting": 0,
-   "d": null,
-   "r": null,
-   "calledBy": "AP"
-  },
-  "GOV-CT": {
-   "status": "D",
-   "reporting": 0,
-   "d": null,
-   "r": null,
-   "calledBy": "AP"
-  },
-  "SEN-CO": {
-   "status": "D",
-   "reporting": 0,
-   "d": null,
-   "r": null,
-   "calledBy": "CBS News, AP"
-  },
-  "SEN-SC": {
-   "status": "D",
-   "reporting": 69,
-   "d": 52.6,
-   "r": 45.7,
-   "calledBy": "DDHQ (9:54 pm ET), AP, CBS News"
-  },
-  "SEN-NM": {
-   "status": "D",
-   "reporting": 0,
-   "d": null,
-   "r": null,
-   "calledBy": "AP (8:00 pm ET)"
-  },
-  "H-VA-02": {
-   "status": "D",
-   "reporting": 0,
-   "d": null,
-   "r": null,
-   "calledBy": "DDHQ via Bloomberg"
-  },
-  "H-PA-07": {
-   "status": "D",
-   "reporting": 0,
-   "d": null,
-   "r": null,
-   "calledBy": "DDHQ via Bloomberg"
-  },
-  "GOV-RI": {
-   "status": "D",
-   "reporting": 0,
-   "d": null,
-   "r": null,
-   "calledBy": "ABC News"
-  },
-  "GOV-ME": {
-   "status": "D",
-   "reporting": 0,
-   "d": null,
-   "r": null,
-   "calledBy": "DDHQ via The Hill"
-  },
-  "SEN-SD": {
-   "reporting": 0,
-   "d": null,
-   "r": null,
-   "status": "R",
-   "calledBy": "DDHQ via The Hill"
-  },
-  "GOV-NM": {
-   "reporting": 0,
-   "d": null,
-   "r": null,
-   "status": "D",
-   "calledBy": "DDHQ via The Hill"
-  },
-  "SEN-OR": {
-   "status": "D",
-   "reporting": 0,
-   "d": null,
-   "r": null,
-   "calledBy": "DDHQ (11:00 pm ET)"
-  },
-  "SEN-AR": {
-   "status": "R",
-   "reporting": 0,
-   "d": null,
-   "r": null,
-   "calledBy": "NBC News, AP"
-  },
-  "SEN-AL": {
-   "status": "R",
-   "reporting": 0,
-   "d": null,
-   "r": null,
-   "calledBy": "NBC News"
-  },
-  "SEN-TN": {
-   "status": "R",
-   "reporting": 0,
-   "d": null,
-   "r": null,
-   "calledBy": "AP"
-  },
-  "GOV-TX": {
-   "status": "D",
-   "reporting": 0,
-   "d": null,
-   "r": null,
-   "calledBy": "CNN, ABC News"
-  },
-  "GOV-CA": {
-   "status": "D",
-   "reporting": 0,
-   "d": null,
-   "r": null,
-   "calledBy": "ABC News, CBS News"
-  },
-  "H-VA-01": {
-   "status": "D",
-   "reporting": 0,
-   "d": null,
-   "r": null,
-   "calledBy": "DDHQ (10:28 pm ET), NBC News"
-  },
-  "H-PA-10": {
-   "status": "D",
-   "reporting": 0,
-   "d": null,
-   "r": null,
-   "calledBy": "AP (10:41 pm ET)"
-  },
-  "H-OH-15": {
-   "status": "D",
-   "reporting": 0,
-   "d": null,
-   "r": null,
-   "calledBy": "DDHQ via The Hill"
-  },
-  "H-AZ-06": {
-   "status": "D",
-   "reporting": 0,
-   "d": null,
-   "r": null,
-   "calledBy": "DDHQ via The Hill"
-  },
-  "H-NY-17": {
-   "status": "uncalled",
-   "reporting": 0,
-   "d": null,
-   "r": null,
-   "calledBy": "Not yet projected; Lawler (R) conceded per ABC7, Fox 5"
-  },
-  "GOV-SC": {
-   "status": "R",
-   "reporting": 0,
-   "d": null,
-   "r": null,
-   "calledBy": "DDHQ via The Hill"
-  },
-  "GOV-AL": {
-   "status": "R",
-   "reporting": 0,
-   "d": null,
-   "r": null,
-   "calledBy": "DDHQ via The Hill"
-  },
-  "GOV-MN": {
-   "status": "D",
-   "reporting": 0,
-   "d": null,
-   "r": null,
-   "calledBy": "AP"
-  },
-  "H-CO-08": {
-   "status": "D",
-   "reporting": 0,
-   "d": 56.0,
-   "r": 41.0,
-   "calledBy": "AP (after 11 pm ET)"
-  },
-  "H-IA-01": {
-   "status": "D",
-   "reporting": 0,
-   "d": null,
-   "r": null,
-   "calledBy": "CBS News"
-  },
-  "H-NJ-07": {
-   "status": "D",
-   "reporting": 0,
-   "d": null,
-   "r": null,
-   "calledBy": "CBS News; DDHQ via The Hill"
-  },
-  "H-WI-03": {
-   "status": "D",
-   "reporting": 91,
-   "d": 52.4,
-   "r": 45.8,
-   "calledBy": "AP (12:48 am ET)"
-  },
-  "H-PA-01": {
-   "status": "D",
-   "reporting": 0,
-   "d": null,
-   "r": null,
-   "calledBy": "AP (12:37 am ET)"
-  },
-  "H-TX-15": {
-   "status": "D",
-   "reporting": 0,
-   "d": null,
-   "r": null,
-   "calledBy": "CBS News (~12:35 am ET)"
-  },
-  "H-OH-07": {
-   "status": "D",
-   "reporting": 0,
-   "d": null,
-   "r": null,
-   "calledBy": "DDHQ via The Hill; NBC News"
-  },
-  "GOV-NH": {
-   "status": "R",
-   "reporting": 0,
-   "d": null,
-   "r": null,
-   "calledBy": "Fox News Decision Desk"
-  },
-  "GOV-TN": {
-   "status": "R",
-   "reporting": 0,
-   "d": null,
-   "r": null,
-   "calledBy": "Washington Examiner"
-  },
-  "H-CA-22": {
-   "status": "D",
-   "reporting": 0,
-   "d": null,
-   "r": null,
-   "calledBy": "DDHQ via Bloomberg"
-  },
-  "GOV-OR": {
-   "status": "D",
-   "reporting": 0,
-   "d": null,
-   "r": null,
-   "calledBy": "DDHQ via The Hill"
-  }
- },
- "otherCalls": [
-  {
-   "race": "FL-23",
-   "winner": "D",
-   "text": "Moskowitz (D) holds FL-23",
-   "calledBy": "DDHQ via The Hill"
-  },
-  {
-   "race": "AL-01",
-   "winner": "R",
-   "text": "Carl (R) wins AL-01",
-   "calledBy": "DDHQ via The Hill"
-  },
-  {
-   "race": "OH-13",
-   "winner": "D",
-   "text": "Sykes (D) holds OH-13",
-   "calledBy": "ABC News"
-  },
-  {
-   "race": "NY-10",
-   "winner": "D",
-   "text": "Lander (D) wins NY-10",
-   "calledBy": "DDHQ via Bloomberg"
-  },
-  {
-   "race": "NY-12",
-   "winner": "D",
-   "text": "Lasher (D) wins NY-12",
-   "calledBy": "DDHQ via Bloomberg"
-  },
-  {
-   "race": "NY-13",
-   "winner": "D",
-   "text": "Avila Chevalier (D) wins NY-13",
-   "calledBy": "Washington Examiner"
-  },
-  {
-   "race": "NY-07",
-   "winner": "D",
-   "text": "Valdez (D) wins NY-7",
-   "calledBy": "Washington Examiner"
-  },
-  {
-   "race": "NE-02",
-   "winner": "D",
-   "text": "Powell (D) wins NE-02, a GOP-held seat",
-   "calledBy": "DDHQ via Bloomberg"
-  },
-  {
-   "race": "FL-24",
-   "winner": "D",
-   "text": "Gilbert (D) holds FL-24",
-   "calledBy": "DDHQ via The Hill"
-  },
-  {
-   "race": "MA-06",
-   "winner": "D",
-   "text": "Koh (D) wins MA-6",
-   "calledBy": "AP"
-  },
-  {
-   "race": "TX-28",
-   "winner": "D",
-   "text": "Cuellar (D) wins a 12th term in TX-28",
-   "calledBy": "Washington Examiner"
-  }
- ],
- "momentum": [
-  {
-   "date": "2026-11-04",
-   "dir": "D",
-   "text": "AP projects Bob Harvie (D) defeats Rep. Brian Fitzpatrick in PA-1 (12:37 am ET), one of the GOP's most entrenched swing-seat incumbents.",
-   "source": "FOX 29 / AP",
-   "url": "https://www.fox29.com/news/bob-harvie-wins-pennsylvanias-1st-congressional-district-ap"
-  },
-  {
-   "date": "2026-11-04",
-   "dir": "D",
-   "text": "CNN projects Troy Jackson (D) defeats Sen. Susan Collins in Maine (~12:15 am ET), Democrats' seventh Senate flip; Collins conceded.",
-   "source": "Newsweek / CNN",
-   "url": "https://www.newsweek.com/susan-collins-troy-jackson-maine-senate-midterms-results-12635379"
-  },
-  {
-   "date": "2026-11-03",
-   "dir": "D",
-   "text": "Decision Desk HQ and NBC News project Democrats win Senate control after Josh Turek (D) flips Iowa, giving Democrats full control of Congress.",
-   "source": "Bloomberg / DDHQ",
-   "url": "https://www.bloomberg.com/news/articles/2026-11-04/democrats-win-control-of-the-senate-ddhq-projects"
-  },
-  {
-   "date": "2026-11-03",
-   "dir": "D",
-   "text": "DDHQ projects Josh Turek (D) defeats Ashley Hinson in Iowa (~11:18 pm ET), 51%\u201345% with 78% counted.",
-   "source": "The Hill / DDHQ",
-   "url": "https://thehill.com/homenews/campaign/6178947-democrat-josh-turek-flips-senate-seat-in-iowa-2026-midterms/amp/"
-  },
-  {
-   "date": "2026-11-03",
-   "dir": "D",
-   "text": "AP projects Sherrod Brown (D) defeats Sen. Jon Husted in Ohio (11:10 pm ET), Democrats' fifth Senate flip, bringing them to 50 seats.",
-   "source": "GV Wire / AP",
-   "url": "https://gvwire.com/2026/11/03/sherrod-brown-wins-ohio-senate-special-election-ap-says/"
-  },
-  {
-   "date": "2026-11-03",
-   "dir": "D",
-   "text": "CNN projects Gina Hinojosa (D) defeats Gov. Greg Abbott, flipping the Texas governorship.",
-   "source": "Bloomberg / CNN",
-   "url": "https://www.bloomberg.com/news/articles/2026-11-04/democrat-hinojosa-wins-texas-governor-race-cnn-projects"
-  },
-  {
-   "date": "2026-11-04",
-   "dir": "D",
-   "text": "DDHQ projects Democrat Adam Hamilton flips Kansas Senate seat, Democrats' fourth Senate pickup.",
-   "source": "Bloomberg (DDHQ)",
-   "url": "https://bloomberg.com/news/articles/2026-11-04/democrat-hamilton-wins-kansas-senate-race-ddhq-projects"
-  },
-  {
-   "date": "2026-11-03",
-   "dir": "D",
-   "text": "Decision Desk HQ projects James Talarico (D) defeats Ken Paxton in Texas (10:14 pm ET), Democrats' third Senate flip; one more net gain needed for control.",
-   "source": "Bloomberg / DDHQ",
-   "url": "https://www.bloomberg.com/news/articles/2026-11-04/democrat-talarico-wins-texas-senate-race-ddhq-projects"
-  },
-  {
-   "date": "2026-11-03",
-   "dir": "D",
-   "text": "Annie Andrews (D) defeats Sen. Darline Graham in South Carolina, Democrats' second Senate flip of the night (AP, CBS, DDHQ).",
-   "source": "CBS News",
-   "url": "https://www.cbsnews.com/news/south-carolina-2026-senate-annie-andrews-darline-graham/"
-  },
-  {
-   "date": "2026-11-03",
-   "dir": "D",
-   "text": "Decision Desk HQ projects Democrats win control of the U.S. House (9:09 pm ET); Senate control not yet projected.",
-   "source": "Bloomberg / DDHQ",
-   "url": "https://www.bloomberg.com/news/articles/2026-11-04/democrats-win-control-of-the-house-ddhq-projects"
-  },
-  {
-   "date": "2026-11-03",
-   "dir": "D",
-   "text": "NBC projects Keisha Lance Bottoms wins Georgia governor, flipping the office to Democrats.",
-   "source": "NBC News",
-   "url": "https://www.nbcnews.com/politics/2026-election/keisha-lance-bottoms-georgia-governor-win-democrats-flip-jackson-rcna603348"
-  },
-  {
-   "date": "2026-11-03",
-   "dir": "D",
-   "text": "AP projects Roy Cooper (D) defeats Michael Whatley in North Carolina, flipping a GOP-held Senate seat \u2014 Democrats' first pickup of the night.",
-   "source": "WBTV / AP",
-   "url": "https://www.wbtv.com/2026/11/04/roy-cooper-wins-2026-us-senate-race-north-carolina-ap-projects/"
-  },
-  {
-   "date": "2026-11-03",
-   "dir": "neutral",
-   "text": "Election Day opened with mostly technical and weather problems (Broward County system fault ~20 min; Westchester scanner delays). Early-vote turnout ran well above 2022.",
-   "source": "AP via WSLS",
-   "url": "https://www.wsls.com/news/politics/2026/11/03/election-day-arrives-after-a-surge-in-early-voting-with-observers-keeping-close-watch-at-the-polls/"
-  },
-  {
-   "date": "2026-11-03",
-   "dir": "D",
-   "text": "Maine on track for record midterm turnout, per Secretary of State Shenna Bellows \u2014 Maine Senate is a must-flip for Democrats.",
-   "source": "Fox News live",
-   "url": "https://www.foxnews.com/live-news/2026-midterm-elections-news-analysis-races-11-3-2026"
-  },
-  {
-   "date": "2026-11-03",
-   "dir": "R",
-   "text": "Appeals court lets DOJ warn election officials they could be prosecuted for not following its demands on voting procedures; another ruling allows requests to segregate suspected noncitizen ballots.",
-   "source": "CNN / Fox News live",
-   "url": "https://edition.cnn.com/2026/11/03/politics/live-news/midterm-election-congress"
-  },
-  {
-   "date": "2026-11-02",
-   "dir": "D",
-   "text": "Supreme Court declined the administration's emergency request to stop California from counting ~20,000 ballots DHS flagged as possible noncitizens.",
-   "source": "CNN",
-   "url": "https://edition.cnn.com/2026/11/03/politics/live-news/midterm-election-congress"
-  },
-  {
-   "date": "2026-11-02",
-   "dir": "D",
-   "text": "Final NYT/Siena polls: Democrats lead all seven Senate toss-ups \u2014 Talarico 50\u201343 (TX), Jackson 51\u201345 (ME), Brown 49\u201344 (OH), Peltola 48\u201346 (AK), Turek 48\u201347 (IA).",
-   "source": "Forbes",
-   "url": "https://www.forbes.com/sites/saradorn/2026/11/01/latest-polls-in-2026-midterms-democrats-lead-nearly-all-key-senate-races/"
-  },
-  {
-   "date": "2026-11-02",
-   "dir": "D",
-   "text": "Kalshi Senate odds for Democrats hit 74\u201375%, the platform's high, up from ~63% on Oct. 2. Republicans led this market as late as July (60% R peak).",
-   "source": "CNBC / Quartz",
-   "url": "https://www.cnbc.com/2026/11/02/prediction-market-traders-now-see-nearly-75percent-chance-of-democrats-winning-the-senate.html"
-  },
-  {
-   "date": "2026-11-02",
-   "dir": "R",
-   "text": "Polling-error risk: 2016, 2020 and 2024 polls understated Republicans by ~3\u20135 pts. A miss that size likely costs Democrats the Senate and narrows the House.",
-   "source": "Silver Bulletin via DC News Now",
-   "url": "https://www.dcnewsnow.com/news/politics/final-projections-give-democrats-high-odds-to-sweep-congress/"
-  },
-  {
-   "date": "2026-10-29",
-   "dir": "D",
-   "text": "Cook's final governor ratings moved four races toward Democrats (incl. Wisconsin to Lean D); Cook projects a Democratic net gain of 2\u20134 governorships.",
-   "source": "Cook Political Report",
-   "url": "https://www.cookpolitical.com/analysis/governors/2026-final-governors-ratings"
-  },
-  {
-   "date": "2026-10-23",
-   "dir": "D",
-   "text": "Cook moved 19 House races toward Democrats and none toward Republicans; Democrats now 'favored outright' in the 218 seats needed.",
-   "source": "The Hill",
-   "url": "https://thehill.com/homenews/campaign/6167727-cook-political-report-democrats-19-house-seats/"
-  },
-  {
-   "date": "2026-10-23",
-   "dir": "D",
-   "text": "Trump approval at record lows (CNN/SSRS 32%); NYT/Siena generic ballot D+11, CNN D+10.",
-   "source": "The Hill / Forbes",
-   "url": "https://www.forbes.com/sites/saradorn/2026/10/23/republicans-chances-of-maintaining-house-majority-have-all-but-evaporated-cook-political-report-says/"
-  },
-  {
-   "date": "2026-10-19",
-   "dir": "R",
-   "text": "Georgia governor remains a statistical tie: Rick Jackson (R) +1.6 over Keisha Lance Bottoms (D), even as Ossoff leads by ~7 for Senate.",
-   "source": "WRDW / Quantus",
-   "url": "https://www.wrdw.com/2026/10/19/who-will-win-ga-elections-new-poll-reveals-clues/"
-  },
-  {
-   "date": "2026-05-13",
-   "dir": "R",
-   "text": "Mid-decade redistricting and court rulings (incl. Louisiana v. Callais narrowing VRA majority-minority protections) shifted the House map toward the GOP; one model's GOP odds rose from 18.9% to 27.2% in a week.",
-   "source": "RacetotheWH",
-   "url": "https://racetothewh.com/house"
-  }
- ],
- "alerts": [
-  {
-   "t": "2026-11-04T03:54:01Z",
-   "dir": "D",
-   "text": "DDHQ: Acton (D) defeats Ramaswamy, flipping Ohio governor."
-  },
-  {
-   "t": "2026-11-04T03:54:01Z",
-   "dir": "D",
-   "text": "DDHQ: Sand (D) wins Iowa governor, a Democratic flip."
-  },
-  {
-   "t": "2026-11-04T03:54:01Z",
-   "dir": "neutral",
-   "text": "DDHQ: Crowley (D) holds Wisconsin governor; Pingree (D) holds Maine."
-  },
-  {
-   "t": "2026-11-04T03:54:01Z",
-   "dir": "D",
-   "text": "NBC News and CNN also project Democrats win the House."
-  },
-  {
-   "t": "2026-11-04T04:08:05Z",
-   "dir": "D",
-   "text": "DDHQ: Hamilton (D) flips Kansas Senate seat \u2014 fourth Democratic pickup."
-  },
-  {
-   "t": "2026-11-04T04:08:05Z",
-   "dir": "D",
-   "text": "DDHQ/CBS: Hobbs (D) holds Arizona governor, defeating Biggs."
-  },
-  {
-   "t": "2026-11-04T04:08:05Z",
-   "dir": "D",
-   "text": "DDHQ: Benson (D) wins Michigan governor, holding the seat."
-  },
-  {
-   "t": "2026-11-04T04:08:05Z",
-   "dir": "neutral",
-   "text": "DDHQ: Haaland (D) holds New Mexico governor; Rounds (R) holds South Dakota Senate."
-  },
-  {
-   "t": "2026-11-04T04:08:05Z",
-   "dir": "D",
-   "text": "DDHQ: Powell (D) wins Nebraska's 2nd District, a Republican-held seat."
-  },
-  {
-   "t": "2026-11-04T04:25:16Z",
-   "dir": "D",
-   "text": "AP: Brown (D) unseats Husted in Ohio \u2014 fifth Democratic Senate flip."
-  },
-  {
-   "t": "2026-11-04T04:25:16Z",
-   "dir": "D",
-   "text": "CNN/ABC: Hinojosa (D) defeats Gov. Abbott, flipping Texas governor."
-  },
-  {
-   "t": "2026-11-04T04:25:16Z",
-   "dir": "D",
-   "text": "AP: Stelson (D) ousts Perry in PA-10, a Republican-held seat."
-  },
-  {
-   "t": "2026-11-04T04:25:16Z",
-   "dir": "D",
-   "text": "DDHQ/NBC: Taylor (D) defeats Wittman, flipping VA-1."
-  },
-  {
-   "t": "2026-11-04T04:25:16Z",
-   "dir": "neutral",
-   "text": "ABC/CBS: Becerra (D) wins California governor \u2014 Democratic hold."
-  },
-  {
-   "t": "2026-11-04T04:25:16Z",
-   "dir": "neutral",
-   "text": "DDHQ: Merkley (D) holds Oregon Senate seat."
-  },
-  {
-   "t": "2026-11-04T04:25:16Z",
-   "dir": "neutral",
-   "text": "NBC/AP: Republicans hold Senate seats in AR, AL and TN."
-  },
-  {
-   "t": "2026-11-04T04:38:18Z",
-   "dir": "D",
-   "text": "DDHQ/NBC: Turek (D) flips Iowa Senate \u2014 sixth Democratic pickup."
-  },
-  {
-   "t": "2026-11-04T04:38:18Z",
-   "dir": "D",
-   "text": "DDHQ and NBC project Democrats win control of the Senate."
-  },
-  {
-   "t": "2026-11-04T04:38:18Z",
-   "dir": "D",
-   "text": "AP and ABC News also project Democrats win the House."
-  },
-  {
-   "t": "2026-11-04T05:08:12Z",
-   "dir": "D",
-   "text": "DDHQ/The Hill: Leonard (D) ousts Rep. Carey, flipping OH-15."
-  },
-  {
-   "t": "2026-11-04T05:08:12Z",
-   "dir": "D",
-   "text": "DDHQ/The Hill: Mendoza (D) flips AZ-6 from Rep. Ciscomani."
-  },
-  {
-   "t": "2026-11-04T05:08:12Z",
-   "dir": "D",
-   "text": "Lawler (R) concedes NY-17 to Conley (D); no network call yet."
-  },
-  {
-   "t": "2026-11-04T05:22:42Z",
-   "dir": "neutral",
-   "text": "AP: Flanagan (D) defeats Tafoya, holding Minnesota Senate seat."
-  },
-  {
-   "t": "2026-11-04T05:22:42Z",
-   "dir": "neutral",
-   "text": "DDHQ/The Hill: Republicans hold Alabama (Tuberville) and South Carolina (Wilson) governor."
-  },
-  {
-   "t": "2026-11-04T05:54:27Z",
-   "dir": "D",
-   "text": "CNN: Jackson (D) defeats Sen. Collins in Maine \u2014 seventh Democratic Senate flip."
-  },
-  {
-   "t": "2026-11-04T05:54:27Z",
-   "dir": "neutral",
-   "text": "AP: Klobuchar (D) wins Minnesota governor, holding the seat."
-  },
-  {
-   "t": "2026-11-04T05:54:27Z",
-   "dir": "D",
-   "text": "AP: Rutinel (D) unseats Rep. Gabe Evans, flipping CO-8."
-  },
-  {
-   "t": "2026-11-04T05:54:27Z",
-   "dir": "D",
-   "text": "CBS: Bohannan (D) unseats Rep. Miller-Meeks, flipping IA-1."
-  },
-  {
-   "t": "2026-11-04T05:54:27Z",
-   "dir": "D",
-   "text": "CBS/DDHQ: Bennett (D) defeats Rep. Tom Kean Jr., flipping NJ-7."
-  },
-  {
-   "t": "2026-11-04T05:54:27Z",
-   "dir": "D",
-   "text": "Van Orden (R) concedes WI-3 to Cooke (D); no network call yet."
-  },
-  {
-   "t": "2026-11-04T06:14:51Z",
-   "dir": "D",
-   "text": "AP: Harvie (D) unseats Rep. Fitzpatrick, flipping PA-1."
-  },
-  {
-   "t": "2026-11-04T06:14:51Z",
-   "dir": "D",
-   "text": "AP: Cooke (D) unseats Rep. Van Orden, flipping WI-3."
-  },
-  {
-   "t": "2026-11-04T06:14:51Z",
-   "dir": "D",
-   "text": "CBS: Pulido (D) defeats Rep. De La Cruz, flipping TX-15."
-  },
-  {
-   "t": "2026-11-04T06:14:51Z",
-   "dir": "D",
-   "text": "DDHQ/NBC: Poindexter (D) defeats Rep. Max Miller, flipping OH-7."
-  },
-  {
-   "t": "2026-11-04T06:14:51Z",
-   "dir": "D",
-   "text": "AP and CBS also project Democratic Senate control, per reports."
-  },
-  {
-   "t": "2026-11-04T06:14:51Z",
-   "dir": "neutral",
-   "text": "Fox: Ayotte (R) holds New Hampshire governor; Blackburn (R) wins Tennessee."
-  },
-  {
-   "t": "2026-11-04T06:22:59Z",
-   "dir": "neutral",
-   "text": "DDHQ/The Hill: El-Sayed (D) defeats Rogers, holding Michigan Senate seat."
-  },
-  {
-   "t": "2026-11-04T07:08:00Z",
-   "dir": "R",
-   "text": "DDHQ: Ricketts (R) defeats Osborn (I), holding Nebraska Senate seat."
-  },
-  {
-   "t": "2026-11-04T07:08:00Z",
-   "dir": "D",
-   "text": "DDHQ: Villegas (D) unseats Rep. Valadao, flipping CA-22."
-  },
-  {
-   "t": "2026-11-04T07:08:00Z",
-   "dir": "neutral",
-   "text": "DDHQ/The Hill: Kotek (D) wins reelection as Oregon governor."
-  }
- ]
+  "updated": "2026-11-04T07:54:02Z",
+  "phase": "live",
+  "phaseNote": "Both chambers projected Democratic; Alaska Senate, NV/KS/AK governors and some House seats still counting.",
+  "liveRead": {
+    "senate": "DDHQ, NBC, AP, CBS project D Senate control; Alaska uncalled, ranked-choice tabulation Nov. 18.",
+    "house": "D control projected by AP, NBC, CNN, ABC, DDHQ; AP tally 224 D, 135 R; D flipped IA-2, IA-3, WI-1, TX-23.",
+    "governors": "Democrats flipped GA, OH, IA, TX; NV, KS, AK uncalled, Holscher (D) narrowly leads in Kansas."
+  },
+  "tally": {
+    "senate": {
+      "D": 20,
+      "R": 10,
+      "I": 0,
+      "note": "Called 2026 races only. Seats not up: 34 D-caucus, 31 R. DDHQ, NBC, AP, CBS project D control."
+    },
+    "house": {
+      "D": 224,
+      "R": 135,
+      "note": "Called races (AP tally via Fox News). 218 needed. AP, ABC, NBC, CNN, DDHQ project D control."
+    },
+    "governors": {
+      "D": 21,
+      "R": 9,
+      "I": 0,
+      "note": "Called races out of 36."
+    }
+  },
+  "races": {
+    "SEN-NC": {
+      "status": "D",
+      "reporting": 0,
+      "d": 66.8,
+      "r": 31.6,
+      "calledBy": "AP (8:23 pm ET), CBS News, ABC News"
+    },
+    "SEN-ME": {
+      "status": "D",
+      "reporting": 68,
+      "d": null,
+      "r": null,
+      "calledBy": "CNN (~12:15 am ET); Collins conceded"
+    },
+    "SEN-OH": {
+      "status": "D",
+      "reporting": 87,
+      "d": 48.6,
+      "r": 46.5,
+      "calledBy": "AP (11:10 pm ET)"
+    },
+    "SEN-TX": {
+      "status": "D",
+      "reporting": 29,
+      "d": 59.0,
+      "r": 40.0,
+      "calledBy": "DDHQ (10:14 pm ET), AP (11:12 pm ET), ABC News"
+    },
+    "SEN-AK": {
+      "status": "uncalled",
+      "reporting": 0,
+      "d": null,
+      "r": null,
+      "calledBy": "Not projected; ranked-choice tabulation Nov. 18"
+    },
+    "SEN-IA": {
+      "status": "D",
+      "reporting": 78,
+      "d": 51.0,
+      "r": 45.0,
+      "calledBy": "DDHQ (~11:18 pm ET), NBC News"
+    },
+    "SEN-KS": {
+      "status": "D",
+      "reporting": 0,
+      "d": null,
+      "r": null,
+      "calledBy": "DDHQ via Bloomberg, The Hill"
+    },
+    "SEN-NE": {
+      "status": "R",
+      "reporting": 0,
+      "d": null,
+      "r": null,
+      "calledBy": "DDHQ via Bloomberg, The Hill"
+    },
+    "SEN-MI": {
+      "status": "D",
+      "reporting": 0,
+      "d": null,
+      "r": null,
+      "calledBy": "DDHQ via The Hill (~1:20 am ET)"
+    },
+    "SEN-GA": {
+      "status": "D",
+      "reporting": 63,
+      "d": 62.0,
+      "r": 38.0,
+      "calledBy": "NBC News, CBS News, DDHQ"
+    },
+    "SEN-NH": {
+      "status": "D",
+      "reporting": 8,
+      "d": 61.8,
+      "r": 36.4,
+      "calledBy": "DDHQ (8:00 pm ET); Sununu conceded"
+    },
+    "SEN-MN": {
+      "status": "D",
+      "reporting": 0,
+      "d": null,
+      "r": null,
+      "calledBy": "AP"
+    },
+    "GOV-GA": {
+      "status": "D",
+      "reporting": 0,
+      "d": null,
+      "r": null,
+      "calledBy": "NBC News"
+    },
+    "GOV-AZ": {
+      "status": "D",
+      "reporting": 0,
+      "d": null,
+      "r": null,
+      "calledBy": "DDHQ via Bloomberg; CBS News"
+    },
+    "GOV-MI": {
+      "status": "D",
+      "reporting": 0,
+      "d": null,
+      "r": null,
+      "calledBy": "DDHQ via The Hill"
+    },
+    "GOV-WI": {
+      "status": "D",
+      "reporting": 0,
+      "d": null,
+      "r": null,
+      "calledBy": "DDHQ via Bloomberg"
+    },
+    "GOV-PA": {
+      "status": "D",
+      "reporting": 0,
+      "d": null,
+      "r": null,
+      "calledBy": "ABC News (~8:01 pm ET)"
+    },
+    "GOV-KS": {
+      "status": "uncalled",
+      "reporting": 0,
+      "d": null,
+      "r": null,
+      "calledBy": "Not projected; Holscher (D) leads by ~5,557 votes"
+    },
+    "GOV-NV": {
+      "status": "uncalled",
+      "reporting": 0,
+      "d": null,
+      "r": null,
+      "calledBy": ""
+    },
+    "GOV-IA": {
+      "status": "D",
+      "reporting": 0,
+      "d": null,
+      "r": null,
+      "calledBy": "DDHQ via The Hill"
+    },
+    "GOV-OH": {
+      "status": "D",
+      "reporting": 76,
+      "d": 50.0,
+      "r": 46.0,
+      "calledBy": "DDHQ via The Hill; AP (11:04 pm ET)"
+    },
+    "GOV-AK": {
+      "status": "uncalled",
+      "reporting": 0,
+      "d": null,
+      "r": null,
+      "calledBy": ""
+    },
+    "SEN-VA": {
+      "status": "D",
+      "reporting": 1,
+      "d": null,
+      "r": null,
+      "calledBy": "AP (7:00 pm ET)"
+    },
+    "SEN-WV": {
+      "status": "R",
+      "reporting": 0,
+      "d": null,
+      "r": null,
+      "calledBy": "DDHQ via The Hill (~7:30 pm ET)"
+    },
+    "SEN-DE": {
+      "status": "D",
+      "reporting": 0,
+      "d": null,
+      "r": null,
+      "calledBy": "AP"
+    },
+    "SEN-IL": {
+      "status": "D",
+      "reporting": 0,
+      "d": null,
+      "r": null,
+      "calledBy": "AP"
+    },
+    "SEN-MA": {
+      "status": "D",
+      "reporting": 0,
+      "d": null,
+      "r": null,
+      "calledBy": "AP"
+    },
+    "SEN-NJ": {
+      "status": "D",
+      "reporting": 0,
+      "d": null,
+      "r": null,
+      "calledBy": "AP"
+    },
+    "SEN-RI": {
+      "status": "D",
+      "reporting": 0,
+      "d": null,
+      "r": null,
+      "calledBy": "AP"
+    },
+    "SEN-FL": {
+      "status": "R",
+      "reporting": 0,
+      "d": null,
+      "r": null,
+      "calledBy": "DDHQ via Bloomberg"
+    },
+    "H-FL-22": {
+      "status": "D",
+      "reporting": 95,
+      "d": 52.2,
+      "r": 47.8,
+      "calledBy": "DDHQ (8:05 pm ET)"
+    },
+    "SEN-KY": {
+      "status": "R",
+      "reporting": 0,
+      "d": null,
+      "r": null,
+      "calledBy": "DDHQ via The Hill"
+    },
+    "SEN-OK": {
+      "status": "R",
+      "reporting": 0,
+      "d": null,
+      "r": null,
+      "calledBy": "DDHQ via The Hill"
+    },
+    "GOV-IL": {
+      "status": "D",
+      "reporting": 0,
+      "d": null,
+      "r": null,
+      "calledBy": "ABC News (~8:01 pm ET)"
+    },
+    "GOV-MD": {
+      "status": "D",
+      "reporting": 0,
+      "d": null,
+      "r": null,
+      "calledBy": "ABC News (~8:01 pm ET)"
+    },
+    "GOV-MA": {
+      "status": "D",
+      "reporting": 0,
+      "d": null,
+      "r": null,
+      "calledBy": "AP, ABC News (8:00 pm ET)"
+    },
+    "GOV-FL": {
+      "status": "R",
+      "reporting": 0,
+      "d": null,
+      "r": null,
+      "calledBy": "DDHQ (8:28 pm ET)"
+    },
+    "SEN-WY": {
+      "status": "R",
+      "reporting": 0,
+      "d": null,
+      "r": null,
+      "calledBy": "AP"
+    },
+    "GOV-NY": {
+      "status": "D",
+      "reporting": 0,
+      "d": null,
+      "r": null,
+      "calledBy": "AP"
+    },
+    "H-KY-06": {
+      "status": "D",
+      "reporting": 92,
+      "d": 55.0,
+      "r": 41.2,
+      "calledBy": "DDHQ (9:07 pm ET)"
+    },
+    "H-NC-11": {
+      "status": "D",
+      "reporting": 0,
+      "d": null,
+      "r": null,
+      "calledBy": "DDHQ (8:28 pm ET)"
+    },
+    "H-PA-08": {
+      "status": "D",
+      "reporting": 0,
+      "d": null,
+      "r": null,
+      "calledBy": "DDHQ"
+    },
+    "H-FL-14": {
+      "status": "D",
+      "reporting": 0,
+      "d": null,
+      "r": null,
+      "calledBy": "NBC News"
+    },
+    "GOV-CO": {
+      "status": "D",
+      "reporting": 0,
+      "d": null,
+      "r": null,
+      "calledBy": "AP (~9:20 pm ET)"
+    },
+    "GOV-WY": {
+      "status": "R",
+      "reporting": 0,
+      "d": null,
+      "r": null,
+      "calledBy": "AP"
+    },
+    "GOV-CT": {
+      "status": "D",
+      "reporting": 0,
+      "d": null,
+      "r": null,
+      "calledBy": "AP"
+    },
+    "SEN-CO": {
+      "status": "D",
+      "reporting": 0,
+      "d": null,
+      "r": null,
+      "calledBy": "CBS News, AP"
+    },
+    "SEN-SC": {
+      "status": "D",
+      "reporting": 69,
+      "d": 52.6,
+      "r": 45.7,
+      "calledBy": "DDHQ (9:54 pm ET), AP, CBS News"
+    },
+    "SEN-NM": {
+      "status": "D",
+      "reporting": 0,
+      "d": null,
+      "r": null,
+      "calledBy": "AP (8:00 pm ET)"
+    },
+    "H-VA-02": {
+      "status": "D",
+      "reporting": 97,
+      "d": 53.1,
+      "r": null,
+      "calledBy": "DDHQ via Bloomberg"
+    },
+    "H-PA-07": {
+      "status": "D",
+      "reporting": 97,
+      "d": 56.1,
+      "r": null,
+      "calledBy": "DDHQ via Bloomberg"
+    },
+    "GOV-RI": {
+      "status": "D",
+      "reporting": 0,
+      "d": null,
+      "r": null,
+      "calledBy": "ABC News"
+    },
+    "GOV-ME": {
+      "status": "D",
+      "reporting": 0,
+      "d": null,
+      "r": null,
+      "calledBy": "DDHQ via The Hill"
+    },
+    "SEN-SD": {
+      "reporting": 0,
+      "d": null,
+      "r": null,
+      "status": "R",
+      "calledBy": "DDHQ via The Hill"
+    },
+    "GOV-NM": {
+      "reporting": 0,
+      "d": null,
+      "r": null,
+      "status": "D",
+      "calledBy": "DDHQ via The Hill"
+    },
+    "SEN-OR": {
+      "status": "D",
+      "reporting": 0,
+      "d": null,
+      "r": null,
+      "calledBy": "DDHQ (11:00 pm ET)"
+    },
+    "SEN-AR": {
+      "status": "R",
+      "reporting": 0,
+      "d": null,
+      "r": null,
+      "calledBy": "NBC News, AP"
+    },
+    "SEN-AL": {
+      "status": "R",
+      "reporting": 0,
+      "d": null,
+      "r": null,
+      "calledBy": "NBC News"
+    },
+    "SEN-TN": {
+      "status": "R",
+      "reporting": 0,
+      "d": null,
+      "r": null,
+      "calledBy": "AP"
+    },
+    "GOV-TX": {
+      "status": "D",
+      "reporting": 0,
+      "d": null,
+      "r": null,
+      "calledBy": "CNN, ABC News"
+    },
+    "GOV-CA": {
+      "status": "D",
+      "reporting": 0,
+      "d": null,
+      "r": null,
+      "calledBy": "ABC News, CBS News"
+    },
+    "H-VA-01": {
+      "status": "D",
+      "reporting": 0,
+      "d": null,
+      "r": null,
+      "calledBy": "DDHQ (10:28 pm ET), NBC News"
+    },
+    "H-PA-10": {
+      "status": "D",
+      "reporting": 0,
+      "d": null,
+      "r": null,
+      "calledBy": "AP (10:41 pm ET)"
+    },
+    "H-OH-15": {
+      "status": "D",
+      "reporting": 0,
+      "d": null,
+      "r": null,
+      "calledBy": "DDHQ via The Hill"
+    },
+    "H-AZ-06": {
+      "status": "D",
+      "reporting": 71,
+      "d": 54.9,
+      "r": null,
+      "calledBy": "DDHQ via The Hill"
+    },
+    "H-NY-17": {
+      "status": "uncalled",
+      "reporting": 61,
+      "d": 52.2,
+      "r": null,
+      "calledBy": "Not yet projected; Lawler (R) conceded per ABC7, Fox 5"
+    },
+    "GOV-SC": {
+      "status": "R",
+      "reporting": 0,
+      "d": null,
+      "r": null,
+      "calledBy": "DDHQ via The Hill"
+    },
+    "GOV-AL": {
+      "status": "R",
+      "reporting": 0,
+      "d": null,
+      "r": null,
+      "calledBy": "DDHQ via The Hill"
+    },
+    "GOV-MN": {
+      "status": "D",
+      "reporting": 0,
+      "d": null,
+      "r": null,
+      "calledBy": "AP"
+    },
+    "H-CO-08": {
+      "status": "D",
+      "reporting": 78,
+      "d": 55.5,
+      "r": 41.0,
+      "calledBy": "AP (after 11 pm ET)"
+    },
+    "H-IA-01": {
+      "status": "D",
+      "reporting": 99,
+      "d": 52.8,
+      "r": null,
+      "calledBy": "CBS News"
+    },
+    "H-NJ-07": {
+      "status": "D",
+      "reporting": 94,
+      "d": 57.1,
+      "r": null,
+      "calledBy": "CBS News; DDHQ via The Hill"
+    },
+    "H-WI-03": {
+      "status": "D",
+      "reporting": 99,
+      "d": 52.4,
+      "r": 45.8,
+      "calledBy": "AP (12:48 am ET)"
+    },
+    "H-PA-01": {
+      "status": "D",
+      "reporting": 0,
+      "d": null,
+      "r": null,
+      "calledBy": "AP (12:37 am ET)"
+    },
+    "H-TX-15": {
+      "status": "D",
+      "reporting": 89,
+      "d": 61.6,
+      "r": null,
+      "calledBy": "CBS News (~12:35 am ET)"
+    },
+    "H-OH-07": {
+      "status": "D",
+      "reporting": 98,
+      "d": 54.7,
+      "r": null,
+      "calledBy": "DDHQ via The Hill; NBC News"
+    },
+    "GOV-NH": {
+      "status": "R",
+      "reporting": 0,
+      "d": null,
+      "r": null,
+      "calledBy": "Fox News Decision Desk"
+    },
+    "GOV-TN": {
+      "status": "R",
+      "reporting": 0,
+      "d": null,
+      "r": null,
+      "calledBy": "Washington Examiner"
+    },
+    "H-CA-22": {
+      "status": "D",
+      "reporting": 45,
+      "d": 65.0,
+      "r": null,
+      "calledBy": "DDHQ via Bloomberg"
+    },
+    "GOV-OR": {
+      "status": "D",
+      "reporting": 0,
+      "d": null,
+      "r": null,
+      "calledBy": "DDHQ via The Hill"
+    },
+    "H-IA-02": {
+      "status": "D",
+      "reporting": 0,
+      "d": null,
+      "r": null,
+      "calledBy": "AP"
+    },
+    "H-IA-03": {
+      "status": "D",
+      "reporting": 0,
+      "d": null,
+      "r": null,
+      "calledBy": "AP (via Fox News results)"
+    },
+    "H-NM-02": {
+      "status": "D",
+      "reporting": 0,
+      "d": null,
+      "r": null,
+      "calledBy": "AP"
+    },
+    "H-AL-02": {
+      "status": "D",
+      "reporting": 0,
+      "d": null,
+      "r": null,
+      "calledBy": "AP (via Fox News results)"
+    },
+    "H-TX-23": {
+      "status": "D",
+      "reporting": 0,
+      "d": null,
+      "r": null,
+      "calledBy": "CBS News"
+    },
+    "H-TX-35": {
+      "status": "D",
+      "reporting": 0,
+      "d": 59.0,
+      "r": 41.0,
+      "calledBy": "AP (via Fox News results)"
+    },
+    "H-WI-01": {
+      "status": "D",
+      "reporting": 0,
+      "d": null,
+      "r": null,
+      "calledBy": "AP (via Fox News results)"
+    },
+    "H-FL-25": {
+      "status": "uncalled",
+      "reporting": 99,
+      "d": 51.3,
+      "r": null,
+      "calledBy": ""
+    },
+    "H-AZ-01": {
+      "status": "uncalled",
+      "reporting": 72,
+      "d": 54.9,
+      "r": null,
+      "calledBy": ""
+    },
+    "H-TX-34": {
+      "status": "uncalled",
+      "reporting": 99,
+      "d": 55.6,
+      "r": null,
+      "calledBy": ""
+    },
+    "H-NC-01": {
+      "status": "uncalled",
+      "reporting": 96,
+      "d": 49.6,
+      "r": null,
+      "calledBy": ""
+    },
+    "H-OH-09": {
+      "status": "uncalled",
+      "reporting": 66,
+      "d": 50.2,
+      "r": null,
+      "calledBy": ""
+    },
+    "H-FL-13": {
+      "status": "uncalled",
+      "reporting": 99,
+      "d": null,
+      "r": 49.5,
+      "calledBy": ""
+    },
+    "H-FL-27": {
+      "status": "uncalled",
+      "reporting": 99,
+      "d": null,
+      "r": 50.2,
+      "calledBy": ""
+    },
+    "H-MI-04": {
+      "status": "uncalled",
+      "reporting": 73,
+      "d": null,
+      "r": 50.5,
+      "calledBy": ""
+    },
+    "H-WA-03": {
+      "status": "uncalled",
+      "reporting": 67,
+      "d": 55.0,
+      "r": null,
+      "calledBy": ""
+    },
+    "GOV-ID": {
+      "status": "R",
+      "reporting": 0,
+      "d": null,
+      "r": null,
+      "calledBy": "AP (12:36 am ET)"
+    },
+    "GOV-OK": {
+      "status": "R",
+      "reporting": 0,
+      "d": null,
+      "r": null,
+      "calledBy": "AP (11:46 pm ET)"
+    },
+    "GOV-AR": {
+      "status": "R",
+      "reporting": 0,
+      "d": null,
+      "r": null,
+      "calledBy": "AP"
+    },
+    "GOV-HI": {
+      "status": "D",
+      "reporting": 0,
+      "d": null,
+      "r": null,
+      "calledBy": "NBC News; AP"
+    }
+  },
+  "otherCalls": [
+    {
+      "race": "FL-23",
+      "winner": "D",
+      "text": "Moskowitz (D) holds FL-23",
+      "calledBy": "DDHQ via The Hill"
+    },
+    {
+      "race": "AL-01",
+      "winner": "R",
+      "text": "Carl (R) wins AL-01",
+      "calledBy": "DDHQ via The Hill"
+    },
+    {
+      "race": "OH-13",
+      "winner": "D",
+      "text": "Sykes (D) holds OH-13",
+      "calledBy": "ABC News"
+    },
+    {
+      "race": "NY-10",
+      "winner": "D",
+      "text": "Lander (D) wins NY-10",
+      "calledBy": "DDHQ via Bloomberg"
+    },
+    {
+      "race": "NY-12",
+      "winner": "D",
+      "text": "Lasher (D) wins NY-12",
+      "calledBy": "DDHQ via Bloomberg"
+    },
+    {
+      "race": "NY-13",
+      "winner": "D",
+      "text": "Avila Chevalier (D) wins NY-13",
+      "calledBy": "Washington Examiner"
+    },
+    {
+      "race": "NY-07",
+      "winner": "D",
+      "text": "Valdez (D) wins NY-7",
+      "calledBy": "Washington Examiner"
+    },
+    {
+      "race": "NE-02",
+      "winner": "D",
+      "text": "Powell (D) wins NE-02, a GOP-held seat",
+      "calledBy": "DDHQ via Bloomberg"
+    },
+    {
+      "race": "FL-24",
+      "winner": "D",
+      "text": "Gilbert (D) holds FL-24",
+      "calledBy": "DDHQ via The Hill"
+    },
+    {
+      "race": "MA-06",
+      "winner": "D",
+      "text": "Koh (D) wins MA-6",
+      "calledBy": "AP"
+    },
+    {
+      "race": "TX-28",
+      "winner": "D",
+      "text": "Cuellar (D) wins a 12th term in TX-28",
+      "calledBy": "Washington Examiner"
+    }
+  ],
+  "momentum": [
+    {
+      "date": "2026-11-04",
+      "dir": "D",
+      "text": "AP projects Lindsay James (D) wins Iowa's 2nd District, one of several overnight Midwest House flips (with IA-3, WI-1).",
+      "source": "Iowa Capital Dispatch / AP",
+      "url": "https://iowacapitaldispatch.com/2026/11/03/democrat-lindsay-james-wins-iowas-2nd-congressional-district-seat-ap-projects/"
+    },
+    {
+      "date": "2026-11-04",
+      "dir": "D",
+      "text": "AP projects Bob Harvie (D) defeats Rep. Brian Fitzpatrick in PA-1 (12:37 am ET), one of the GOP's most entrenched swing-seat incumbents.",
+      "source": "FOX 29 / AP",
+      "url": "https://www.fox29.com/news/bob-harvie-wins-pennsylvanias-1st-congressional-district-ap"
+    },
+    {
+      "date": "2026-11-04",
+      "dir": "D",
+      "text": "CNN projects Troy Jackson (D) defeats Sen. Susan Collins in Maine (~12:15 am ET), Democrats' seventh Senate flip; Collins conceded.",
+      "source": "Newsweek / CNN",
+      "url": "https://www.newsweek.com/susan-collins-troy-jackson-maine-senate-midterms-results-12635379"
+    },
+    {
+      "date": "2026-11-03",
+      "dir": "D",
+      "text": "Decision Desk HQ and NBC News project Democrats win Senate control after Josh Turek (D) flips Iowa, giving Democrats full control of Congress.",
+      "source": "Bloomberg / DDHQ",
+      "url": "https://www.bloomberg.com/news/articles/2026-11-04/democrats-win-control-of-the-senate-ddhq-projects"
+    },
+    {
+      "date": "2026-11-03",
+      "dir": "D",
+      "text": "DDHQ projects Josh Turek (D) defeats Ashley Hinson in Iowa (~11:18 pm ET), 51%\u201345% with 78% counted.",
+      "source": "The Hill / DDHQ",
+      "url": "https://thehill.com/homenews/campaign/6178947-democrat-josh-turek-flips-senate-seat-in-iowa-2026-midterms/amp/"
+    },
+    {
+      "date": "2026-11-03",
+      "dir": "D",
+      "text": "AP projects Sherrod Brown (D) defeats Sen. Jon Husted in Ohio (11:10 pm ET), Democrats' fifth Senate flip, bringing them to 50 seats.",
+      "source": "GV Wire / AP",
+      "url": "https://gvwire.com/2026/11/03/sherrod-brown-wins-ohio-senate-special-election-ap-says/"
+    },
+    {
+      "date": "2026-11-03",
+      "dir": "D",
+      "text": "CNN projects Gina Hinojosa (D) defeats Gov. Greg Abbott, flipping the Texas governorship.",
+      "source": "Bloomberg / CNN",
+      "url": "https://www.bloomberg.com/news/articles/2026-11-04/democrat-hinojosa-wins-texas-governor-race-cnn-projects"
+    },
+    {
+      "date": "2026-11-04",
+      "dir": "D",
+      "text": "DDHQ projects Democrat Adam Hamilton flips Kansas Senate seat, Democrats' fourth Senate pickup.",
+      "source": "Bloomberg (DDHQ)",
+      "url": "https://bloomberg.com/news/articles/2026-11-04/democrat-hamilton-wins-kansas-senate-race-ddhq-projects"
+    },
+    {
+      "date": "2026-11-03",
+      "dir": "D",
+      "text": "Decision Desk HQ projects James Talarico (D) defeats Ken Paxton in Texas (10:14 pm ET), Democrats' third Senate flip; one more net gain needed for control.",
+      "source": "Bloomberg / DDHQ",
+      "url": "https://www.bloomberg.com/news/articles/2026-11-04/democrat-talarico-wins-texas-senate-race-ddhq-projects"
+    },
+    {
+      "date": "2026-11-03",
+      "dir": "D",
+      "text": "Annie Andrews (D) defeats Sen. Darline Graham in South Carolina, Democrats' second Senate flip of the night (AP, CBS, DDHQ).",
+      "source": "CBS News",
+      "url": "https://www.cbsnews.com/news/south-carolina-2026-senate-annie-andrews-darline-graham/"
+    },
+    {
+      "date": "2026-11-03",
+      "dir": "D",
+      "text": "Decision Desk HQ projects Democrats win control of the U.S. House (9:09 pm ET); Senate control not yet projected.",
+      "source": "Bloomberg / DDHQ",
+      "url": "https://www.bloomberg.com/news/articles/2026-11-04/democrats-win-control-of-the-house-ddhq-projects"
+    },
+    {
+      "date": "2026-11-03",
+      "dir": "D",
+      "text": "NBC projects Keisha Lance Bottoms wins Georgia governor, flipping the office to Democrats.",
+      "source": "NBC News",
+      "url": "https://www.nbcnews.com/politics/2026-election/keisha-lance-bottoms-georgia-governor-win-democrats-flip-jackson-rcna603348"
+    },
+    {
+      "date": "2026-11-03",
+      "dir": "D",
+      "text": "AP projects Roy Cooper (D) defeats Michael Whatley in North Carolina, flipping a GOP-held Senate seat \u2014 Democrats' first pickup of the night.",
+      "source": "WBTV / AP",
+      "url": "https://www.wbtv.com/2026/11/04/roy-cooper-wins-2026-us-senate-race-north-carolina-ap-projects/"
+    },
+    {
+      "date": "2026-11-03",
+      "dir": "neutral",
+      "text": "Election Day opened with mostly technical and weather problems (Broward County system fault ~20 min; Westchester scanner delays). Early-vote turnout ran well above 2022.",
+      "source": "AP via WSLS",
+      "url": "https://www.wsls.com/news/politics/2026/11/03/election-day-arrives-after-a-surge-in-early-voting-with-observers-keeping-close-watch-at-the-polls/"
+    },
+    {
+      "date": "2026-11-03",
+      "dir": "D",
+      "text": "Maine on track for record midterm turnout, per Secretary of State Shenna Bellows \u2014 Maine Senate is a must-flip for Democrats.",
+      "source": "Fox News live",
+      "url": "https://www.foxnews.com/live-news/2026-midterm-elections-news-analysis-races-11-3-2026"
+    },
+    {
+      "date": "2026-11-03",
+      "dir": "R",
+      "text": "Appeals court lets DOJ warn election officials they could be prosecuted for not following its demands on voting procedures; another ruling allows requests to segregate suspected noncitizen ballots.",
+      "source": "CNN / Fox News live",
+      "url": "https://edition.cnn.com/2026/11/03/politics/live-news/midterm-election-congress"
+    },
+    {
+      "date": "2026-11-02",
+      "dir": "D",
+      "text": "Supreme Court declined the administration's emergency request to stop California from counting ~20,000 ballots DHS flagged as possible noncitizens.",
+      "source": "CNN",
+      "url": "https://edition.cnn.com/2026/11/03/politics/live-news/midterm-election-congress"
+    },
+    {
+      "date": "2026-11-02",
+      "dir": "D",
+      "text": "Final NYT/Siena polls: Democrats lead all seven Senate toss-ups \u2014 Talarico 50\u201343 (TX), Jackson 51\u201345 (ME), Brown 49\u201344 (OH), Peltola 48\u201346 (AK), Turek 48\u201347 (IA).",
+      "source": "Forbes",
+      "url": "https://www.forbes.com/sites/saradorn/2026/11/01/latest-polls-in-2026-midterms-democrats-lead-nearly-all-key-senate-races/"
+    },
+    {
+      "date": "2026-11-02",
+      "dir": "D",
+      "text": "Kalshi Senate odds for Democrats hit 74\u201375%, the platform's high, up from ~63% on Oct. 2. Republicans led this market as late as July (60% R peak).",
+      "source": "CNBC / Quartz",
+      "url": "https://www.cnbc.com/2026/11/02/prediction-market-traders-now-see-nearly-75percent-chance-of-democrats-winning-the-senate.html"
+    },
+    {
+      "date": "2026-11-02",
+      "dir": "R",
+      "text": "Polling-error risk: 2016, 2020 and 2024 polls understated Republicans by ~3\u20135 pts. A miss that size likely costs Democrats the Senate and narrows the House.",
+      "source": "Silver Bulletin via DC News Now",
+      "url": "https://www.dcnewsnow.com/news/politics/final-projections-give-democrats-high-odds-to-sweep-congress/"
+    },
+    {
+      "date": "2026-10-29",
+      "dir": "D",
+      "text": "Cook's final governor ratings moved four races toward Democrats (incl. Wisconsin to Lean D); Cook projects a Democratic net gain of 2\u20134 governorships.",
+      "source": "Cook Political Report",
+      "url": "https://www.cookpolitical.com/analysis/governors/2026-final-governors-ratings"
+    },
+    {
+      "date": "2026-10-23",
+      "dir": "D",
+      "text": "Cook moved 19 House races toward Democrats and none toward Republicans; Democrats now 'favored outright' in the 218 seats needed.",
+      "source": "The Hill",
+      "url": "https://thehill.com/homenews/campaign/6167727-cook-political-report-democrats-19-house-seats/"
+    },
+    {
+      "date": "2026-10-23",
+      "dir": "D",
+      "text": "Trump approval at record lows (CNN/SSRS 32%); NYT/Siena generic ballot D+11, CNN D+10.",
+      "source": "The Hill / Forbes",
+      "url": "https://www.forbes.com/sites/saradorn/2026/10/23/republicans-chances-of-maintaining-house-majority-have-all-but-evaporated-cook-political-report-says/"
+    },
+    {
+      "date": "2026-10-19",
+      "dir": "R",
+      "text": "Georgia governor remains a statistical tie: Rick Jackson (R) +1.6 over Keisha Lance Bottoms (D), even as Ossoff leads by ~7 for Senate.",
+      "source": "WRDW / Quantus",
+      "url": "https://www.wrdw.com/2026/10/19/who-will-win-ga-elections-new-poll-reveals-clues/"
+    },
+    {
+      "date": "2026-05-13",
+      "dir": "R",
+      "text": "Mid-decade redistricting and court rulings (incl. Louisiana v. Callais narrowing VRA majority-minority protections) shifted the House map toward the GOP; one model's GOP odds rose from 18.9% to 27.2% in a week.",
+      "source": "RacetotheWH",
+      "url": "https://racetothewh.com/house"
+    }
+  ],
+  "alerts": [
+    {
+      "t": "2026-11-04T04:25:16Z",
+      "dir": "D",
+      "text": "AP: Stelson (D) ousts Perry in PA-10, a Republican-held seat."
+    },
+    {
+      "t": "2026-11-04T04:25:16Z",
+      "dir": "D",
+      "text": "DDHQ/NBC: Taylor (D) defeats Wittman, flipping VA-1."
+    },
+    {
+      "t": "2026-11-04T04:25:16Z",
+      "dir": "neutral",
+      "text": "ABC/CBS: Becerra (D) wins California governor \u2014 Democratic hold."
+    },
+    {
+      "t": "2026-11-04T04:25:16Z",
+      "dir": "neutral",
+      "text": "DDHQ: Merkley (D) holds Oregon Senate seat."
+    },
+    {
+      "t": "2026-11-04T04:25:16Z",
+      "dir": "neutral",
+      "text": "NBC/AP: Republicans hold Senate seats in AR, AL and TN."
+    },
+    {
+      "t": "2026-11-04T04:38:18Z",
+      "dir": "D",
+      "text": "DDHQ/NBC: Turek (D) flips Iowa Senate \u2014 sixth Democratic pickup."
+    },
+    {
+      "t": "2026-11-04T04:38:18Z",
+      "dir": "D",
+      "text": "DDHQ and NBC project Democrats win control of the Senate."
+    },
+    {
+      "t": "2026-11-04T04:38:18Z",
+      "dir": "D",
+      "text": "AP and ABC News also project Democrats win the House."
+    },
+    {
+      "t": "2026-11-04T05:08:12Z",
+      "dir": "D",
+      "text": "DDHQ/The Hill: Leonard (D) ousts Rep. Carey, flipping OH-15."
+    },
+    {
+      "t": "2026-11-04T05:08:12Z",
+      "dir": "D",
+      "text": "DDHQ/The Hill: Mendoza (D) flips AZ-6 from Rep. Ciscomani."
+    },
+    {
+      "t": "2026-11-04T05:08:12Z",
+      "dir": "D",
+      "text": "Lawler (R) concedes NY-17 to Conley (D); no network call yet."
+    },
+    {
+      "t": "2026-11-04T05:22:42Z",
+      "dir": "neutral",
+      "text": "AP: Flanagan (D) defeats Tafoya, holding Minnesota Senate seat."
+    },
+    {
+      "t": "2026-11-04T05:22:42Z",
+      "dir": "neutral",
+      "text": "DDHQ/The Hill: Republicans hold Alabama (Tuberville) and South Carolina (Wilson) governor."
+    },
+    {
+      "t": "2026-11-04T05:54:27Z",
+      "dir": "D",
+      "text": "CNN: Jackson (D) defeats Sen. Collins in Maine \u2014 seventh Democratic Senate flip."
+    },
+    {
+      "t": "2026-11-04T05:54:27Z",
+      "dir": "neutral",
+      "text": "AP: Klobuchar (D) wins Minnesota governor, holding the seat."
+    },
+    {
+      "t": "2026-11-04T05:54:27Z",
+      "dir": "D",
+      "text": "AP: Rutinel (D) unseats Rep. Gabe Evans, flipping CO-8."
+    },
+    {
+      "t": "2026-11-04T05:54:27Z",
+      "dir": "D",
+      "text": "CBS: Bohannan (D) unseats Rep. Miller-Meeks, flipping IA-1."
+    },
+    {
+      "t": "2026-11-04T05:54:27Z",
+      "dir": "D",
+      "text": "CBS/DDHQ: Bennett (D) defeats Rep. Tom Kean Jr., flipping NJ-7."
+    },
+    {
+      "t": "2026-11-04T05:54:27Z",
+      "dir": "D",
+      "text": "Van Orden (R) concedes WI-3 to Cooke (D); no network call yet."
+    },
+    {
+      "t": "2026-11-04T06:14:51Z",
+      "dir": "D",
+      "text": "AP: Harvie (D) unseats Rep. Fitzpatrick, flipping PA-1."
+    },
+    {
+      "t": "2026-11-04T06:14:51Z",
+      "dir": "D",
+      "text": "AP: Cooke (D) unseats Rep. Van Orden, flipping WI-3."
+    },
+    {
+      "t": "2026-11-04T06:14:51Z",
+      "dir": "D",
+      "text": "CBS: Pulido (D) defeats Rep. De La Cruz, flipping TX-15."
+    },
+    {
+      "t": "2026-11-04T06:14:51Z",
+      "dir": "D",
+      "text": "DDHQ/NBC: Poindexter (D) defeats Rep. Max Miller, flipping OH-7."
+    },
+    {
+      "t": "2026-11-04T06:14:51Z",
+      "dir": "D",
+      "text": "AP and CBS also project Democratic Senate control, per reports."
+    },
+    {
+      "t": "2026-11-04T06:14:51Z",
+      "dir": "neutral",
+      "text": "Fox: Ayotte (R) holds New Hampshire governor; Blackburn (R) wins Tennessee."
+    },
+    {
+      "t": "2026-11-04T06:22:59Z",
+      "dir": "neutral",
+      "text": "DDHQ/The Hill: El-Sayed (D) defeats Rogers, holding Michigan Senate seat."
+    },
+    {
+      "t": "2026-11-04T07:08:00Z",
+      "dir": "R",
+      "text": "DDHQ: Ricketts (R) defeats Osborn (I), holding Nebraska Senate seat."
+    },
+    {
+      "t": "2026-11-04T07:08:00Z",
+      "dir": "D",
+      "text": "DDHQ: Villegas (D) unseats Rep. Valadao, flipping CA-22."
+    },
+    {
+      "t": "2026-11-04T07:08:00Z",
+      "dir": "neutral",
+      "text": "DDHQ/The Hill: Kotek (D) wins reelection as Oregon governor."
+    },
+    {
+      "t": "2026-11-04T07:39:16Z",
+      "dir": "D",
+      "text": "AP: Lindsay James (D) flips Iowa's 2nd District."
+    },
+    {
+      "t": "2026-11-04T07:39:16Z",
+      "dir": "D",
+      "text": "AP: Trone Garriott (D) unseats Rep. Nunn, flipping IA-3."
+    },
+    {
+      "t": "2026-11-04T07:39:16Z",
+      "dir": "D",
+      "text": "AP: Berman (D) unseats Rep. Steil, flipping WI-1."
+    },
+    {
+      "t": "2026-11-04T07:39:16Z",
+      "dir": "D",
+      "text": "CBS: Padilla Stout (D) flips TX-23."
+    },
+    {
+      "t": "2026-11-04T07:39:16Z",
+      "dir": "D",
+      "text": "AP: Johnny Garcia (D) wins redrawn TX-35 over De La Cruz."
+    },
+    {
+      "t": "2026-11-04T07:39:16Z",
+      "dir": "neutral",
+      "text": "AP: Vasquez (D) holds NM-2; Figures (D) holds AL-2."
+    },
+    {
+      "t": "2026-11-04T07:39:16Z",
+      "dir": "D",
+      "text": "AP House tally: Democrats 224 seats, Republicans 135 called."
+    },
+    {
+      "t": "2026-11-04T07:39:16Z",
+      "dir": "neutral",
+      "text": "Alaska Senate heads to ranked-choice tabulation Nov. 18; uncalled."
+    },
+    {
+      "t": "2026-11-04T07:39:16Z",
+      "dir": "neutral",
+      "text": "Kansas governor uncalled; Holscher (D) leads Masterson by ~5,600 votes."
+    },
+    {
+      "t": "2026-11-04T07:54:02Z",
+      "dir": "neutral",
+      "text": "AP: Little (R) wins Idaho governor; Mazzei (R) wins Oklahoma."
+    },
+    {
+      "t": "2026-11-04T07:54:02Z",
+      "dir": "neutral",
+      "text": "AP: Sanders (R) holds Arkansas governor; Green (D) holds Hawaii."
+    }
+  ]
 }
