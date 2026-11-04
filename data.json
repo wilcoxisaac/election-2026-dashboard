@@ -1,10 +1,10 @@
 {
-  "updated": "2026-11-04T14:57:54Z",
+  "updated": "2026-11-04T15:10:14Z",
   "phase": "live",
   "phaseNote": "Both chambers projected Democratic; Mississippi and Alaska Senate, Kansas and Alaska governor, several House seats uncalled.",
   "liveRead": {
     "senate": "DDHQ, NBC, AP, CBS project D Senate control; Letlow (R) holds Louisiana; Alaska and Mississippi (Colom +43) uncalled.",
-    "house": "D control projected by AP, NBC, CNN, ABC, DDHQ; FL-27 heads to recount; NY-17, AZ-1, ME-2 uncalled.",
+    "house": "D control projected by AP, NBC, CNN, ABC, DDHQ; AP tally 228 D, 139 R; FL-27 recount, NY-17, AZ-1, ME-2 uncalled.",
     "governors": "AP: Ford (D) unseats Lombardo in Nevada; Democrats flipped GA, OH, IA, TX, NV; Kansas and Alaska uncalled."
   },
   "tally": {
@@ -16,8 +16,8 @@
     },
     "house": {
       "D": 228,
-      "R": 135,
-      "note": "Called races (AP tally via Fox News, plus DDHQ calls in NC-1, MT-1, OH-10, SC-1). 218 needed. AP, ABC, NBC, CNN, DDHQ project D control."
+      "R": 139,
+      "note": "Called races (AP tally via Fox News). 218 needed. AP, ABC, NBC, CNN, DDHQ project D control."
     },
     "governors": {
       "D": 22,
@@ -645,8 +645,8 @@
     },
     "H-AZ-01": {
       "status": "uncalled",
-      "reporting": 72,
-      "d": 54.9,
+      "reporting": 85,
+      "d": 52.6,
       "r": null,
       "calledBy": ""
     },
@@ -687,9 +687,9 @@
     },
     "H-MI-04": {
       "status": "uncalled",
-      "reporting": 73,
+      "reporting": 95,
       "d": null,
-      "r": 50.5,
+      "r": 50.3,
       "calledBy": ""
     },
     "H-WA-03": {
