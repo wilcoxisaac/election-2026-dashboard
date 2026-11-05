@@ -1,10 +1,10 @@
 {
- "updated": "2026-11-05T18:38:20Z",
+ "updated": "2026-11-05T19:52:39Z",
  "phase": "live",
- "phaseNote": "Both chambers projected Democratic; Mississippi and Alaska Senate, Kansas and Alaska governor, ~41 House seats uncalled.",
+ "phaseNote": "Both chambers projected Democratic; Mississippi and Alaska Senate, Kansas and Alaska governor, ~40 House seats uncalled.",
  "liveRead": {
   "senate": "D control projected by DDHQ, NBC, AP, CBS; Mississippi (Colom +1,138) and Alaska (Peltola +626) uncalled.",
-  "house": "D control projected (AP, NBC, CNN, ABC, DDHQ); NBC: D net +34 after R flip of TX-32; 41 seats uncalled.",
+  "house": "D control projected (AP, NBC, CNN, ABC, DDHQ); AP has 243 D, 152 R called, about 40 seats uncalled.",
   "governors": "Democrats flipped GA, OH, IA, TX, NV; Kansas (Holscher +~5,500) and Alaska (Kreiss-Tomkins 49%) uncalled."
  },
  "tally": {
@@ -15,9 +15,9 @@
    "note": "Called 2026 races only. Seats not up: 34 D-caucus, 31 R. DDHQ, NBC, AP, CBS project D control."
   },
   "house": {
-   "D": 240,
-   "R": 147,
-   "note": "Called races (AP tally via Fox News, 9:35 PM ET Nov. 4). 218 needed. NBC (Nov. 5): 41 uncalled, D net +34; CNN projects D at least 250."
+   "D": 243,
+   "R": 152,
+   "note": "Called races (AP tally, Nov. 5 via allthecalls.app). 218 needed. CNN 250-154, DDHQ 247-152, NBC 244-155."
   },
   "governors": {
    "D": 22,
@@ -648,7 +648,7 @@
    "reporting": 86,
    "d": 52.6,
    "r": null,
-   "calledBy": "DDHQ (via The Hill): Shah (D) flips open seat over Feely (R)"
+   "calledBy": "DDHQ, ABC (12:12 PM ET Nov. 5), CNN (1:29 PM ET), MS NOW: Shah (D) flips open seat over Feely (R)"
   },
   "H-TX-34": {
    "status": "D",
@@ -750,10 +750,10 @@
   },
   "H-MT-01": {
    "status": "D",
-   "reporting": 69,
-   "d": 53.9,
-   "r": 43.4,
-   "calledBy": "DDHQ via The Hill; AP not yet called; Flint (R) conceded"
+   "reporting": 100,
+   "d": 51.8,
+   "r": 48.2,
+   "calledBy": "AP (10:02 AM ET Nov. 5), ABC, MS NOW, DDHQ; Forstag (D) 132,003 vs Flint (R) 122,694"
   },
   "H-OH-10": {
    "status": "D",
@@ -1101,11 +1101,6 @@
  "alerts": [
   {
    "t": "2026-11-04T07:39:16Z",
-   "dir": "D",
-   "text": "AP: Johnny Garcia (D) wins redrawn TX-35 over De La Cruz."
-  },
-  {
-   "t": "2026-11-04T07:39:16Z",
    "dir": "neutral",
    "text": "AP: Vasquez (D) holds NM-2; Figures (D) holds AL-2."
   },
@@ -1298,6 +1293,11 @@
    "t": "2026-11-05T18:38:20Z",
    "dir": "neutral",
    "text": "Maine's 2nd District ranked-choice tabulation set for Nov. 9; LePage (R) leads."
+  },
+  {
+   "t": "2026-11-05T19:52:39Z",
+   "dir": "D",
+   "text": "AP calls Montana's 1st for Forstag (D); AP House tally now 243-152."
   }
  ]
 }
