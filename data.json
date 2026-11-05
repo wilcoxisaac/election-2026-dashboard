@@ -1,10 +1,10 @@
 {
- "updated": "2026-11-05T16:10:30Z",
+ "updated": "2026-11-05T18:38:20Z",
  "phase": "live",
- "phaseNote": "Both chambers projected Democratic; Mississippi and Alaska Senate, Kansas and Alaska governor, several House seats uncalled.",
+ "phaseNote": "Both chambers projected Democratic; Mississippi and Alaska Senate, Kansas and Alaska governor, ~41 House seats uncalled.",
  "liveRead": {
   "senate": "D control projected by DDHQ, NBC, AP, CBS; Mississippi (Colom +1,138) and Alaska (Peltola +626) uncalled.",
-  "house": "D control projected by AP, NBC, CNN, ABC, DDHQ; AP: D flipped NV-2; NY-17, ME-2, MN-1, CO-5, CO-4, AZ-2 uncalled.",
+  "house": "D control projected (AP, NBC, CNN, ABC, DDHQ); NBC: D net +34 after R flip of TX-32; 41 seats uncalled.",
   "governors": "Democrats flipped GA, OH, IA, TX, NV; Kansas (Holscher +~5,500) and Alaska (Kreiss-Tomkins 49%) uncalled."
  },
  "tally": {
@@ -17,7 +17,7 @@
   "house": {
    "D": 240,
    "R": 147,
-   "note": "Called races (AP tally via Fox News, 9:35 PM ET Nov. 4). 218 needed. AP, ABC, NBC, CNN, DDHQ project D control."
+   "note": "Called races (AP tally via Fox News, 9:35 PM ET Nov. 4). 218 needed. NBC (Nov. 5): 41 uncalled, D net +34; CNN projects D at least 250."
   },
   "governors": {
    "D": 22,
@@ -739,7 +739,7 @@
    "reporting": 96,
    "d": 49.0,
    "r": 48.9,
-   "calledBy": "Not projected; Colom (D) leads Hyde-Smith by 1,138 votes, ~95.6% counted (WLBT, 6 PM CT Nov. 4); affidavit/mail ballots outstanding"
+   "calledBy": "Not projected; Colom (D) 464,926 vs Hyde-Smith 463,788 (+1,138); ~3,600 mail ballots out, affidavit cure through Nov. 10"
   },
   "SEN-LA": {
    "status": "R",
@@ -774,7 +774,7 @@
    "reporting": 0,
    "d": null,
    "r": null,
-   "calledBy": "Not projected; LePage (R) narrowly leads Dunlap, ranked-choice tabulation likely"
+   "calledBy": "Not projected; LePage (R) leads Dunlap by ~5,400 first-choice votes; ranked-choice tabulation begins Nov. 9"
   },
   "H-AZ-02": {
    "status": "uncalled",
@@ -786,9 +786,9 @@
   "H-MN-01": {
    "status": "uncalled",
    "reporting": 0,
-   "d": null,
-   "r": null,
-   "calledBy": "Not projected; Johnson (D) leads Finstad by 324 votes and declared victory; recount likely"
+   "d": 50.0,
+   "r": 49.9,
+   "calledBy": "Not projected (AP); Johnson (D) leads Finstad by 323 votes, 49.99%-49.89%; recount likely"
   },
   "H-CA-48": {
    "status": "D",
@@ -913,9 +913,22 @@
    "winner": "D",
    "text": "Cuellar (D) wins a 12th term in TX-28",
    "calledBy": "Washington Examiner"
+  },
+  {
+   "race": "TX-32",
+   "winner": "R",
+   "text": "Yarbrough (R) flips TX-32 over Barrios, 51.5%-48.5%",
+   "calledBy": "NBC News"
   }
  ],
  "momentum": [
+  {
+   "date": "2026-11-05",
+   "dir": "R",
+   "text": "NBC projects Jace Yarbrough (R) flips TX-32 over Dan Barrios, the GOP's first House pickup; NBC puts Democrats' net gain at 34 with 41 races uncalled.",
+   "source": "GV Wire / NBC News",
+   "url": "https://gvwire.com/2026/11/05/republican-flips-house-seat-cutting-democrats-net-gain-to-34-as-41-races-remain-uncalled/"
+  },
   {
    "date": "2026-11-04",
    "dir": "D",
@@ -1083,31 +1096,9 @@
    "text": "Georgia governor remains a statistical tie: Rick Jackson (R) +1.6 over Keisha Lance Bottoms (D), even as Ossoff leads by ~7 for Senate.",
    "source": "WRDW / Quantus",
    "url": "https://www.wrdw.com/2026/10/19/who-will-win-ga-elections-new-poll-reveals-clues/"
-  },
-  {
-   "date": "2026-05-13",
-   "dir": "R",
-   "text": "Mid-decade redistricting and court rulings (incl. Louisiana v. Callais narrowing VRA majority-minority protections) shifted the House map toward the GOP; one model's GOP odds rose from 18.9% to 27.2% in a week.",
-   "source": "RacetotheWH",
-   "url": "https://racetothewh.com/house"
   }
  ],
  "alerts": [
-  {
-   "t": "2026-11-04T07:39:16Z",
-   "dir": "D",
-   "text": "AP: Trone Garriott (D) unseats Rep. Nunn, flipping IA-3."
-  },
-  {
-   "t": "2026-11-04T07:39:16Z",
-   "dir": "D",
-   "text": "AP: Berman (D) unseats Rep. Steil, flipping WI-1."
-  },
-  {
-   "t": "2026-11-04T07:39:16Z",
-   "dir": "D",
-   "text": "CBS: Padilla Stout (D) flips TX-23."
-  },
   {
    "t": "2026-11-04T07:39:16Z",
    "dir": "D",
@@ -1292,6 +1283,21 @@
    "t": "2026-11-05T16:10:30Z",
    "dir": "neutral",
    "text": "DDHQ: Constantino (R) holds New York's 21st District."
+  },
+  {
+   "t": "2026-11-05T18:38:20Z",
+   "dir": "R",
+   "text": "NBC: Yarbrough (R) flips TX-32, first GOP House pickup; D net now +34."
+  },
+  {
+   "t": "2026-11-05T18:38:20Z",
+   "dir": "D",
+   "text": "CNN projects Democrats will win at least 250 House seats."
+  },
+  {
+   "t": "2026-11-05T18:38:20Z",
+   "dir": "neutral",
+   "text": "Maine's 2nd District ranked-choice tabulation set for Nov. 9; LePage (R) leads."
   }
  ]
 }
