@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-05T22:22:46Z",
+ "updated": "2026-11-05T22:52:26Z",
  "phase": "live",
  "phaseNote": "Both chambers projected for Democrats; Mississippi and Alaska Senate, Kansas and Alaska governor still uncalled.",
  "liveRead": {
@@ -788,7 +788,7 @@
    "reporting": 0,
    "d": 50.0,
    "r": 49.9,
-   "calledBy": "Not projected (AP); Johnson (D) leads Finstad by 323 votes, 49.99%-49.89%; recount likely"
+   "calledBy": "Not projected (AP); Johnson (D) leads Rep. Finstad by ~323 votes; Finstad seeking recount (Post Bulletin, Nov. 5)"
   },
   "H-CA-48": {
    "status": "D",
@@ -1100,11 +1100,6 @@
  ],
  "alerts": [
   {
-   "t": "2026-11-04T08:25:16Z",
-   "dir": "neutral",
-   "text": "AP: Kurt Alme (R) wins Montana Senate over independent Seth Bodnar."
-  },
-  {
    "t": "2026-11-04T08:52:20Z",
    "dir": "neutral",
    "text": "Mississippi Senate uncalled: Colom (D) led Hyde-Smith (R) by 28 votes, ~97% in."
@@ -1298,6 +1293,11 @@
    "t": "2026-11-05T22:22:46Z",
    "dir": "neutral",
    "text": "Colorado 4th: Boebert trims Laubacher (D) lead to ~2,276 votes; still uncalled."
+  },
+  {
+   "t": "2026-11-05T22:52:26Z",
+   "dir": "neutral",
+   "text": "MN-1: Rep. Finstad (R) seeks recount; Johnson (D) leads by ~323 votes, uncalled."
   }
  ]
 }
