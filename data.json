@@ -1,10 +1,10 @@
 {
- "updated": "2026-11-05T05:52:53Z",
+ "updated": "2026-11-05T13:38:55Z",
  "phase": "live",
  "phaseNote": "Both chambers projected Democratic; Mississippi and Alaska Senate, Kansas and Alaska governor, several House seats uncalled.",
  "liveRead": {
   "senate": "D control projected by DDHQ, NBC, AP, CBS; Mississippi (Colom +1,138) and Alaska (Peltola +626) uncalled.",
-  "house": "D control projected by AP, NBC, CNN, ABC, DDHQ; NY-17, ME-2, MN-1, CO-5, AZ-2 still uncalled.",
+  "house": "D control projected by AP, NBC, CNN, ABC, DDHQ; AP: D flipped NV-2; NY-17, ME-2, MN-1, CO-5, CO-4, AZ-2 uncalled.",
   "governors": "Democrats flipped GA, OH, IA, TX, NV; Kansas (Holscher +~5,500) and Alaska (Kreiss-Tomkins 49%) uncalled."
  },
  "tally": {
@@ -817,6 +817,34 @@
    "d": 50.9,
    "r": 45.8,
    "calledBy": "Not projected; Killin (D) leads Rep. Crank (R) by 13,000+ in El Paso County, 30,000+ ballots left"
+  },
+  "H-NV-02": {
+   "status": "D",
+   "reporting": 0,
+   "d": null,
+   "r": null,
+   "calledBy": "AP (Nov. 4); Benitez-Thompson (D) flips open seat, Flippo (R) conceded"
+  },
+  "H-CO-04": {
+   "status": "uncalled",
+   "reporting": 0,
+   "d": null,
+   "r": null,
+   "calledBy": "Not projected; Laubacher (D) holds slim lead over Rep. Boebert (R)"
+  },
+  "H-NY-21": {
+   "status": "uncalled",
+   "reporting": 0,
+   "d": null,
+   "r": null,
+   "calledBy": "Not projected; open seat"
+  },
+  "H-AK-AL": {
+   "status": "uncalled",
+   "reporting": 0,
+   "d": null,
+   "r": null,
+   "calledBy": "Not projected; Begich (R) leads; RCV tabulation Nov. 18 if no majority"
   }
  },
  "otherCalls": [
@@ -919,7 +947,7 @@
   {
    "date": "2026-11-03",
    "dir": "D",
-   "text": "DDHQ projects Josh Turek (D) defeats Ashley Hinson in Iowa (~11:18 pm ET), 51%–45% with 78% counted.",
+   "text": "DDHQ projects Josh Turek (D) defeats Ashley Hinson in Iowa (~11:18 pm ET), 51%\u201345% with 78% counted.",
    "source": "The Hill / DDHQ",
    "url": "https://thehill.com/homenews/campaign/6178947-democrat-josh-turek-flips-senate-seat-in-iowa-2026-midterms/amp/"
   },
@@ -975,7 +1003,7 @@
   {
    "date": "2026-11-03",
    "dir": "D",
-   "text": "AP projects Roy Cooper (D) defeats Michael Whatley in North Carolina, flipping a GOP-held Senate seat — Democrats' first pickup of the night.",
+   "text": "AP projects Roy Cooper (D) defeats Michael Whatley in North Carolina, flipping a GOP-held Senate seat \u2014 Democrats' first pickup of the night.",
    "source": "WBTV / AP",
    "url": "https://www.wbtv.com/2026/11/04/roy-cooper-wins-2026-us-senate-race-north-carolina-ap-projects/"
   },
@@ -989,7 +1017,7 @@
   {
    "date": "2026-11-03",
    "dir": "D",
-   "text": "Maine on track for record midterm turnout, per Secretary of State Shenna Bellows — Maine Senate is a must-flip for Democrats.",
+   "text": "Maine on track for record midterm turnout, per Secretary of State Shenna Bellows \u2014 Maine Senate is a must-flip for Democrats.",
    "source": "Fox News live",
    "url": "https://www.foxnews.com/live-news/2026-midterm-elections-news-analysis-races-11-3-2026"
   },
@@ -1010,28 +1038,28 @@
   {
    "date": "2026-11-02",
    "dir": "D",
-   "text": "Final NYT/Siena polls: Democrats lead all seven Senate toss-ups — Talarico 50–43 (TX), Jackson 51–45 (ME), Brown 49–44 (OH), Peltola 48–46 (AK), Turek 48–47 (IA).",
+   "text": "Final NYT/Siena polls: Democrats lead all seven Senate toss-ups \u2014 Talarico 50\u201343 (TX), Jackson 51\u201345 (ME), Brown 49\u201344 (OH), Peltola 48\u201346 (AK), Turek 48\u201347 (IA).",
    "source": "Forbes",
    "url": "https://www.forbes.com/sites/saradorn/2026/11/01/latest-polls-in-2026-midterms-democrats-lead-nearly-all-key-senate-races/"
   },
   {
    "date": "2026-11-02",
    "dir": "D",
-   "text": "Kalshi Senate odds for Democrats hit 74–75%, the platform's high, up from ~63% on Oct. 2. Republicans led this market as late as July (60% R peak).",
+   "text": "Kalshi Senate odds for Democrats hit 74\u201375%, the platform's high, up from ~63% on Oct. 2. Republicans led this market as late as July (60% R peak).",
    "source": "CNBC / Quartz",
    "url": "https://www.cnbc.com/2026/11/02/prediction-market-traders-now-see-nearly-75percent-chance-of-democrats-winning-the-senate.html"
   },
   {
    "date": "2026-11-02",
    "dir": "R",
-   "text": "Polling-error risk: 2016, 2020 and 2024 polls understated Republicans by ~3–5 pts. A miss that size likely costs Democrats the Senate and narrows the House.",
+   "text": "Polling-error risk: 2016, 2020 and 2024 polls understated Republicans by ~3\u20135 pts. A miss that size likely costs Democrats the Senate and narrows the House.",
    "source": "Silver Bulletin via DC News Now",
    "url": "https://www.dcnewsnow.com/news/politics/final-projections-give-democrats-high-odds-to-sweep-congress/"
   },
   {
    "date": "2026-10-29",
    "dir": "D",
-   "text": "Cook's final governor ratings moved four races toward Democrats (incl. Wisconsin to Lean D); Cook projects a Democratic net gain of 2–4 governorships.",
+   "text": "Cook's final governor ratings moved four races toward Democrats (incl. Wisconsin to Lean D); Cook projects a Democratic net gain of 2\u20134 governorships.",
    "source": "Cook Political Report",
    "url": "https://www.cookpolitical.com/analysis/governors/2026-final-governors-ratings"
   },
@@ -1065,11 +1093,6 @@
   }
  ],
  "alerts": [
-  {
-   "t": "2026-11-04T07:08:00Z",
-   "dir": "neutral",
-   "text": "DDHQ/The Hill: Kotek (D) wins reelection as Oregon governor."
-  },
   {
    "t": "2026-11-04T07:39:16Z",
    "dir": "D",
@@ -1138,7 +1161,7 @@
   {
    "t": "2026-11-04T09:38:40Z",
    "dir": "R",
-   "text": "AP: Letlow (R) holds Louisiana Senate seat, 50.9%–49.1% over Davis."
+   "text": "AP: Letlow (R) holds Louisiana Senate seat, 50.9%\u201349.1% over Davis."
   },
   {
    "t": "2026-11-04T09:38:40Z",
@@ -1264,6 +1287,11 @@
    "t": "2026-11-05T05:52:53Z",
    "dir": "R",
    "text": "AZ-2: Crane (R) widens lead over Nez to 49.5%-48.7%; uncalled."
+  },
+  {
+   "t": "2026-11-05T13:38:55Z",
+   "dir": "D",
+   "text": "AP: Benitez-Thompson (D) flips Nevada's 2nd District; Flippo concedes."
   }
  ]
 }
