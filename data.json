@@ -1,10 +1,10 @@
 {
- "updated": "2026-11-05T22:52:26Z",
+ "updated": "2026-11-05T23:51:43Z",
  "phase": "live",
  "phaseNote": "Both chambers projected for Democrats; Mississippi and Alaska Senate, Kansas and Alaska governor still uncalled.",
  "liveRead": {
   "senate": "D control projected by DDHQ, NBC, AP, CBS; Mississippi (Colom +1,724) and Alaska (Peltola +637) uncalled.",
-  "house": "D control projected (AP, NBC, CNN, ABC, DDHQ); AP now 244 D, 152 R after calling CO-05 for Killin (D).",
+  "house": "D control projected (AP, NBC, CNN, ABC, CBS, DDHQ); AP: 252 D, 155 R; CBS now projects NJ-02 flip.",
   "governors": "Democrats flipped GA, OH, IA, TX, NV; Kansas (Holscher +~7,000, audit) and Alaska (Kreiss-Tomkins 49%) uncalled."
  },
  "tally": {
@@ -15,9 +15,9 @@
    "note": "Called 2026 races only. Seats not up: 34 D-caucus, 31 R. DDHQ, NBC, AP, CBS project D control."
   },
   "house": {
-   "D": 244,
-   "R": 152,
-   "note": "Called races (AP tally, Nov. 5, incl. AP call of CO-05). 218 needed. CNN 250-154, DDHQ 247-152, NBC 244-155, ABC 244-153."
+   "D": 252,
+   "R": 155,
+   "note": "Called races per AP (252 D after CO-05 call; 28 uncalled as of 4:30 PM ET Nov. 5, per Roll Call/Yahoo). 218 needed. CNN, NBC, ABC, CBS, DDHQ also project D control."
   },
   "governors": {
    "D": 22,
@@ -760,7 +760,7 @@
    "reporting": 98,
    "d": 49.0,
    "r": 48.0,
-   "calledBy": "DDHQ via The Hill; AP not yet called"
+   "calledBy": "DDHQ via The Hill; CBS News (4:28 PM ET Nov. 5): Knickerbocker (D) unseats Rep. Turner"
   },
   "H-SC-01": {
    "status": "D",
@@ -1100,21 +1100,6 @@
  ],
  "alerts": [
   {
-   "t": "2026-11-04T08:52:20Z",
-   "dir": "neutral",
-   "text": "Mississippi Senate uncalled: Colom (D) led Hyde-Smith (R) by 28 votes, ~97% in."
-  },
-  {
-   "t": "2026-11-04T09:38:40Z",
-   "dir": "R",
-   "text": "AP: Letlow (R) holds Louisiana Senate seat, 50.9%–49.1% over Davis."
-  },
-  {
-   "t": "2026-11-04T09:38:40Z",
-   "dir": "neutral",
-   "text": "Mississippi Senate still uncalled: Colom (D) leads Hyde-Smith by 43 votes, ~96% in."
-  },
-  {
    "t": "2026-11-04T10:08:07Z",
    "dir": "D",
    "text": "AP: Aaron Ford (D) defeats Gov. Lombardo (R), flipping Nevada governorship."
@@ -1298,6 +1283,21 @@
    "t": "2026-11-05T22:52:26Z",
    "dir": "neutral",
    "text": "MN-1: Rep. Finstad (R) seeks recount; Johnson (D) leads by ~323 votes, uncalled."
+  },
+  {
+   "t": "2026-11-05T23:38:04Z",
+   "dir": "D",
+   "text": "AP House tally: 252 D, 155 R, with 28 races uncalled."
+  },
+  {
+   "t": "2026-11-05T23:38:04Z",
+   "dir": "D",
+   "text": "CBS: Knickerbocker (D) unseats Rep. Turner in OH-10."
+  },
+  {
+   "t": "2026-11-05T23:51:43Z",
+   "dir": "D",
+   "text": "CBS: Mullock (D) unseats Rep. Van Drew in New Jersey's 2nd."
   }
  ]
 }
