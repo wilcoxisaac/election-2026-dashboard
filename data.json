@@ -1,9 +1,9 @@
 {
- "updated": "2026-11-05T19:52:39Z",
+ "updated": "2026-11-05T20:22:28Z",
  "phase": "live",
  "phaseNote": "Both chambers projected Democratic; Mississippi and Alaska Senate, Kansas and Alaska governor, ~40 House seats uncalled.",
  "liveRead": {
-  "senate": "D control projected by DDHQ, NBC, AP, CBS; Mississippi (Colom +1,138) and Alaska (Peltola +626) uncalled.",
+  "senate": "D control projected by DDHQ, NBC, AP, CBS; Mississippi (Colom +1,724) and Alaska (Peltola +637) uncalled.",
   "house": "D control projected (AP, NBC, CNN, ABC, DDHQ); AP has 243 D, 152 R called, about 40 seats uncalled.",
   "governors": "Democrats flipped GA, OH, IA, TX, NV; Kansas (Holscher +~5,500) and Alaska (Kreiss-Tomkins 49%) uncalled."
  },
@@ -739,7 +739,7 @@
    "reporting": 96,
    "d": 49.0,
    "r": 48.9,
-   "calledBy": "Not projected; Colom (D) 464,926 vs Hyde-Smith 463,788 (+1,138); ~3,600 mail ballots out, affidavit cure through Nov. 10"
+   "calledBy": "Not projected; Colom (D) 466,226 vs Hyde-Smith 464,502 (+1,724) as of 1 p.m. CT Nov. 5 (WLOX); mail and affidavit ballots still out"
   },
   "SEN-LA": {
    "status": "R",
@@ -1101,11 +1101,6 @@
  "alerts": [
   {
    "t": "2026-11-04T07:39:16Z",
-   "dir": "neutral",
-   "text": "AP: Vasquez (D) holds NM-2; Figures (D) holds AL-2."
-  },
-  {
-   "t": "2026-11-04T07:39:16Z",
    "dir": "D",
    "text": "AP House tally: Democrats 224 seats, Republicans 135 called."
   },
@@ -1298,6 +1293,11 @@
    "t": "2026-11-05T19:52:39Z",
    "dir": "D",
    "text": "AP calls Montana's 1st for Forstag (D); AP House tally now 243-152."
+  },
+  {
+   "t": "2026-11-05T20:22:28Z",
+   "dir": "neutral",
+   "text": "Mississippi Senate: Colom (D) lead grows to 1,724 votes; race still uncalled."
   }
  ]
 }
