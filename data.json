@@ -1,11 +1,11 @@
 {
- "updated": "2026-11-05T20:22:28Z",
+ "updated": "2026-11-05T20:52:25Z",
  "phase": "live",
  "phaseNote": "Both chambers projected Democratic; Mississippi and Alaska Senate, Kansas and Alaska governor, ~40 House seats uncalled.",
  "liveRead": {
   "senate": "D control projected by DDHQ, NBC, AP, CBS; Mississippi (Colom +1,724) and Alaska (Peltola +637) uncalled.",
-  "house": "D control projected (AP, NBC, CNN, ABC, DDHQ); AP has 243 D, 152 R called, about 40 seats uncalled.",
-  "governors": "Democrats flipped GA, OH, IA, TX, NV; Kansas (Holscher +~5,500) and Alaska (Kreiss-Tomkins 49%) uncalled."
+  "house": "D control projected (AP, NBC, CNN, ABC, DDHQ); AP has 243 D, 152 R called; CNN called NY-17 for Conley (D).",
+  "governors": "Democrats flipped GA, OH, IA, TX, NV; Kansas (Holscher +~7,000, audit) and Alaska (Kreiss-Tomkins 49%) uncalled."
  },
  "tally": {
   "senate": {
@@ -17,7 +17,7 @@
   "house": {
    "D": 243,
    "R": 152,
-   "note": "Called races (AP tally, Nov. 5 via allthecalls.app). 218 needed. CNN 250-154, DDHQ 247-152, NBC 244-155."
+   "note": "Called races (AP tally, Nov. 5 via allthecalls.app). 218 needed. CNN 250-154, DDHQ 247-152, NBC 244-155, ABC 244-153."
   },
   "governors": {
    "D": 22,
@@ -57,10 +57,10 @@
   },
   "SEN-AK": {
    "status": "uncalled",
-   "reporting": 0,
-   "d": 48.0,
-   "r": 47.7,
-   "calledBy": "Not projected; Peltola (D) leads Sullivan by 626 first-choice votes, 394/401 precincts; RCV tabulation Nov. 18"
+   "reporting": 74,
+   "d": 48.2,
+   "r": 47.9,
+   "calledBy": "Not projected; Peltola (D) leads Sullivan by 637 votes, 48.2%-47.9%, ~74% counted (AP); RCV tabulation Nov. 18"
   },
   "SEN-IA": {
    "status": "D",
@@ -151,7 +151,7 @@
    "reporting": 0,
    "d": null,
    "r": null,
-   "calledBy": "Not projected; Holscher (D) leads by ~5,557 votes; Masterson (R) seeks \"another look\"; mail ballots accepted through Nov. 6"
+   "calledBy": "Not projected; Holscher (D) leads Masterson by ~7,000 votes (<1%), triggering close-race audit (KWCH, Nov. 5 afternoon)"
   },
   "GOV-NV": {
    "status": "D",
@@ -483,11 +483,11 @@
    "calledBy": "DDHQ via The Hill"
   },
   "H-NY-17": {
-   "status": "uncalled",
+   "status": "D",
    "reporting": 84,
    "d": 52.2,
    "r": null,
-   "calledBy": "Not yet projected; Conley (D) leads by 4.3 pts with 84% in; Lawler (R) conceded per ABC7, Fox 5"
+   "calledBy": "CNN (per allthecalls.app, Nov. 5); Lawler (R) conceded; AP not yet called"
   },
   "GOV-SC": {
    "status": "R",
@@ -828,9 +828,9 @@
   "H-CO-04": {
    "status": "uncalled",
    "reporting": 0,
-   "d": null,
-   "r": null,
-   "calledBy": "Not projected; Laubacher (D) holds slim lead over Rep. Boebert (R)"
+   "d": 48.7,
+   "r": 48.0,
+   "calledBy": "Not projected; Laubacher (D) leads Rep. Boebert (R) 176,162 to 173,649 (+2,513) as of noon MT Nov. 5 (CBS Colorado)"
   },
   "H-NY-21": {
    "status": "R",
@@ -1100,21 +1100,6 @@
  ],
  "alerts": [
   {
-   "t": "2026-11-04T07:39:16Z",
-   "dir": "D",
-   "text": "AP House tally: Democrats 224 seats, Republicans 135 called."
-  },
-  {
-   "t": "2026-11-04T07:39:16Z",
-   "dir": "neutral",
-   "text": "Alaska Senate heads to ranked-choice tabulation Nov. 18; uncalled."
-  },
-  {
-   "t": "2026-11-04T07:39:16Z",
-   "dir": "neutral",
-   "text": "Kansas governor uncalled; Holscher (D) leads Masterson by ~5,600 votes."
-  },
-  {
    "t": "2026-11-04T07:54:02Z",
    "dir": "neutral",
    "text": "AP: Little (R) wins Idaho governor; Mazzei (R) wins Oklahoma."
@@ -1298,6 +1283,21 @@
    "t": "2026-11-05T20:22:28Z",
    "dir": "neutral",
    "text": "Mississippi Senate: Colom (D) lead grows to 1,724 votes; race still uncalled."
+  },
+  {
+   "t": "2026-11-05T20:37:38Z",
+   "dir": "D",
+   "text": "CNN: Conley (D) flips NY-17, unseating Rep. Lawler."
+  },
+  {
+   "t": "2026-11-05T20:37:38Z",
+   "dir": "neutral",
+   "text": "Kansas governor: Holscher (D) lead grows to ~7,000; close-race audit triggered."
+  },
+  {
+   "t": "2026-11-05T20:52:25Z",
+   "dir": "neutral",
+   "text": "Colorado 4th: Laubacher (D) leads Boebert by 2,513 votes; still uncalled."
   }
  ]
 }
