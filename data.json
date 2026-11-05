@@ -1,10 +1,10 @@
 {
- "updated": "2026-11-05T02:52:27Z",
+ "updated": "2026-11-05T05:52:53Z",
  "phase": "live",
  "phaseNote": "Both chambers projected Democratic; Mississippi and Alaska Senate, Kansas and Alaska governor, several House seats uncalled.",
  "liveRead": {
   "senate": "D control projected by DDHQ, NBC, AP, CBS; Mississippi (Colom +1,138) and Alaska (Peltola +626) uncalled.",
-  "house": "D control projected by AP, NBC, CNN, ABC, DDHQ; 240 D, 147 R called (AP); NY-17, ME-2, MN-1 uncalled.",
+  "house": "D control projected by AP, NBC, CNN, ABC, DDHQ; NY-17, ME-2, MN-1, CO-5, AZ-2 still uncalled.",
   "governors": "Democrats flipped GA, OH, IA, TX, NV; Kansas (Holscher +~5,500) and Alaska (Kreiss-Tomkins 49%) uncalled."
  },
  "tally": {
@@ -672,11 +672,11 @@
    "calledBy": "AP"
   },
   "H-FL-13": {
-   "status": "uncalled",
+   "status": "R",
    "reporting": 99,
-   "d": null,
-   "r": 49.5,
-   "calledBy": "Not projected; Luna (R) declared victory, 49.6%-48.6% with 99% in"
+   "d": 48.6,
+   "r": 49.6,
+   "calledBy": "DDHQ (Luna, R); other networks not yet projected"
   },
   "H-FL-27": {
    "status": "uncalled",
@@ -779,16 +779,16 @@
   "H-AZ-02": {
    "status": "uncalled",
    "reporting": 0,
-   "d": 49.2,
-   "r": 49.2,
-   "calledBy": "Not projected; Nez (D) and Crane (R) effectively tied"
+   "d": 48.7,
+   "r": 49.5,
+   "calledBy": "Not projected; Crane (R) widens lead over Nez (D), 49.5%-48.7% (KJZZ, 8 PM MST Nov. 4)"
   },
   "H-MN-01": {
    "status": "uncalled",
    "reporting": 0,
    "d": null,
    "r": null,
-   "calledBy": "Not projected; Johnson (D) leads Finstad by 324 votes"
+   "calledBy": "Not projected; Johnson (D) leads Finstad by 324 votes and declared victory; recount likely"
   },
   "H-CA-48": {
    "status": "D",
@@ -1067,16 +1067,6 @@
  "alerts": [
   {
    "t": "2026-11-04T07:08:00Z",
-   "dir": "R",
-   "text": "DDHQ: Ricketts (R) defeats Osborn (I), holding Nebraska Senate seat."
-  },
-  {
-   "t": "2026-11-04T07:08:00Z",
-   "dir": "D",
-   "text": "DDHQ: Villegas (D) unseats Rep. Valadao, flipping CA-22."
-  },
-  {
-   "t": "2026-11-04T07:08:00Z",
    "dir": "neutral",
    "text": "DDHQ/The Hill: Kotek (D) wins reelection as Oregon governor."
   },
@@ -1264,6 +1254,16 @@
    "t": "2026-11-05T02:52:27Z",
    "dir": "D",
    "text": "DDHQ: Amish Shah (D) defeats Feely, flipping Arizona's 1st District."
+  },
+  {
+   "t": "2026-11-05T05:52:53Z",
+   "dir": "neutral",
+   "text": "DDHQ: Rep. Luna (R) holds Florida's 13th District."
+  },
+  {
+   "t": "2026-11-05T05:52:53Z",
+   "dir": "R",
+   "text": "AZ-2: Crane (R) widens lead over Nez to 49.5%-48.7%; uncalled."
   }
  ]
 }
