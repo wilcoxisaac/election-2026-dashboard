@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-05T23:51:43Z",
+ "updated": "2026-11-06T04:22:49Z",
  "phase": "live",
  "phaseNote": "Both chambers projected for Democrats; Mississippi and Alaska Senate, Kansas and Alaska governor still uncalled.",
  "liveRead": {
@@ -830,7 +830,7 @@
    "reporting": 0,
    "d": 48.7,
    "r": 48.1,
-   "calledBy": "Not projected; Laubacher (D) leads Rep. Boebert (R) by ~2,276 votes (48.71%-48.05%) through 2 p.m. MT Nov. 5 (Colorado Politics); margin above automatic-recount threshold"
+   "calledBy": "Not projected; Laubacher (D) lead over Rep. Boebert (R) widened to ~0.9% as of Thursday evening Nov. 5 (NBC News); ~12,000 ballots left, mostly Arapahoe"
   },
   "H-NY-21": {
    "status": "R",
@@ -1100,11 +1100,6 @@
  ],
  "alerts": [
   {
-   "t": "2026-11-04T10:08:07Z",
-   "dir": "D",
-   "text": "AP: Aaron Ford (D) defeats Gov. Lombardo (R), flipping Nevada governorship."
-  },
-  {
    "t": "2026-11-04T12:14:36Z",
    "dir": "neutral",
    "text": "AP: Rep. Marcy Kaptur (D) holds Ohio's 9th District over Derek Merrin."
@@ -1298,6 +1293,11 @@
    "t": "2026-11-05T23:51:43Z",
    "dir": "D",
    "text": "CBS: Mullock (D) unseats Rep. Van Drew in New Jersey's 2nd."
+  },
+  {
+   "t": "2026-11-06T04:22:49Z",
+   "dir": "neutral",
+   "text": "CO-4: Laubacher (D) lead over Boebert widens to ~0.9% (NBC); still uncalled."
   }
  ]
 }
